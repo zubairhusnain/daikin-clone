@@ -1,0 +1,153 @@
+@charset "utf-8";
+
+
+/* ---------- ---------- ---------- 
+	::index::
+
+ A. Setting
+ B. GlobalLocations Layout
+
+---------- ---------- --- ------- */
+
+
+/* A. Setting
+---------- ---------- ---------- */
+#GlobalLocationsWrap p, #GlobalLocationsWrap ul, #GlobalLocationsWrap ol, #GlobalLocationsWrap li, #GlobalLocationsWrap dl, #GlobalLocationsWrap dt, #GlobalLocationsWrap dd, #GlobalLocationsWrap div, #GlobalLocationsWrap form, #GlobalLocationsWrap input, #GlobalLocationsWrap textarea, #GlobalLocationsWrap table, #GlobalLocationsWrap th, #GlobalLocationsWrap td {
+	margin: 0;
+	padding: 0;
+}
+#GlobalLocationsWrap a,
+#GlobalLocationsWrap a:link,
+#GlobalLocationsWrap a:visited {
+	color: #FFF;
+	text-decoration: none;
+	font-size: 100%;
+}
+#GlobalLocationsWrap a:hover,
+#GlobalLocationsWrap a:active,
+#GlobalLocationsWrap a:focus {
+	color: #FFF;
+	font-size: 100%;
+}
+
+
+
+/* B. GlobalLocations Layout
+---------- ---------- ---------- */
+#GlobalLocationsWrap {
+	width: 100%;
+	min-width: 960px;
+	background: #2c9bdb url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/bg_gl.png") repeat-x 0 0;
+}
+#GlobalLocationsWrap #GlobalLocationsArea {
+	width: 475px;
+	min-height: 159px;
+	margin: 0 auto;
+	padding: 62px 0 0 485px;
+	color:#FFF;
+	background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/img_gl.jpg") no-repeat 0 0;
+}
+#GlobalLocationsWrap #GlobalLocationsArea p {
+	margin-bottom: 0;
+}
+#GlobalLocationsWrap #GlobalLocationsArea .GlobalLocations__Catch {
+	margin-bottom: 0;
+	font-size: 214%; /* 30px */
+	font-weight: bold;
+}
+#GlobalLocationsWrap #GlobalLocationsArea .TextButton {
+	display: inline-block;
+	margin: 18px 0 0 0;
+}
+#GlobalLocationsWrap #GlobalLocationsArea .TextButton:hover,
+#GlobalLocationsWrap #GlobalLocationsArea .TextButton:focus {
+	background: #596066;
+}
+#GlobalLocationsWrap #GlobalLocationsArea .TextButton--Large {
+	font-size: 115%; /* 16px */
+}
+#GlobalLocationsWrap #GlobalLocationsArea .TextButton--Large .Mkr {
+  padding-top: 1px;
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 960px) {
+  .set-responsiveWebDesign #GlobalLocationsWrap {
+    min-width: 320px;
+    background-size: auto 100%;
+    background-size: auto 100%;
+  }
+  .set-responsiveWebDesign #GlobalLocationsWrap #GlobalLocationsArea {
+    width: 46%;
+    min-height: 158px;
+    padding: 54px 0 0 51%;
+    background-position: 5% 0;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .set-responsiveWebDesign #GlobalLocationsWrap {
+	  background-image: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/bg_gl_sp.png");
+  }
+  .set-responsiveWebDesign #GlobalLocationsWrap #GlobalLocationsArea {
+    width: 100%;
+    min-height: 204px;
+    min-height: 200px;
+    padding: 58px 10px 0 52%;
+    padding: 58px 10px 0 54.5%;
+    background-size: auto 100%;
+	  background-image: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/img_gl_sp.jpg");
+    background-position: 21% 0;
+    box-sizing: border-box;
+  }
+  .set-responsiveWebDesign #GlobalLocationsWrap #GlobalLocationsArea .GlobalLocations__Catch {
+    font-size: 165%; /* 10px */
+  }
+  .set-responsiveWebDesign #GlobalLocationsWrap #GlobalLocationsArea .TextButton {
+    margin-top: 15px;
+  }
+}
+
+@media screen and (max-width: 481px) {
+  .set-responsiveWebDesign #GlobalLocationsWrap #GlobalLocationsArea {
+    width: 100%;
+    min-height: 112px;
+    padding: 34px 10px 0 53%;
+    background-size: auto 100%;
+	  background-image: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/img_gl_sp.jpg");
+    box-sizing: border-box;
+  }
+  .set-responsiveWebDesign #GlobalLocationsWrap #GlobalLocationsArea .GlobalLocations__Catch {
+    font-size: 72%; /* 10px */
+  }
+  .set-responsiveWebDesign #GlobalLocationsWrap #GlobalLocationsArea .TextButton {
+    margin-top: 5px;
+  }
+  .set-responsiveWebDesign #GlobalLocationsWrap #GlobalLocationsArea .TextButton--Large {
+    position: relative;
+    font-size: 72%; /* 10px */
+    box-sizing: border-box;
+    text-align: right;
+  }
+  .set-responsiveWebDesign #GlobalLocationsWrap #GlobalLocationsArea .TextButton--Large .Mkr--Large {
+    display: none;
+  }
+  .set-responsiveWebDesign #GlobalLocationsWrap #GlobalLocationsArea .TextButton--Large:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+  	width: 4px;
+  	height: 8px;
+    margin-top: -3px;
+  	margin-right: 8px;
+  	background-image: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/mkr_sprite.png");
+  	background-repeat: no-repeat;
+    background-position: -20px 0;
+    background-size: 100px auto;
+  	vertical-align: middle;
+  }
+
+}
+

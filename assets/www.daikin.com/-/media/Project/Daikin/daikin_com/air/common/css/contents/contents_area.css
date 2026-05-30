@@ -1,0 +1,7 @@
+.brand-ContentsArea_inner {
+  max-width: calc(var(--width-contents-max-size) + var(--width-contents-padding) * 2);
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: var(--width-contents-padding);
+  padding-right: var(--width-contents-padding);
+}

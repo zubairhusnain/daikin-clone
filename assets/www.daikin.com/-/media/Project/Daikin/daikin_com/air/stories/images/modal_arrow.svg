@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32.41" height="23.81" viewBox="0 0 32.41 23.81">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #231815;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="modal_arrow.svg" class="cls-1" d="M1348.5,2374.98l-1.13-1.14,10.77-10.78-10.77-10.77,1.13-1.14,11.91,11.91Zm-20.5-12.73h30.47v1.62H1328v-1.62Z" transform="translate(-1328 -2351.16)"/>
+</svg>

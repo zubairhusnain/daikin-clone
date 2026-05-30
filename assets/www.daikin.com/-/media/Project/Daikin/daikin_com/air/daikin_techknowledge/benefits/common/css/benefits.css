@@ -1,0 +1,726 @@
+@media screen and (max-width: 960px) {
+  .set-responsiveWebDesign.header-open .brand-Wrapper {
+    display: none;
+  }
+}
+
+.brand-Breadcrumbs {
+  position: static;
+  background: #fff;
+}
+
+.brand-ContentsArea_inner {
+  padding-top: 35px;
+  padding-bottom: 70px;
+  line-height: 1.57;
+}
+
+.brand-ContentsArea_inner img {
+  max-width: 100%;
+  height: auto;
+}
+
+.brand-ContentsArea_inner h4 {
+  border: none;
+}
+
+@media screen and (max-width: 768px) {
+  .brand-ContentsArea_inner {
+    padding-top: 16px;
+  }
+}
+
+.benefits-KeyVisual {
+  background: #e5edf1;
+}
+
+.benefits-KeyVisual_inner {
+  max-width: calc(var(--width-contents-max-size) + var(--width-contents-padding) * 2);
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: var(--width-contents-padding);
+  padding-right: var(--width-contents-padding);
+  text-align: center;
+}
+
+@media (max-width: 1008px) {
+  .benefits-KeyVisual_inner {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.benefits-KeyVisual_inner2 {
+  display: inline-block;
+  position: relative;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.benefits-KeyVisual_inner2 img {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .benefits-KeyVisual_inner2 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+.benefits-KeyVisual_heading {
+  font-size: calc(35 / var(--font-size-root) * 1rem);
+  line-height: 1.25;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  place-items: flex-start flex-start;
+  gap: 0;
+  text-transform: uppercase;
+}
+
+.benefits-KeyVisual_heading.-top {
+  transform: translateY(-100%);
+}
+
+@media screen and (max-width: 768px) {
+  .benefits-KeyVisual_heading {
+    font-size: calc(20 / var(--font-size-root) * 1rem);
+    position: static;
+    top: initial;
+    transform: initial;
+  }
+  .benefits-KeyVisual_heading.-top {
+    transform: initial;
+  }
+}
+
+.benefits-KeyVisual_word {
+  padding: 3px 17px 2px;
+  background: rgba(0, 154, 207, 0.8);
+}
+
+.benefits-KeyVisual_word.-sub {
+  font-size: calc(17.5 / var(--font-size-root) * 1rem);
+  padding: 5px 19px 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .benefits-KeyVisual_word {
+    width: 100%;
+    padding: 2px 10px;
+    background: #009acf;
+  }
+  .benefits-KeyVisual_word:first-of-type {
+    padding-top: 13px;
+  }
+  .benefits-KeyVisual_word:last-of-type {
+    padding-bottom: 13px;
+  }
+  .benefits-KeyVisual_word.-sub {
+    font-size: calc(10 / var(--font-size-root) * 1rem);
+    padding: 2px 10px 13px;
+  }
+}
+
+.benefits-Lead {
+  font-size: calc(17 / var(--font-size-root) * 1rem);
+  margin-bottom: 35px;
+  line-height: 1.5;
+  color: #000;
+}
+
+@media screen and (max-width: 768px) {
+  .benefits-Lead {
+    font-size: calc(14 / var(--font-size-root) * 1rem);
+    margin-bottom: 19px;
+  }
+}
+
+.benefits-Nav {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media screen and (max-width: 768px) {
+  .benefits-Nav {
+    gap: 25px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .benefits-Nav {
+    grid-template-columns: 1fr;
+  }
+}
+
+.benefits-Nav img {
+  width: 100%;
+  max-width: 100%;
+}
+
+.benefits-Nav_title {
+  font-size: calc(17 / var(--font-size-root) * 1rem);
+  line-height: 1.4;
+  border-top: 4px solid #00cdff;
+  padding: 15px 0 12px;
+}
+
+@media screen and (max-width: 768px) {
+  .benefits-Nav_title {
+    padding-bottom: 9px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .benefits-Nav_title {
+    border-top-width: 3px;
+  }
+}
+
+.benefits-Nav_title a {
+  color: var(--color-heading);
+}
+
+.benefits-Nav_title a::after {
+  content: "";
+  position: relative;
+  display: inline-block;
+  background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/air/daikin_techknowledge/benefits/common/images/icon_link_arrow.svg") 0 0 no-repeat;
+  width: 13px;
+  height: 13px;
+  margin-left: 10px;
+  top: .05em;
+}
+
+.benefits-Nav_subTitle {
+  font-size: calc(14 / var(--font-size-root) * 1rem);
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .benefits-Nav_subTitle {
+    margin-bottom: 18px;
+  }
+}
+
+.benefits-Heading2 {
+  font-size: calc(23 / var(--font-size-root) * 1rem);
+  margin-bottom: 23px;
+  line-height: 1.25;
+  color: var(--color-heading);
+}
+
+@media screen and (max-width: 768px) {
+  .benefits-Heading2 {
+    font-size: calc(18 / var(--font-size-root) * 1rem);
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .benefits-Heading2 {
+    margin-bottom: 16px;
+  }
+}
+
+.benefits-Heading3 {
+  font-size: calc(17 / var(--font-size-root) * 1rem);
+  line-height: 1.4;
+  margin-bottom: 13px;
+  color: var(--color-heading);
+}
+
+@media screen and (max-width: 768px) {
+  .benefits-Heading3 {
+    font-size: calc(18 / var(--font-size-root) * 1rem);
+    margin-bottom: 10px;
+  }
+}
+
+.benefits-HeadingNumeric {
+  font-size: calc(17 / var(--font-size-root) * 1rem);
+  line-height: 133%;
+  color: var(--color-heading);
+  position: relative;
+  margin-top: 45px;
+  margin-bottom: 24px;
+  padding: 10px 0 0 50px;
+  min-height: 26px;
+}
+
+.benefits-Heading2 + .benefits-HeadingNumeric,
+.benefits-Grid_item > .benefits-HeadingNumeric:first-child {
+  margin-top: -10px;
+}
+
+@media screen and (max-width: 768px) {
+  .benefits-HeadingNumeric {
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding: 0 0 0 30px;
+  }
+}
+
+.benefits-HeadingNumeric_num {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/air/daikin_techknowledge/benefits/common/images/mkr_sprite_number.png");
+  background-repeat: no-repeat;
+  min-height: 5px;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .benefits-HeadingNumeric_num {
+    width: 22px;
+    height: 22px;
+    background-size: 22px auto;
+  }
+}
+
+.benefits-HeadingNumeric_num.-num1 {
+  background-position: 0 0;
+}
+
+.benefits-HeadingNumeric_num.-num2 {
+  background-position: 0 -40px;
+}
+
+@media screen and (max-width: 768px) {
+  .benefits-HeadingNumeric_num.-num2 {
+    background-position: 0 -22px;
+  }
+}
+
+.benefits-HeadingNumeric_num.-num3 {
+  background-position: 0 -80px;
+}
+
+@media screen and (max-width: 768px) {
+  .benefits-HeadingNumeric_num.-num3 {
+    background-position: 0 -44px;
+  }
+}
+
+.benefits-HeadingNumeric_num.-num4 {
+  background-position: 0 -120px;
+}
+
+@media screen and (max-width: 768px) {
+  .benefits-HeadingNumeric_num.-num4 {
+    background-position: 0 -66px;
+  }
+}
+
+.benefits-ImgAndTxtWrap {
+  margin-bottom: 35px;
+}
+
+.benefits-ImgAndTxtWrap:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.benefits-ImgAndTxtWrap_img {
+  float: right;
+  margin-left: 30px;
+}
+
+.-imgLeft .benefits-ImgAndTxtWrap_img {
+  float: left;
+  margin-left: 0;
+  margin-right: 30px;
+}
+
+.-imgW30 .benefits-ImgAndTxtWrap_img {
+  width: 30%;
+}
+
+.-imgW75 .benefits-ImgAndTxtWrap_img {
+  width: 75%;
+}
+
+@media screen and (max-width: 768px) {
+  .benefits-ImgAndTxtWrap_img {
+    width: 45%;
+    margin-left: 4%;
+  }
+  .-imgLeft .benefits-ImgAndTxtWrap_img {
+    margin-left: 0;
+    margin-right: 4%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .benefits-ImgAndTxtWrap_img {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+  }
+  .-imgW30 .benefits-ImgAndTxtWrap_img,
+  .-imgW75 .benefits-ImgAndTxtWrap_img {
+    width: 100%;
+  }
+}
+
+.benefits-ImgAndTxtWrap_img img {
+  width: 100%;
+}
+
+.benefits-ImgAndTxtWrap_text > :last-child {
+  margin-bottom: 0;
+}
+
+.benefits-ImgAndTxt {
+  padding-bottom: 30px;
+  display: flex;
+  gap: 30px;
+}
+
+@media screen and (max-width: 480px) {
+  .benefits-ImgAndTxt {
+    flex-direction: column;
+    gap: 17px;
+  }
+}
+
+.benefits-ImgAndTxt_img {
+  width: 50%;
+}
+
+.benefits-ImgAndTxt_img > *:last-child {
+  margin-bottom: 0;
+}
+
+.-imgLeft .benefits-ImgAndTxt_img {
+  order: 1;
+}
+
+.-imgW30 .benefits-ImgAndTxt_img {
+  width: 30%;
+  flex: 0 0 auto;
+}
+
+.-imgW75 .benefits-ImgAndTxt_img {
+  width: 70%;
+  flex: 0 0 auto;
+}
+
+@media screen and (max-width: 480px) {
+  .benefits-ImgAndTxt_img {
+    width: 100%;
+  }
+}
+
+.benefits-ImgAndTxt_text {
+  width: 50%;
+  flex: 1 1 auto;
+}
+
+.-imgLeft .benefits-ImgAndTxt_text {
+  order: 2;
+}
+
+@media screen and (max-width: 480px) {
+  .benefits-ImgAndTxt_text {
+    width: 100%;
+  }
+  .-imgW30 .benefits-ImgAndTxt_text,
+  .-imgW75 .benefits-ImgAndTxt_text {
+    width: 100%;
+  }
+}
+
+.benefits-Img {
+  margin-bottom: 13px;
+}
+
+@media screen and (max-width: 480px) {
+  .benefits-Img {
+    width: 100%;
+  }
+  .benefits-Img img {
+    width: 100%;
+  }
+}
+
+.benefits-Text {
+  font-size: calc(14 / var(--font-size-root) * 1rem);
+  margin-bottom: 17px;
+}
+
+.benefits-ImgAndTxt_text .benefits-Text:last-of-type {
+  margin-bottom: 0;
+}
+
+.benefits-Section {
+  margin-top: 45px;
+  padding-top: 35px;
+  border-top: 4px solid #00cdff;
+}
+
+.benefits-Section.-gray {
+  border-top-color: var(--color-border);
+  margin-top: 80px;
+}
+
+@media screen and (max-width: 480px) {
+  .benefits-Section.-gray {
+    margin-top: 50px;
+    padding-top: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .benefits-Section {
+    border-top-width: 2px;
+  }
+}
+
+.benefits-Grid {
+  display: grid;
+  gap: 30px;
+}
+
+.benefits-Grid.-grid2 {
+  grid-template-columns: 1fr 1fr;
+}
+
+.benefits-Grid.-grid3 {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media screen and (max-width: 480px) {
+  .benefits-Grid {
+    grid-template-columns: 1fr;
+  }
+  .benefits-Grid.-grid2, .benefits-Grid.-grid3 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.benefits-Grid_item > *:last-child {
+  margin-bottom: 0;
+}
+
+.benefits-Pager {
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .benefits-Pager {
+    margin-top: 60px;
+  }
+}
+
+.benefits-Pager ul {
+  display: flex;
+  place-items: center;
+  gap: 15px 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .benefits-Pager ul {
+    flex-direction: column;
+    place-items: flex-start flex-start;
+  }
+}
+
+.benefits-Pager a {
+  font-size: calc(14 / var(--font-size-root) * 1rem);
+  font-weight: bold;
+  color: var(--color-link-text);
+}
+
+.benefits-Pager a:hover, .benefits-Pager a:focus {
+  text-decoration: underline;
+}
+
+.benefits-Pager_prev {
+  flex: 1 1 auto;
+  width: 50%;
+  text-align: right;
+}
+
+.benefits-Pager_prev a::before {
+  content: "";
+  position: relative;
+  display: inline-block;
+  background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/air/common/images/icon/icon_link_arrow_8_blue.svg") 0 0 no-repeat;
+  width: 6px;
+  height: 8px;
+  transform: scaleX(-1);
+  margin-right: 4px;
+  top: -.1em;
+}
+
+@media screen and (max-width: 768px) {
+  .benefits-Pager_prev {
+    align-self: flex-start;
+    width: 100%;
+    text-align: left;
+  }
+  .benefits-Pager_prev:empty {
+    display: none;
+  }
+}
+
+.benefits-Pager_num {
+  flex: 0 0 auto;
+  padding-left: 1px;
+}
+
+@media screen and (max-width: 768px) {
+  .benefits-Pager_num {
+    align-self: center;
+  }
+}
+
+.benefits-Pager_num ol {
+  display: flex;
+}
+
+.benefits-Pager_num li {
+  margin-left: -1px;
+}
+
+.benefits-Pager_num a {
+  display: block;
+  padding: 6px 20px 5px;
+  border: 1px solid var(--color-border);
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .benefits-Pager_num a {
+    width: 44px;
+    height: 44px;
+    padding: 12px 0 5px;
+  }
+}
+
+.benefits-Pager_num .-current a {
+  color: #fff;
+  background: var(--color-link-bg);
+}
+
+.benefits-Pager_num .-current a:hover, .benefits-Pager_num .-current a:focus {
+  text-decoration: none;
+}
+
+.benefits-Pager_next {
+  flex: 1 1 auto;
+  width: 50%;
+}
+
+.benefits-Pager_next a::after {
+  content: "";
+  position: relative;
+  display: inline-block;
+  background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/air/common/images/icon/icon_link_arrow_8_blue.svg") 0 0 no-repeat;
+  width: 6px;
+  height: 8px;
+  margin-left: 4px;
+  top: -.1em;
+}
+
+@media screen and (max-width: 768px) {
+  .benefits-Pager_next {
+    align-self: flex-end;
+    width: 100%;
+    text-align: right;
+  }
+  .benefits-Pager_next:empty {
+    display: none;
+  }
+}
+
+.benefits-Note {
+  margin-bottom: 15px;
+}
+
+.benefits-Note li {
+  font-size: calc(14 / var(--font-size-root) * 1rem);
+  margin-bottom: 5px;
+  display: flex;
+  gap: 0  3px;
+}
+
+.benefits-Note_marker {
+  flex: 0 0 auto;
+}
+
+.benefits-Note_text {
+  flex: 1 1 auto;
+}
+
+.benefits-AdditionalInformation {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media screen and (max-width: 768px) {
+  .benefits-AdditionalInformation {
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .benefits-AdditionalInformation {
+    grid-template-columns: 1fr;
+  }
+}
+
+.benefits-AdditionalInformation_img {
+  margin-bottom: 13px;
+}
+
+.benefits-AdditionalInformation_img img {
+  width: 100%;
+}
+
+.benefits-AdditionalInformation_heading {
+  font-size: calc(15 / var(--font-size-root) * 1rem);
+  line-height: 1.53;
+  margin-bottom: 6px;
+  color: var(--color-heading);
+}
+
+.benefits-AdditionalInformation_p {
+  font-size: calc(14 / var(--font-size-root) * 1rem);
+  margin-bottom: 17px;
+}
+
+.benefits-AdditionalInformation_button {
+  font-size: calc(13 / var(--font-size-root) * 1rem);
+  display: inline-block;
+  color: #fff !important;
+  background: var(--color-button-bg);
+  font-weight: bold;
+  text-align: center;
+  padding: 2px 10px;
+}
+
+.benefits-AdditionalInformation_button:hover, .benefits-AdditionalInformation_button:focus {
+  background: var(--color-button-bg-hover);
+}
+
+.benefits-AdditionalInformation_button:after {
+  content: "";
+  position: relative;
+  display: inline-block;
+  background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/air/common/images/icon/icon_link_arrow_8_blue.svg") 0 0 no-repeat;
+  width: 6px;
+  height: 8px;
+  margin-left: 5px;
+}

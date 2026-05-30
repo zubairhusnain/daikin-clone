@@ -1,0 +1,4200 @@
+@charset "utf-8";
+
+
+/* ---------- ---------- ----------
+	::index::
+
+ A. Contents Layout
+  -font-size adjustment
+ B. Breadcrumbs
+ C. KeyVisual
+  -01. KeyVisual--Over
+  -02. KeyVisual--Wide
+ D. MainContentsArea
+ E. SubContentsArea
+  -01. Widget
+
+ X. Modules
+  -01. Heading
+  -02. Section
+  -03. Grid
+  -04. GridColumnCount
+  -05. Block
+  -06. Box
+  -07. Text
+  -08. Definition List
+  -09. List
+  -10. Mkr
+  -11. Button
+  -12. Tab
+  -13. Table
+  -14. Image
+  -00. General Items
+
+ XX. Function Modules
+  -01. TabNav
+  -02. TabViewer
+  -03. Flex
+  -04. Tooltip
+  -05. Colorbox (Modal)
+  -06. SlideImg (Rollup / Carousel)
+  -07. Pagetop
+
+---------- ---------- ---------- */
+
+
+/* A. Contents Layout
+---------- ---------- ---------- */
+#ContentsWrap {
+	position: relative;
+	width: 100%;
+	min-width: 960px;
+	font-size: 117%; /* 14px */
+	background-position: 50% 0;
+	background-repeat: no-repeat;
+	background-size: auto;
+	z-index: 99;
+}
+
+@media screen and (max-width: 960px) {
+  .set-responsiveWebDesign #ContentsWrap {
+    min-width: 320px;
+  }
+}
+
+/*-----------------------------------------------
+	#ContentsWrap font-size adjustment
+	(base font size 14px )
+
+	10px  72%      16px  115%     22px  158%
+	11px  79%      17px  122%     23px  165%
+	12px  86%      18px  129%     24px  172%
+	13px  93%      19px  136%     25px  179%
+	14px  100%     20px  143%     26px  186%
+	15px  108%     21px  150%
+
+-----------------------------------------------*/
+
+#ContentsArea:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+#ContentsArea {
+	position: relative;
+	width: 960px;
+	margin: 0 auto 0;
+	padding-bottom: 40px;
+	z-index: 1;
+}
+
+@media screen and (max-width: 960px) {
+  .set-responsiveWebDesign #ContentsArea {
+    padding: 0 10px;
+    width: 100%;
+    min-width: 320px;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 769px) {
+  .set-responsiveWebDesign #ContentsArea {
+    padding-bottom: 0;
+  }
+}
+
+
+/* * A-01. ContentsArea_Double
+---------- ---------- */
+.ContentsArea_Double #ContentsArea {
+	margin-top:40px;
+}
+.ContentsArea_Double.KeyVisual--Over #ContentsArea {
+	margin-top: 280px;
+}
+.ContentsArea_Double.KeyVisual--Wide #ContentsArea {
+	margin-top: 0;
+	padding-top: 350px;
+}
+
+
+/* A-02. ContentsArea_Single
+---------- ---------- */
+.ContentsArea_Single #ContentsArea {
+	margin-top:40px;
+}
+.ContentsArea_Single.KeyVisual--Over #ContentsArea {
+	margin-top: 280px;
+}
+.ContentsArea_Single.KeyVisual--Wide #ContentsArea {
+	margin-top: 0;
+	padding-top: 350px;
+}
+
+
+/* A-03. ContentsInner
+---------- ---------- */
+#ContentsInner {
+	width: 100%;
+}
+.ContentsInnerWrap {
+	width: 100%;
+}
+.ContentsInnerContainer {
+    margin: 0 auto;
+    max-width: 1400px;
+    min-width: 960px;
+}
+.ContentsInnerArea:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.ContentsInnerArea {
+	width: 960px;
+	margin: 0 auto;
+	padding-bottom: 40px;
+	overflow: hidden;
+}
+
+@media screen and (max-width: 960px) {
+  .set-responsiveWebDesign .ContentsInnerContainer,
+  .set-responsiveWebDesign .ContentsInnerArea {
+    width: 100%;
+    min-width: 300px;
+  }
+  .set-responsiveWebDesign .ContentsInnerArea {
+    padding-bottom: 0px;
+  }
+}
+
+/* B. Breadcrumbs
+---------- ---------- ---------- */
+#BreadcrumbsWrap {
+	position: relative;
+	width: 100%;
+	background-color: rgb(255,255,255);
+	background-color: rgba(255,255,255,0.8);
+	z-index: 10;
+}
+#BreadcrumbsArea {
+	width: 960px;
+	margin: 0 auto;
+	padding: 12px 0 11px;
+	font-size: 79%; /* 11px */
+}
+#BreadcrumbsArea ul {
+	margin-bottom: 0;
+}
+#BreadcrumbsArea ul li {
+	margin-bottom: 0;
+}
+.KeyVisual--Wide #BreadcrumbsWrap {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+}
+
+@media screen and (max-width: 960px) {
+  .set-responsiveWebDesign #BreadcrumbsWrap {
+    min-width: 320px;
+  }
+  .set-responsiveWebDesign #BreadcrumbsArea {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .set-responsiveWebDesign #BreadcrumbsWrap {
+    display: none;
+  }
+}
+
+/* C. KeyVisualArea
+---------- ---------- ---------- */
+#KeyVisualWrap {
+	margin: 0 auto;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	min-width: 960px;
+	width: 100%;
+	max-width: 1400px;
+	background-position: 50% 0;
+	background-repeat: no-repeat;
+	background-color: #09c;
+	z-index: 1;
+}
+.KeyVisual--Wide #KeyVisualWrap {
+	z-index: 2;
+}
+#KeyVisualArea:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+#KeyVisualArea {
+	position: relative;
+	z-index: 5;
+}
+.KeyVisualArea__Text {
+	float: left;
+}
+.KeyVisualArea--ThumbBnr1 .KeyVisualArea__Text {
+	width: 765px;
+}
+.KeyVisualArea--ThumbBnr2 .KeyVisualArea__Text {
+	width: 575px;
+}
+.KeyVisualArea--ThumbBnr3 .KeyVisualArea__Text {
+	width: 385px;
+}
+.KeyVisualArea__Text h1 {
+	margin-bottom: 10px;
+	color: #FFF;
+	font-weight: bold;
+	font-size: 250%; /* 35px */
+	line-height: 1.18;
+}
+.KeyVisualArea__Text__Catch {
+	color: #FFF;
+	font-weight: bold;
+}
+.KeyVisualArea__Text__Catch > dl > dt {
+	font-size: 172%; /* 24px */
+	font-weight: bold;
+}
+.KeyVisualArea__Text__Catch > dl > dd {
+	font-size: 115%; /* 16px */
+	font-weight: normal;
+	line-height: 1.5;
+}
+.KeyVisualArea__Notice {
+	float: right;
+}
+.KeyVisualArea--ThumbBnr1 .KeyVisualArea__Notice {
+	width: 175px;
+}
+.KeyVisualArea--ThumbBnr2 .KeyVisualArea__Notice {
+	width: 365px;
+}
+.KeyVisualArea--ThumbBnr3 .KeyVisualArea__Notice {
+	width: 555px;
+}
+.KeyVisualArea__Notice a {
+	color: #000;
+}
+.KeyVisualArea__Notice a:hover,
+.KeyVisualArea__Notice a:focus {
+	color: #0099cc;
+}
+.KeyVisualArea__Notice .KeyVisualArea__Notice--ThumbBnr {
+	margin-right: -15px;
+}
+.KeyVisualArea__Notice .KeyVisualArea__Notice--ThumbBnr > li {
+	float: left;
+	width: 175px;
+	margin-right: 15px;
+}
+.KeyVisualArea__Notice .KeyVisualArea__Notice--ThumbBnr > li > a {
+	display: block;
+	padding: 1px;
+	background: #FFF;
+}
+.KeyVisualArea__Notice .KeyVisualArea__Notice--ThumbBnr > li > a:hover {
+	text-decoration: none;
+}
+.KeyVisualArea__Notice .KeyVisualArea__Notice--ThumbBnr > li > a:hover .Img {
+	opacity: 0.8;
+}
+.KeyVisualArea__Notice .KeyVisualArea__Notice--ThumbBnr ul {
+	margin-left: 8px;
+}
+.KeyVisualPrintBackground {
+	display: none;
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	text-align: center;
+	z-index: -10;
+}
+
+.KeyVisualPrintBackground .BackgroundInner {
+	width: 980px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.KeyVisualPrintBackground .BackgroundInner img { margin-left: -210px; }/* Position Adjustment for KeyVisual Width 1400px */
+
+@media screen and (max-width: 960px) {
+  .set-responsiveWebDesign #KeyVisualWrap {
+  	min-width: 320px;
+  }
+}
+@media screen and (max-width: 769px) {
+  .set-responsiveWebDesign #KeyVisualWrap {
+    position: relative;
+  }
+}
+
+/* C-01. KeyVisual--Over
+---------- ---------- */
+.KeyVisual--Over #KeyVisualWrap {
+	height: 480px;
+}
+.ContentsArea_Double.KeyVisual--Over #KeyVisualArea {
+	width: 960px;
+	height: 190px;
+	padding-top: 130px;
+	margin: 0 auto;
+}
+.ContentsArea_Single.KeyVisual--Over #KeyVisualArea {
+	width: 960px;
+	height: 160px;
+	padding-top: 160px;
+	margin: 0 auto;
+}
+.KeyVisual--Over .KeyVisualArea__Text .Inner {
+	display: inline-block;
+	float: left;
+	clear: both;
+	padding: 5px 10px;
+	line-height: 1;
+	background-color: rgb(0,153,204);
+	background-color: rgba(0,153,204,0.8);
+}
+.KeyVisual--Over .KeyVisualArea__Text .Inner.gen-TextItalic {
+	padding-right: 20px;
+}
+.KeyVisual--Over .KeyVisualArea__Text .Inner__SubText {
+	font-size: 51%; /*18px*/
+	line-height: 1;
+}
+
+
+/* C-02. KeyVisual--Wide
+---------- ---------- */
+.KeyVisual--Wide #KeyVisualWrap {
+	height: 310px;
+}
+.KeyVisual--Wide #KeyVisualArea {
+	width: 960px;
+	height: 200px;
+	padding-top: 110px;
+	margin: 0 auto;
+}
+
+
+
+/* D. MainContentsArea
+---------- ---------- ---------- */
+#MainContentsArea:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+#MainContentsArea {
+	background-color: #FFF;
+}
+.ContentsArea_Double #ContentsArea #MainContentsArea {
+	float: right;
+	width: 702px;
+}
+.ContentsArea_Single #ContentsArea #MainContentsArea {
+	float: none;
+	width: 960px;
+}
+.ContentsArea_Single.MainContentsArea_MainSub #MainContentsArea .MainContentsArea__Main {
+	float: left;
+	width: 702px;
+}
+.ContentsArea_Single.MainContentsArea_SubMain #MainContentsArea .MainContentsArea__Main {
+	float: right;
+	width: 702px;
+}
+.ContentsArea_Single.MainContentsArea_MainSub #MainContentsArea .MainContentsArea__Sub {
+	float: right;
+	width: 228px;
+}
+.ContentsArea_Single.MainContentsArea_SubMain #MainContentsArea .MainContentsArea__Sub {
+	float: left;
+	width: 228px;
+}
+
+@media screen and (max-width: 960px) {
+  .set-responsiveWebDesign .ContentsArea_Double #ContentsArea #MainContentsArea {
+    width: 73.125%;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .set-responsiveWebDesign .ContentsArea_Double #ContentsArea #MainContentsArea {
+    float: none;
+    width: 100%;
+  }
+}
+
+/* E. SubContentsArea
+---------- ---------- ---------- */
+#SubContentsArea {
+	background-color: #FFF;
+}
+.ContentsArea_Double #ContentsArea #SubContentsArea {
+	float: left;
+	width: 228px;
+}
+
+@media screen and (max-width: 960px) {
+  .set-responsiveWebDesign .ContentsArea_Double #ContentsArea #SubContentsArea {
+    width: 23.375%;
+  }
+}
+@media screen and (max-width: 769px) {
+  .set-responsiveWebDesign .ContentsArea_Double #ContentsArea #SubContentsArea {
+    display: none;
+    float: none;
+    width: 100%;
+  }
+}
+
+/* E-01. Widget
+---------- ---------- */
+.Widget:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.Widget {
+	margin-bottom:30px;
+	color: #333;
+	border-top: 4px solid #000;
+	background: #edf2f5;
+}
+.Widget__Inner {
+	margin: 15px 15px 0;
+	padding-bottom: 15px;
+}
+.Widget__WideImg {
+	margin-bottom: 15px;
+}
+.Widget .Widget__Title {
+	margin-bottom:10px;
+	font-size: 108%; /* 15px */
+	font-weight: bold;
+	line-height: 1.33;
+	text-transform: uppercase;
+}
+.Widget__Body:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.Widget__Body--Text {
+	font-size: 86%; /* 12px */
+	line-height:1.58;
+}
+.Widget dl dt,
+.Widget dl dd,
+.Widget p {
+	margin-bottom: 15px;
+}
+.Widget a {
+	color: #333;
+}
+.Widget a:hover,
+.Widget a:focus {
+	color: #0099cc;
+	text-decoration: none;
+}
+.Widget .TextButton:hover,
+.Widget .TextButton:focus {
+	color: #FFF;
+	text-decoration: none;
+}
+
+/* Widget--BlueBox
+---------- */
+.Widget--BlueBox {
+	color: #FFF;
+	background: #0099cc;
+}
+
+/* Widget--PlaneBox
+---------- */
+.Widget--PlaneBox {
+	border-top: none;
+}
+.Widget--PlaneBox .Widget__Inner {
+	padding-top: 15px;
+}
+
+/* Widget--LocalNav
+---------- */
+.Widget--LocalNav {
+	padding: 10px 5px 15px;
+}
+.Widget--LocalNav dl dt {
+	padding: 0 10px 12px;
+	border-bottom: 1px solid #d2d6d9;
+}
+.Widget--LocalNav dl dt a {
+	color: #000;
+}
+.Widget--LocalNav .LocalNav li {
+	margin-bottom: 3px;
+}
+.Widget--LocalNav .LocalNav li a {
+	display: block;
+	padding: 6px 0 6px 23px;
+	text-indent: -14px;
+}
+.Widget--LocalNav .LocalNav li.is-Current > a {
+	padding-right: 6px;
+	color: #FFF;
+	font-weight: bold;
+	background: #00c6f7;
+}
+.Widget--LocalNav .LocalNav li i {
+	display: inline-block;
+	width: 7px;
+	height: 10px;
+	margin-right: 7px;
+	background-image: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/mkr_sprite.png");
+	background-repeat: no-repeat;
+	background-position: -20px -20px;
+	vertical-align: baseline;
+}
+.Widget--LocalNav .LocalNav li.is-Current > a > i {
+	background-image: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/mkr_sprite.png");
+	background-position: -20px -60px;
+}
+.Widget--LocalNav .LocalNav li > ul {
+	margin-left: 10px;
+}
+.Widget--LocalNav .LocalNav li > ul li i {
+	background-position: -60px 0;
+}
+
+
+/* LocalNavWrapSp
+---------- */
+#LocalNavWrapSp {
+  display: none;
+  position: relative;
+  overflow: hidden;
+}
+.set-responsiveWebDesign #LocalNavWrapSp.is-Show {
+  overflow: visible;
+  z-index: 100;
+}
+.set-responsiveWebDesign #LocalNavAreaSp {
+  background: #fff;
+}
+html.set-responsiveWebDesign.localnav-open {
+  height: 100%;
+  overflow: hidden;
+}
+.set-responsiveWebDesign #LocalNavWrapSp #LocalNavAreaSp .Widget__Body {
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.set-responsiveWebDesign #LocalNavAreaSp.is-Fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 100;
+}
+.set-responsiveWebDesign #LocalNavWrapSp .Widget--LocalNav {
+  display: none;
+  position: relative;
+  padding: 0;
+}
+.set-responsiveWebDesign #LocalNavWrapSp .Widget__Title {
+  padding-left: 55px;
+  padding-bottom: 0;
+  min-height: 45px;
+  max-height: 45px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  box-sizing: border-box;
+  text-transform: uppercase;
+}
+.set-responsiveWebDesign #LocalNavWrapSp .Widget__Title a:hover {
+  cursor: default;
+  text-decoration: none;
+}
+.set-responsiveWebDesign #LocalNavWrapSp .LocalMenu a {
+  background: #edf2f5;
+  box-sizing: border-box;
+  width: 45px;
+  height: 45px;
+  display: inline-block;
+  padding: 12px 0 0 12px;
+}
+.set-responsiveWebDesign #LocalNavWrapSp .LocalMenu span {
+  display: inline-block;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  width: 19px;
+  height: 23px;
+  background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/icon_local_menu.png") no-repeat 100% 50%;
+  background-size: 100% auto;
+}
+.set-responsiveWebDesign #LocalNavWrapSp .local-titleBtn {
+  text-transform: uppercase;
+}
+.set-responsiveWebDesign #LocalNavWrapSp.is-Show .LocalMenu span {
+  background-image: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/icon_local_menu_blue.png");
+}
+.set-responsiveWebDesign #LocalNavWrapSp .Widget--LocalNav dl dt {
+  border-bottom: none;
+}
+.set-responsiveWebDesign #LocalNavWrapSp .LocalMenu {
+  position: absolute;
+}
+.set-responsiveWebDesign #LocalNavWrapSp .Widget__Body {
+  display: none;
+  padding-left: 44px;
+}
+.set-responsiveWebDesign #LocalNavWrapSp #LocalNavAreaSp .Widget__Body {
+  border-bottom: 1px solid #d2d6d9;
+  background: #edf2f5;
+}
+.set-responsiveWebDesign #LocalNavWrapSp #LocalNavAreaSp .Widget__Body > .LocalNav {
+  padding-bottom: 20px;
+}
+.set-responsiveWebDesign #LocalNavWrapSp #LocalNavAreaSp dd a {
+  display: block;
+  padding: 17px 50px 17px 10px;
+  color: #000;
+}
+.set-responsiveWebDesign #LocalNavWrapSp #LocalNavAreaSp a:active,
+.set-responsiveWebDesign #LocalNavWrapSp #LocalNavAreaSp a:hover {
+  text-decoration: none;
+}
+.set-responsiveWebDesign #LocalNavWrapSp #LocalNavAreaSp dl,
+.set-responsiveWebDesign #LocalNavWrapSp #LocalNavAreaSp dt {
+  margin-bottom: 0;
+}
+.set-responsiveWebDesign #LocalNavWrapSp #LocalNavAreaSp dl dd {
+  margin-bottom: 0;
+}
+.set-responsiveWebDesign #LocalNavWrapSp #LocalNavAreaSp dl dd i {
+  display: none;
+}
+.set-responsiveWebDesign #LocalNavWrapSp #LocalNavAreaSp .LocalNav {
+}
+.set-responsiveWebDesign #LocalNavWrapSp #LocalNavAreaSp .LocalNav li {
+  position: relative;
+  margin-bottom: 0;
+  border-top: 1px solid #d2d6d9;
+}
+.set-responsiveWebDesign #LocalNavWrapSp #LocalNavAreaSp .LocalNav > li:first-child {
+  border-top: none;
+}
+.set-responsiveWebDesign #LocalNavWrapSp #LocalNavAreaSp .LocalNav li:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  margin-top: -5px;
+  margin-right: 10px;
+  background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/mkr_sprite.png") no-repeat -20px -20px;
+  vertical-align: middle;
+}
+.set-responsiveWebDesign #LocalNavWrapSp #LocalNavAreaSp .LocalNav .local-accordion > a:after {
+  left: 0;
+  right: auto;
+  width: 10px;
+  height: 10px;
+  margin-top: -5px;
+  margin-right: 10px;
+  background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/mkr_sprite.png") no-repeat -20px -20px;
+  vertical-align: middle;
+  display: none !important;
+  content: normal !important;
+}
+.set-responsiveWebDesign #LocalNavWrapSp #LocalNavAreaSp .LocalNav .local-accordion > a:before {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-top: -5px;
+  margin-right: 3px;
+  background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/mkr_sprite.png") no-repeat -20px -20px;
+}
+.set-responsiveWebDesign #LocalNavWrapSp #LocalNavAreaSp .LocalNav > li > ul {
+  display: none;
+}
+.set-responsiveWebDesign #LocalNavWrapSp #LocalNavAreaSp .LocalNav .local-accordion:after {
+  content: normal;
+  display: none;
+}
+.set-responsiveWebDesign #LocalNavWrapSp #LocalNavAreaSp .LocalNav .local-accordion > a > i {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 45px;
+  height: 100%;
+  background: none;
+  margin-right: 0;
+  z-index: 10;
+}
+.set-responsiveWebDesign #LocalNavWrapSp #LocalNavAreaSp .LocalNav .local-accordion > a > i:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 11px;
+  height: 13px;
+  margin-top: -6px;
+  margin-right: 12px;
+  background-image: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/mkr_sprite.png");
+  background-repeat: no-repeat;
+  background-position: -80px 0;
+  vertical-align: middle;
+}
+.set-responsiveWebDesign #LocalNavWrapSp #LocalNavAreaSp .LocalNav .local-accordion > a.is-Show > i:after {
+  background-position: -80px -20px;
+}
+.set-responsiveWebDesign #LocalNavWrapSp #LocalNavAreaSp .LocalNav .local-accordion > a {
+  position: relative;
+}
+.set-responsiveWebDesign #LocalNavWrapSp #LocalNavAreaSp .LocalNav .local-accordion > a:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  margin-top: -5px;
+  margin-right: 10px;
+  background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/mkr_sprite.png") no-repeat -20px -20px;
+  vertical-align: middle;
+}
+.set-responsiveWebDesign #LocalNavWrapSp #LocalNavAreaSp .LocalNav .local-accordion > a.is-Show:after {
+  background-position: -80px -20px;
+}
+.set-responsiveWebDesign #LocalNavWrapSp #LocalNavAreaSp .LocalNav li.is-Current a {
+  color: #fff;
+}
+.set-responsiveWebDesign #LocalNavWrapSp #LocalNavAreaSp .GrobalNav_list li:first-child {
+  border-top: none;
+}
+.set-responsiveWebDesign #LocalNavWrapSp #LocalNavAreaSp .Mkr--Medium.Mkr--ArwLightBlue {
+  display: none;
+}
+.set-responsiveWebDesign #LocalNavWrapSp .Widget--LocalNav .LocalNav li > ul {
+  margin-left: 0;
+}
+.set-responsiveWebDesign #LocalNavWrapSp #LocalNavAreaSp .Widget--LocalNav .LocalNav li a {
+  text-indent: 0;
+}
+
+@media screen and (max-width: 769px) {
+  .set-responsiveWebDesign #LocalNavWrapSp {
+    display: block;
+  }
+  .set-responsiveWebDesign.header-open #LocalNavWrapSp {
+    background: #fff;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .set-responsiveWebDesign.localnav-open {
+    overflow: hidden;
+    height: 100%;
+  }
+  .set-responsiveWebDesign.localnav-open.show-header #pkg-Wrapper,
+  .set-responsiveWebDesign.localnav-open.show-header #ContentsWrap,
+  .set-responsiveWebDesign.localnav-open.show-header #ContentsArea {
+    display: none;
+  }
+  html.set-responsiveWebDesign.localnav-open #pkg-Wrapper,
+  html.set-responsiveWebDesign.localnav-open #ContentsWrap,
+  html.set-responsiveWebDesign.localnav-open #ContentsArea {
+    display: none;
+  }
+  .set-responsiveWebDesign #LocalNavWrapSp .Widget--LocalNav {
+    display: block;
+    border-top: 2px solid #000000;
+    min-height: 46px;
+    box-sizing: border-box;
+  }
+  .set-responsiveWebDesign #LocalNavWrapSp .Widget__Body.is-Show {
+    display: block;
+  }
+}
+
+/* Widget--Bnr
+---------- */
+.Widget--Bnr {
+	border: none;
+	background: none;
+}
+.Widget--Bnr ul li {
+	margin-bottom: 5px;
+}
+.Widget--Bnr ul li a {
+	display: block;
+}
+
+/* Widget--Utility
+---------- */
+.Widget--Utility {
+	border: none;
+}
+.Widget--Utility li {
+	padding-top: 15px;
+}
+.Widget--Utility li a {
+	display: block;
+}
+.Widget--Utility li span {
+	display: table-cell;
+	vertical-align: middle;
+}
+.Widget--Utility li span img {
+	margin-right: 10px;
+}
+
+/* Widget--Article
+---------- */
+.Widget--Article .Widget__Title {
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #bababa;
+}
+.Widget--Article .Widget__Body dl {
+	margin-bottom: 0;
+}
+.Widget--Article .Widget__Body dt {
+	margin-bottom: 10px;
+	font-size: 86%; /* 12px */
+	font-weight: bold;
+}
+.Widget--Article .Widget__Body dd {
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #bababa;
+}
+
+
+
+/* X. Modules
+---------- ---------- ---------- */
+/* X-01. Heading
+---------- ---------- */
+h1, h2, h3, h4, h5 {
+	color: #000;
+	font-weight: bold;
+}
+h1 {
+	margin-bottom: 20px;
+	font-size: 214%; /* 30px */
+	line-height: 1.2;
+	text-transform: uppercase;
+}
+h2 {
+	margin-bottom: 13px;
+	font-size: 158%; /* 22px */
+	line-height: 1.27;
+}
+h3 {
+	margin-bottom: 6px;
+	font-size: 108%; /* 15px */
+	line-height: 1.53;
+}
+.gen-TopLine h3:last-child {
+	margin-bottom: 15px;
+}
+h4 {
+	margin-bottom:11px;
+	padding-left: 6px;
+	color: #000;
+	border-left: 4px solid #00c6f7;
+}
+h4.BorderNone {
+	padding-left: 0;
+	border-left: none;
+}
+h5 {
+	margin-bottom: 11px;
+	padding-left: 6px;
+	color: #4C4C4C;
+	border-left: 4px solid #a5b0b8;
+}
+h5.BorderNone {
+	padding-left: 0;
+	border-left: none;
+}
+
+h2 a, h2 a:link, h2 a:visited,
+h3 a, h3 a:link, h3 a:visited,
+h4 a, h4 a:link, h4 a:visited,
+h5 a, h5 a:link, h5 a:visited {
+	color: #000;
+}
+h2 a:hover, h2 a:focus,
+h3 a:hover, h3 a:focus,
+h4 a:hover, h4 a:focus,
+h5 a:hover, h5 a:focus {
+	color: #0099CC;
+	text-decoration: none;
+}
+
+/* Heading (KeyVisual)
+---------- */
+.KeyVisual h2 {
+	margin-bottom: 15px;
+	font-size: 214%; /* 30px */
+	line-height: 1.2;
+}
+.KeyVisual h3 {
+	margin-bottom: 7px;
+	font-size: 129%; /* 18px */
+	line-height: 1.33;
+}
+.KeyVisual h4 {
+	margin-bottom: 7px;
+	font-size: 108%; /* 15px */
+	line-height: 1.53;
+}
+.KeyVisual h5 {
+	margin-bottom: 8px;
+}
+
+/* SubTitle
+---------- */
+.HlSubTitle {
+	margin-bottom: 3px;
+	color: #999;
+	font-size: 143%; /* 20px */
+	font-weight: bold;
+	line-height: 1.3;
+}
+
+/* SubTitle (KeyVisual)
+---------- */
+.KeyVisual .H3SubTitle {
+	margin-bottom: 3px;
+	line-height: 1.3;
+	font-size: 114%; /* 16px */
+	font-weight: bold;
+	color: #666;
+}
+
+/* SubText
+---------- */
+.HlSubText {
+	margin: 7px 0 5px;
+	color: #000;
+	font-size: 122%; /* 17px */
+	line-height: 1.3;
+}
+
+/* LeadText
+---------- */
+.HlLeadText {
+	margin-top: -15px;
+	color: #000;
+	font-size: 122%; /* 17px */
+	line-height: 1.3;
+}
+
+
+/* X-02. Section
+---------- ---------- */
+.Section:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.Section {
+	padding-bottom:23px;
+	overflow: hidden;
+}
+.Section > .Section:last-child {
+	padding-bottom:0;
+}
+.Section--TopSolidLine {
+	padding-top: 34px;
+	border-top: 4px solid #00CDFF;
+}
+.Section--TopSolidLineGray {
+	margin-top:20px;
+	padding-top: 34px;
+	border-top: 4px solid #d2d6d9;
+}
+.Section--TopSolidLineLightGray {
+	padding-top: 20px;
+	border-top: 3px solid #edf1f5;
+}
+.Section--TopSolidLineLightGrayWide {
+	padding-top: 34px;
+	border-top: 3px solid #edf1f5;
+}
+.Section--TopSolidLineGrayThin {
+	padding-top: 20px;
+	border-top: 1px solid #ccc;
+}
+.Section--TopSolidLineGrayThinWide {
+	padding-top: 34px;
+	border-top: 1px solid #ccc;
+}
+
+
+/* X-03. Grid
+---------- ---------- */
+.Grid:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.Grid {
+	margin: 0 -30px 0 0;
+	letter-spacing: -.40em;
+}
+.Grid__Col {
+	display: inline-block;
+	margin: 0 30px 17px 0;
+	letter-spacing: normal;
+	vertical-align: top;
+}
+.Grid.Gird--WideMargin .Grid__Col {
+	margin-bottom: 30px;
+}
+.Grid__Col p:last-child,
+.Grid__Col dl:last-child,
+.Grid__Col dl:last-child dd:last-child,
+.Grid__Col ul:last-child,
+.Grid__Col ul:last-child li:last-child,
+.Grid__Col .Block--ImgAndTxt .Block__Img p:last-child {
+	margin-bottom: 0;
+}
+.Block--GridLine .Grid__Col p:last-child,
+.Block--GridLine .Grid__Col dl:last-child,
+.Block--GridLine .Grid__Col dl:last-child dd:last-child,
+.Block--GridLine .Grid__Col ul:last-child,
+.Block--GridLine .Grid__Col ul:last-child li:last-child,
+.Block--GridLineBold .Grid__Col p:last-child,
+.Block--GridLineBold .Grid__Col dl:last-child,
+.Block--GridLineBold .Grid__Col dl:last-child dd:last-child,
+.Block--GridLineBold .Grid__Col ul:last-child,
+.Block--GridLineBold .Grid__Col ul:last-child li:last-child {
+	margin-bottom: 17px;
+}
+.Flex .Grid__Col {
+	display: block;
+	float: left;
+}
+.Grid__FullCol {
+	display: inline-block;
+	margin: 0 0 13px 0;
+	letter-spacing: normal;
+	vertical-align: top;
+}
+.Grid__Col--SolidLine {
+	padding-top: 20px;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+li.Grid__Col--SolidLine {
+	margin: -1px 30px 0 0;
+	padding-bottom: 17px;
+}
+li.Grid__Col--SolidLine:last-child {
+	margin-bottom: 17px;
+}
+.Grid__Col--SolidLineBold {
+	padding-top: 15px;
+	border-top: 3px solid #f0f4f7;
+	border-bottom: 3px solid #f0f4f7;
+}
+.Grid__Col--TopSolidLine {
+	padding-top: 20px;
+	border-top: 1px solid #ccc;
+}
+.Grid__Col--TopSolidLineBold {
+	padding-top: 20px;
+	border-top: 3px solid #f0f4f7;
+}
+.Grid__Col--BtmSolidLine {
+	padding-bottom: 20px;
+	border-bottom: 1px solid #ccc;
+}
+.Grid__Col--BtmSolidLineBold {
+	padding-bottom: 20px;
+	border-bottom: 3px solid #f0f4f7;
+}
+
+/* Grid (ContentsArea_Double / ContentsArea_Single MainContentsArea__Main)
+---------- */
+.ContentsArea_Double .Grid--TypeCol2.Grid--TypeCol2--TopSolidLine,
+.ContentsArea_Single .MainContentsArea__Main .Grid--TypeCol2.Grid--TypeCol2--TopSolidLine {
+	padding-top: 15px;
+	background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/bg_contentsdouble_col2_line.png") no-repeat top left;
+}
+.ContentsArea_Double .Grid--TypeCol2.Grid--TypeCol2--BtmSolidLine,
+.ContentsArea_Single .MainContentsArea__Main .Grid--TypeCol2.Grid--TypeCol2--BtmSolidLine {
+	background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/bg_contentsdouble_col2_line.png") no-repeat bottom left;
+}
+.ContentsArea_Double .Grid--TypeCol2 .Grid__Col--Size1,
+.ContentsArea_Single .MainContentsArea__Main .Grid--TypeCol2 .Grid__Col--Size1 {
+	width: 336px;
+}
+
+.ContentsArea_Double .Grid--TypeCol3.Grid--TypeCol3--TopSolidLineBold,
+.ContentsArea_Single .MainContentsArea__Main .Grid--TypeCol3.Grid--TypeCol3--TopSolidLineBold {
+	padding-top: 35px;
+	background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/bg_contentsdouble_col3_line_bold.png") no-repeat top left;
+}
+.ContentsArea_Double .Grid--TypeCol3.Grid--TypeCol3--BtmSolidLineBold,
+.ContentsArea_Single .MainContentsArea__Main .Grid--TypeCol3.Grid--TypeCol3--BtmSolidLineBold {
+	background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/bg_contentsdouble_col3_line_bold.png") no-repeat bottom left;
+}
+.ContentsArea_Double .Grid--TypeCol3 .Grid__Col--Size1,
+.ContentsArea_Single .MainContentsArea__Main .Grid--TypeCol3 .Grid__Col--Size1 {
+	width: 214px;
+}
+.ContentsArea_Double .Grid--TypeCol3 .Grid__Col--Size2,
+.ContentsArea_Single .MainContentsArea__Main .Grid--TypeCol3 .Grid__Col--Size2 {
+	width: 458px;
+}
+
+.ContentsArea_Double .Grid.Grid--TypeCol6,
+.ContentsArea_Single .Grid.Grid--TypeCol6 {
+	margin-right: -18px;
+}
+.ContentsArea_Double .Grid--TypeCol6 .Grid__Col,
+.ContentsArea_Single .Grid--TypeCol6 .Grid__Col {
+	margin-right: 18px;
+}
+.ContentsArea_Double .Grid--TypeCol6 .Grid__Col--Size1,
+.ContentsArea_Single .Grid--TypeCol6 .Grid__Col--Size1 {
+	width: 145px;
+}
+
+/* Grid__FullCol */
+.ContentsArea_Double .Grid--TypeCol2 .Grid__FullCol.Grid__Col--Size1,
+.ContentsArea_Single .MainContentsArea__Main .Grid--TypeCol2 .Grid__FullCol.Grid__Col--Size1 {
+	width: 351px;
+}
+.ContentsArea_Double .Grid--TypeCol3 .Grid__FullCol.Grid__Col--Size1,
+.ContentsArea_Single .MainContentsArea__Main .Grid--TypeCol3 .Grid__FullCol.Grid__Col--Size1 {
+	width: 234px;
+}
+
+@media screen and (max-width: 960px) {
+  .set-responsiveWebDesign .Grid.Grid--TypeCol2 {
+    margin: 0 0 0 -20px;
+  }
+  .set-responsiveWebDesign .ContentsArea_Double .Grid--TypeCol2 .Grid__Col--Size1,
+  .set-responsiveWebDesign .ContentsArea_Single .MainContentsArea__Main .Grid--TypeCol2 .Grid__Col--Size1 {
+  	width: 50%;
+    margin-right: 0;
+    padding-left: 20px;
+    box-sizing: border-box;
+  }
+}
+
+/* Grid (ContentsArea_Double / ContentsArea_Single MainContentsArea__Main / Box)
+---------- */
+.ContentsArea_Double .Box .Grid--TypeCol2 .Grid__Col--Size1,
+.ContentsArea_Single .MainContentsArea__Main .Box .Grid--TypeCol2 .Grid__Col--Size1 {
+	width: 316px;
+}
+.ContentsArea_Double .Box .Grid--TypeCol3 .Grid__Col--Size1,
+.ContentsArea_Single .MainContentsArea__Main .Box .Grid--TypeCol3 .Grid__Col--Size1 {
+	width: 200px;
+}
+.ContentsArea_Double .Box .Grid--TypeCol3 .Grid__Col--Size2,
+.ContentsArea_Single .MainContentsArea__Main .Box .Grid--TypeCol3 .Grid__Col--Size2 {
+	width: 432px;
+}
+
+
+/* Grid (ContentsArea_Single)
+---------- */
+.ContentsArea_Single .Grid--TypeCol2 .Grid__Col--Size1 {
+	width: 465px;
+}
+.ContentsArea_Single .Grid--TypeCol3 .Grid__Col--Size1 {
+	width: 300px;
+}
+.ContentsArea_Single .Grid--TypeCol3 .Grid__Col--Size2 {
+	width: 630px;
+}
+.ContentsArea_Single .Grid--TypeCol4 .Grid__Col--Size1 {
+	width: 217px;
+}
+.ContentsArea_Single .Grid--TypeCol4 .Grid__Col--Size2 {
+	width: 465px;
+}
+
+/* Grid__FullCol */
+.ContentsArea_Single .Grid--TypeCol2 .Grid__FullCol.Grid__Col--Size1 {
+	width: 480px;
+}
+.ContentsArea_Single .Grid--TypeCol3 .Grid__FullCol.Grid__Col--Size1 {
+	width: 320px;
+}
+.ContentsArea_Single .Grid--TypeCol6 .Grid__FullCol.Grid__Col--Size1 {
+	width: 160px;
+}
+
+/* Grid (ContentsArea_Single / Box)
+---------- */
+.ContentsArea_Single .Box .Grid--TypeCol2 .Grid__Col--Size1 {
+	width: 445px;
+}
+.ContentsArea_Single .Box .Grid--TypeCol3 .Grid__Col--Size1 {
+	width: 286px;
+}
+.ContentsArea_Single .Box .Grid--TypeCol3 .Grid__Col--Size2 {
+	width: 604px;
+}
+
+
+/* X-04. GridColumnCount
+---------- ---------- */
+.GridColumnCount.GridColumnCount--TypeCol2 {
+	-moz-column-count: 2;
+	-webkit-column-count: 2;
+	column-count: 2;
+	-moz-column-gap: 30px;
+	-webkit-column-gap: 30px;
+	column-gap: 30px;
+}
+.GridColumnCount.GridColumnCount--TypeCol3 {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+	-moz-column-gap: 30px;
+	-webkit-column-gap: 30px;
+	column-gap: 30px;
+}
+
+
+/* X-05. Block
+---------- ---------- */
+.Block:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/* Block--ImgAndTxt */
+.Block--ImgAndTxt .Block__Img {
+	display: inline;
+}
+.Block--ImgAndTxt .Block__Img--Left {
+	float: left;
+	margin-right: 30px;
+}
+.Block--ImgAndTxt .Block__Img--Right {
+	float: right;
+	margin-left: 30px;
+}
+.Block--ImgAndTxt .Block__Img .Img {
+	margin-bottom:15px;
+}
+.Block--ImgAndTxt .Block__Img .ImgCaption {
+	margin:-10px 0 20px;
+}
+.Block--ImgAndTxt .Block__Content {
+	overflow: hidden;
+}
+.Block--ImgAndTxt .Block__Content--Wrap {
+	overflow: visible;
+}
+
+/* Block--Position */
+.Block--Position {
+	position: relative;
+}
+.Block--Position img.BgImg {
+	position: relative;
+}
+.Block--Position .Block__Text {
+	position: absolute;
+	color: #000;
+}
+
+/* Block--Article */
+.Block--Article {
+	padding-top: 15px;
+	border-top: 1px solid #ccc;
+}
+.Block--Article .Block__Heading {
+	margin-bottom: 15px;
+	border-bottom: 1px solid #ccc;
+}
+.Block--Article .Block__Body dl {
+	margin-bottom: 0;
+	overflow: hidden;
+}
+.Block--Article dl > dt:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.Block--Article dl > dt {
+	padding-top: 15px;
+	font-size: 86%; /* 12px */
+	font-weight: bold;
+	line-height: 1.2;
+	overflow: hidden;
+}
+.Block--Article .Block__Body dl {
+	margin-top: -15px;
+	overflow: hidden;
+}
+.Block--Article .Block__Body dl > dt {
+	margin-top: -1px;
+	border-top: 1px solid #ccc;
+}
+.Block--Article dl > dt span {
+	float: left;
+	margin-left: -10px;
+	margin-right: 10px;
+	padding: 0 10px;
+	border-left: 1px solid #bababa;
+}
+.Block--Article dl > dt span.Category span {
+	float: none;
+	border: none;
+}
+.Block--Article dl > dt span.Category__Type {
+	color: #6a9f2c;
+}
+.Block--Article dl > dt span.Category--Notice {
+	color: #d13232;
+}
+.Block--Article dl > dd {
+	margin-bottom: 14px;
+}
+.Block--Article dl > dd p {
+	margin: 10px 0 0;
+}
+.Block--Article dl > dd ul {
+	margin: 5px 0 0 0;
+}
+.Block--Article .Block__Body ul.List a,
+.Block--Article .Block__Body ul.List a:link {
+	font-size: 115%; /* 16px */
+	font-weight: bold;
+}
+.Block--Article .Block__Body ul.List a:visited {
+	color: #464f9a;
+}
+.Block--Article .Block__Body ul.List a:hover,
+.Block--Article .Block__Body ul.List a:active,
+.Block--Article .Block__Body ul.List a:focus {
+	text-decoration: underline;
+}
+
+/* Block--Pager */
+.Block--Pager {
+	margin:40px 0 17px;
+	letter-spacing: -.40em;
+}
+.Block--Pager ul {
+	text-align: center;
+	overflow: hidden;
+}
+.Block--Pager li {
+	display: inline-block;
+	margin-left: -1px;
+	font-weight: bold;
+	letter-spacing: normal;
+}
+.Block--Pager li a {
+	position: relative;
+    display: block;
+	padding: 6px 20px 5px;
+	color: #0099cc;
+	border: 1px solid #d2d6d9;
+}
+.Block--Pager li.is-Current a {
+	color: #FFF;
+	background: #00C6F7;
+}
+.Block--Pager li.is-Current a:hover {
+	text-decoration: none;
+}
+.Block--Pager li.Pager__Prev {
+	text-align: right;
+}
+.Block--Pager li.Pager__Next {
+	text-align: left;
+}
+.Block--Pager li.Pager__Prev a,
+.Block--Pager li.Pager__Next a {
+	border:none;
+}
+.Block--Pager li.Pager__Next a i {
+	margin-left: 4px;
+}
+/* Pager4 */
+.ContentsArea_Double .Block--Pager.Pager4 li.Pager__Prev,
+.ContentsArea_Double .Block--Pager.Pager4 li.Pager__Next {
+	width: 250px;
+}
+.ContentsArea_Single .Block--Pager.Pager4 li.Pager__Prev,
+.ContentsArea_Single .Block--Pager.Pager4 li.Pager__Next {
+	width: 379px;
+}
+
+/* Pager6 */
+.ContentsArea_Single .Block--Pager.Pager6 li.Pager__Prev,
+.ContentsArea_Single .Block--Pager.Pager6 li.Pager__Next {
+	width: 328px;
+}
+
+/* Pager6 */
+#pkg-Wrapper .pkg-ContentsArea_Single .Block--Pager.Pager6 li.Pager__Prev,
+#pkg-Wrapper .pkg-ContentsArea_Single .Block--Pager.Pager6 li.Pager__Next {
+	width: 328px;
+}
+
+
+/* Block--Summary */
+.Block--Summary .Box--ColorBox .Box__Body {
+	min-height: 148px;
+	padding: 25px 20px;
+}
+.Block--Summary .Box--ColorBox .Box__Title,
+.Block--Summary .Box--ColorBox .Box__Text {
+	color: #000;
+}
+.Block--Summary .Box--ColorBox .Box__Text {
+	font-size: 115%;
+}
+
+/* Block--Middle */
+.Block--Middle .Middle {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+/* Block--GridLine */
+.Block--GridLineTopNone,
+.Block--GridLineBtmNone,
+.Block--GridLineBoldTopNone,
+.Block--GridLineBoldBtmNone {
+	overflow: hidden;
+}
+/**/
+.ContentsArea_Double .Block--GridLine,
+.ContentsArea_Single .MainContentsArea__Main .Block--GridLine {
+	margin-bottom: 17px;
+	background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/bg_contentsdouble_col2_line.png") no-repeat top left;
+}
+.ContentsArea_Single .Block--GridLine {
+	margin-bottom: 17px;
+	background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/bg_contentssingle_col2_line.png") no-repeat top left;
+}
+.ContentsArea_Double .Block--GridLine .Grid--TypeCol2,
+.ContentsArea_Single .MainContentsArea__Main .Block--GridLine .Grid--TypeCol2 {
+	margin-bottom: 0;
+	background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/bg_contentsdouble_col2_line.png") no-repeat bottom left;
+}
+.ContentsArea_Single .Block--GridLine .Grid--TypeCol2 {
+	margin-bottom: 0;
+	background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/bg_contentssingle_col2_line.png") no-repeat bottom left;
+}
+.ContentsArea_Double .Block--GridLine .Grid--TypeCol2 .Grid__Col,
+.ContentsArea_Single .MainContentsArea__Main .Block--GridLine .Grid--TypeCol2 .Grid__Col {
+	margin-bottom: 0;
+	padding: 20px 0 3px;
+}
+.ContentsArea_Single .Block--GridLine .Grid--TypeCol2 .Grid__Col {
+	margin-bottom: 0;
+	padding: 20px 0 3px;
+}
+.ContentsArea_Double .Block--GridLine ul.Grid--TypeCol2 li.Grid__Col,
+.ContentsArea_Single .MainContentsArea__Main .Block--GridLine ul.Grid--TypeCol2 li.Grid__Col {
+	margin-bottom: 0;
+	padding: 20px 0 20px;
+}
+.ContentsArea_Single .Block--GridLine ul.Grid--TypeCol2 li.Grid__Col {
+	margin-bottom: 0;
+	padding: 20px 0 20px;
+}
+/**/
+.ContentsArea_Double .Block--GridLineBold,
+.ContentsArea_Single .MainContentsArea__Main .Block--GridLineBold {
+	margin-bottom: 17px;
+	background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/bg_contentsdouble_col2_line_bold.png") no-repeat top left;
+}
+.ContentsArea_Single .Block--GridLineBold {
+	margin-bottom: 17px;
+	background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/bg_contentssingle_col2_line_bold.png") no-repeat top left;
+}
+.ContentsArea_Double .Block--GridLineBold .Grid--TypeCol2,
+.ContentsArea_Single .MainContentsArea__Main .Block--GridLineBold .Grid--TypeCol2 {
+	margin-bottom: 0;
+	background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/bg_contentsdouble_col2_line_bold.png") no-repeat bottom left;
+}
+.ContentsArea_Single .Block--GridLineBold .Grid--TypeCol2 {
+	margin-bottom: 0;
+	background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/bg_contentssingle_col2_line_bold.png") no-repeat bottom left;
+}
+.ContentsArea_Double .Block--GridLineBold .Grid--TypeCol2 .Grid__Col,
+.ContentsArea_Single .MainContentsArea__Main .Block--GridLineBold .Grid--TypeCol2 .Grid__Col {
+	margin-bottom: 0;
+	padding: 20px 0 3px;
+}
+.ContentsArea_Single .Block--GridLineBold .Grid--TypeCol2 .Grid__Col {
+	margin-bottom: 0;
+	padding: 20px 0 3px;
+}
+.ContentsArea_Double .Block--GridLineBold ul.Grid--TypeCol2 li.Grid__Col,
+.ContentsArea_Single .MainContentsArea__Main .Block--GridLineBold ul.Grid--TypeCol2 li.Grid__Col {
+	margin-bottom: 0;
+	padding: 20px 0 20px;
+}
+.ContentsArea_Single .Block--GridLineBold ul.Grid--TypeCol2 li.Grid__Col {
+	margin-bottom: 0;
+	padding: 20px 0 20px;
+}
+/**/
+.ContentsArea_Double .Block--GridLineTop .Grid--TypeCol2,
+.ContentsArea_Single .MainContentsArea__Main .Block--GridLineTop .Grid--TypeCol2 {
+	padding-top: 30px;
+	background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/bg_contentsdouble_col2_line.png") no-repeat top left;
+}
+.ContentsArea_Single .Block--GridLineTop .Grid--TypeCol2 {
+	padding-top: 30px;
+	background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/bg_contentssingle_col2_line.png") no-repeat top left;
+}
+.ContentsArea_Double .Block--GridLineTopNone .Grid--TypeCol2,
+.ContentsArea_Single .MainContentsArea__Main .Block--GridLineTopNone .Grid--TypeCol2 {
+	margin-top: -1px;
+	padding-top: 30px;
+	background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/bg_contentsdouble_col2_line.png") no-repeat top left;
+}
+.ContentsArea_Single .Block--GridLineTopNone .Grid--TypeCol2 {
+	margin-top: -1px;
+	padding-top: 30px;
+	background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/bg_contentssingle_col2_line.png") no-repeat top left;
+}
+/**/
+.ContentsArea_Double .Block--GridLineBoldTop .Grid--TypeCol2,
+.ContentsArea_Single .MainContentsArea__Main .Block--GridLineBoldTop .Grid--TypeCol2 {
+	padding-top: 30px;
+	background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/bg_contentsdouble_col2_line_bold.png") no-repeat top left;
+}
+.ContentsArea_Single .Block--GridLineBoldTop .Grid--TypeCol2 {
+	padding-top: 30px;
+	background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/bg_contentssingle_col2_line_bold.png") no-repeat top left;
+}
+.ContentsArea_Double .Block--GridLineBoldTopNone .Grid--TypeCol2,
+.ContentsArea_Single .MainContentsArea__Main .Block--GridLineBoldTopNone .Grid--TypeCol2 {
+	margin-top: -3px;
+	padding-top: 30px;
+	background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/bg_contentsdouble_col2_line_bold.png") no-repeat top left;
+}
+.ContentsArea_Single .Block--GridLineBoldTopNone .Grid--TypeCol2 {
+	margin-top: -3px;
+	padding-top: 30px;
+	background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/bg_contentssingle_col2_line_bold.png") no-repeat top left;
+}
+/**/
+.ContentsArea_Double .Block--GridLineBtm .Grid--TypeCol2,
+.ContentsArea_Single .MainContentsArea__Main .Block--GridLineBtm .Grid--TypeCol2 {
+	padding: 30px 0 10px 0;
+	background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/bg_contentsdouble_col2_line.png") no-repeat bottom left;
+}
+.ContentsArea_Single .Block--GridLineBtm .Grid--TypeCol2 {
+	padding: 30px 0 10px 0;
+	background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/bg_contentssingle_col2_line.png") no-repeat bottom left;
+}
+.ContentsArea_Double .Block--GridLineBtmNone .Grid--TypeCol2,
+.ContentsArea_Single .MainContentsArea__Main .Block--GridLineBtmNone .Grid--TypeCol2 {
+	margin-bottom: -1px;
+	padding: 30px 0 10px 0;
+	background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/bg_contentsdouble_col2_line.png") no-repeat bottom left;
+}
+.ContentsArea_Single .Block--GridLineBtmNone .Grid--TypeCol2 {
+	margin-bottom: -1px;
+	padding: 30px 0 10px 0;
+	background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/bg_contentssingle_col2_line.png") no-repeat bottom left;
+}
+/**/
+.ContentsArea_Double .Block--GridLineBoldBtm .Grid--TypeCol2,
+.ContentsArea_Single .MainContentsArea__Main .Block--GridLineBoldBtm .Grid--TypeCol2 {
+	padding: 30px 0 10px 0;
+	background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/bg_contentsdouble_col2_line_bold.png") no-repeat bottom left;
+}
+.ContentsArea_Single .Block--GridLineBoldBtm .Grid--TypeCol2 {
+	padding: 30px 0 10px 0;
+	background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/bg_contentssingle_col2_line_bold.png") no-repeat bottom left;
+}
+.ContentsArea_Double .Block--GridLineBoldBtmNone .Grid--TypeCol2,
+.ContentsArea_Single .MainContentsArea__Main .Block--GridLineBoldBtmNone .Grid--TypeCol2 {
+	margin-bottom: -3px;
+	padding: 30px 0 10px 0;
+	background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/bg_contentsdouble_col2_line_bold.png") no-repeat bottom left;
+}
+.ContentsArea_Single .Block--GridLineBoldBtmNone .Grid--TypeCol2 {
+	margin-bottom: -3px;
+	padding: 30px 0 10px 0;
+	background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/bg_contentssingle_col2_line_bold.png") no-repeat bottom left;
+}
+/* ----------------------- */
+.ContentsArea_Double .Block--GridLine.Block--Grid3,
+.ContentsArea_Single .MainContentsArea__Main .Block--GridLine.Block--Grid3 {
+	margin-bottom: 17px;
+	background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/bg_contentsdouble_col3_line.png") no-repeat top left;
+}
+.ContentsArea_Single .Block--GridLine.Block--Grid3 {
+	margin-bottom: 17px;
+	background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/bg_contentssingle_col3_line.png") no-repeat top left;
+}
+.ContentsArea_Double .Block--GridLine .Grid--TypeCol3,
+.ContentsArea_Single .MainContentsArea__Main .Block--GridLine .Grid--TypeCol3 {
+	margin-bottom: 0;
+	background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/bg_contentsdouble_col3_line.png") no-repeat bottom left;
+}
+.ContentsArea_Single .Block--GridLine .Grid--TypeCol3 {
+	margin-bottom: 0;
+	background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/bg_contentssingle_col3_line.png") no-repeat bottom left;
+}
+.ContentsArea_Double .Block--GridLine .Grid--TypeCol3 .Grid__Col,
+.ContentsArea_Single .MainContentsArea__Main .Block--GridLine .Grid--TypeCol3 .Grid__Col {
+	margin-bottom: 0;
+	padding: 20px 0 3px;
+}
+.ContentsArea_Single .Block--GridLine .Grid--TypeCol3 .Grid__Col {
+	margin-bottom: 0;
+	padding: 20px 0 3px;
+}
+.ContentsArea_Double .Block--GridLine ul.Grid--TypeCol3 li.Grid__Col,
+.ContentsArea_Single .MainContentsArea__Main .Block--GridLine ul.Grid--TypeCol3 li.Grid__Col {
+	margin-bottom: 0;
+	padding: 20px 0 20px;
+}
+.ContentsArea_Single .Block--GridLine ul.Grid--TypeCol3 li.Grid__Col {
+	margin-bottom: 0;
+	padding: 20px 0 20px;
+}
+/**/
+.ContentsArea_Double .Block--GridLineBold.Block--Grid3,
+.ContentsArea_Single .MainContentsArea__Main .Block--GridLineBold {
+	margin-bottom: 17px;
+	background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/bg_contentsdouble_col3_line_bold.png") no-repeat top left;
+}
+.ContentsArea_Single .Block--GridLineBold.Block--Grid3 {
+	margin-bottom: 17px;
+	background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/bg_contentssingle_col3_line_bold.png") no-repeat top left;
+}
+.ContentsArea_Double .Block--GridLineBold .Grid--TypeCol3,
+.ContentsArea_Single .MainContentsArea__Main .Block--GridLineBold .Grid--TypeCol3 {
+	margin-bottom: 0;
+	background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/bg_contentsdouble_col3_line_bold.png") no-repeat bottom left;
+}
+.ContentsArea_Single .Block--GridLineBold .Grid--TypeCol3 {
+	margin-bottom: 0;
+	background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/bg_contentssingle_col3_line_bold.png") no-repeat bottom left;
+}
+.ContentsArea_Double .Block--GridLineBold .Grid--TypeCol3 .Grid__Col,
+.ContentsArea_Single .MainContentsArea__Main .Block--GridLineBold .Grid--TypeCol3 .Grid__Col {
+	margin-bottom: 0;
+	padding: 20px 0 3px;
+}
+.ContentsArea_Single .Block--GridLineBold .Grid--TypeCol3 .Grid__Col {
+	margin-bottom: 0;
+	padding: 20px 0 3px;
+}
+.ContentsArea_Double .Block--GridLineBold ul.Grid--TypeCol3 li.Grid__Col,
+.ContentsArea_Single .MainContentsArea__Main .Block--GridLineBold ul.Grid--TypeCol3 li.Grid__Col {
+	margin-bottom: 0;
+	padding: 20px 0 20px;
+}
+.ContentsArea_Single .Block--GridLineBold ul.Grid--TypeCol3 li.Grid__Col {
+	margin-bottom: 0;
+	padding: 20px 0 20px;
+}
+/**/
+.ContentsArea_Double .Block--GridLineTop .Grid--TypeCol3,
+.ContentsArea_Single .MainContentsArea__Main .Block--GridLineTop .Grid--TypeCol3 {
+	padding-top: 35px;
+	background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/bg_contentsdouble_col3_line.png") no-repeat top left;
+}
+.ContentsArea_Single .Block--GridLineTop .Grid--TypeCol3 {
+	padding-top: 35px;
+	background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/bg_contentssingle_col3_line.png") no-repeat top left;
+}
+.ContentsArea_Double .Block--GridLineTopNone .Grid--TypeCol3,
+.ContentsArea_Single .MainContentsArea__Main .Block--GridLineTopNone .Grid--TypeCol3 {
+	margin-top: -3px;
+	padding-top: 30px;
+	background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/bg_contentsdouble_col3_line.png") no-repeat top left;
+}
+.ContentsArea_Single .Block--GridLineTopNone .Grid--TypeCol3 {
+	margin-top: -3px;
+	padding-top: 30px;
+	background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/bg_contentssingle_col3_line.png") no-repeat top left;
+}
+/**/
+.ContentsArea_Double .Block--GridLineBoldTop .Grid--TypeCol3,
+.ContentsArea_Single .MainContentsArea__Main .Block--GridLineBoldTop .Grid--TypeCol3 {
+	padding-top: 35px;
+	background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/bg_contentsdouble_col3_line_bold.png") no-repeat top left;
+}
+.ContentsArea_Single .Block--GridLineBoldTop .Grid--TypeCol3 {
+	padding-top: 35px;
+	background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/bg_contentssingle_col3_line_bold.png") no-repeat top left;
+}
+.ContentsArea_Double .Block--GridLineBoldTopNone .Grid--TypeCol3,
+.ContentsArea_Single .MainContentsArea__Main .Block--GridLineBoldTopNone .Grid--TypeCol3 {
+	margin-top: -3px;
+	padding-top: 30px;
+	background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/bg_contentsdouble_col3_line_bold.png") no-repeat top left;
+}
+.ContentsArea_Single .Block--GridLineBoldTopNone .Grid--TypeCol3 {
+	margin-top: -3px;
+	padding-top: 30px;
+	background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/bg_contentssingle_col3_line_bold.png") no-repeat top left;
+}
+/**/
+.ContentsArea_Double .Block--GridLineBtm .Grid--TypeCol3,
+.ContentsArea_Single .MainContentsArea__Main .Block--GridLineBtm .Grid--TypeCol3 {
+	padding: 30px 0 10px 0;
+	background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/bg_contentsdouble_col3_line.png") no-repeat bottom left;
+}
+.ContentsArea_Single .Block--GridLineBtm .Grid--TypeCol3 {
+	padding: 30px 0 10px 0;
+	background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/bg_contentssingle_col3_line.png") no-repeat bottom left;
+}
+.ContentsArea_Double .Block--GridLineBtmNone .Grid--TypeCol3,
+.ContentsArea_Single .MainContentsArea__Main .Block--GridLineBtmNone .Grid--TypeCol3 {
+	margin-bottom: -3px;
+	padding: 30px 0 10px 0;
+	background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/bg_contentsdouble_col3_line.png") no-repeat bottom left;
+}
+.ContentsArea_Single .Block--GridLineBtmNone .Grid--TypeCol3 {
+	margin-bottom: -3px;
+	padding: 30px 0 10px 0;
+	background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/bg_contentssingle_col3_line.png") no-repeat bottom left;
+}
+/**/
+.ContentsArea_Double .Block--GridLineBoldBtm .Grid--TypeCol3,
+.ContentsArea_Single .MainContentsArea__Main .Block--GridLineBoldBtm .Grid--TypeCol3 {
+	padding: 30px 0 10px 0;
+	background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/bg_contentsdouble_col3_line_bold.png") no-repeat bottom left;
+}
+.ContentsArea_Single .Block--GridLineBoldBtm .Grid--TypeCol3 {
+	padding: 30px 0 10px 0;
+	background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/bg_contentssingle_col3_line_bold.png") no-repeat bottom left;
+}
+.ContentsArea_Double .Block--GridLineBoldBtmNone .Grid--TypeCol3,
+.ContentsArea_Single .MainContentsArea__Main .Block--GridLineBoldBtmNone .Grid--TypeCol3 {
+	margin-bottom: -3px;
+	padding: 30px 0 10px 0;
+	background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/bg_contentsdouble_col3_line_bold.png") no-repeat bottom left;
+}
+.ContentsArea_Single .Block--GridLineBoldBtmNone .Grid--TypeCol3 {
+	margin-bottom: -3px;
+	padding: 30px 0 10px 0;
+	background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/bg_contentssingle_col3_line_bold.png") no-repeat bottom left;
+}
+/* ----------------------- */
+.ContentsArea_Double .Block--GridLineBoldTop .Grid--TypeCol6,
+.ContentsArea_Single .Block--GridLineBoldTop .Grid--TypeCol6 {
+	padding-top: 30px;
+	background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/bg_contentsdouble_col6_line_bold.png") no-repeat top left;
+}
+.ContentsArea_Double .Block--GridLineBoldTopNone .Grid--TypeCol6,
+.ContentsArea_Single .Block--GridLineBoldTopNone .Grid--TypeCol6 {
+	margin-top: -3px;
+	padding-top: 30px;
+	background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/bg_contentsdouble_col6_line_bold.png") no-repeat top left;
+}
+
+.ContentsArea_Double .Block--GridLineBoldBtm .Grid--TypeCol6,
+.ContentsArea_Single .MainContentsArea__Main .Block--GridLineBoldBtm .Grid--TypeCol6 {
+	padding: 30px 0 10px 0;
+	background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/bg_contentsdouble_col6_line_bold.png") no-repeat bottom left;
+}
+.ContentsArea_Double .Block--GridLineBoldBtmNone .Grid--TypeCol6,
+.ContentsArea_Single .MainContentsArea__Main .Block--GridLineBoldBtmNone .Grid--TypeCol6 {
+	margin-bottom: -3px;
+	padding: 30px 0 10px 0;
+	background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/bg_contentsdouble_col6_line_bold.png") no-repeat bottom left;
+}
+/**/
+.ContentsArea_Double .Block--GridLineVertical .Grid--TypeCol3,
+.ContentsArea_Single .MainContentsArea__Main .Block--GridLineVertical .Grid--TypeCol3 {
+	margin-bottom: 17px;
+	background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/bg_contentsdouble_col3_verticalline.png") repeat-y left;
+}
+.ContentsArea_Double .Block--GridLineVertical .Grid--TypeCol3 .Grid__Col,
+.ContentsArea_Single .MainContentsArea__Main .Block--GridLineVertical .Grid--TypeCol3 .Grid__Col {
+	margin-bottom: 0;
+}
+
+
+/* X-06. Box
+---------- ---------- */
+.Box {
+	margin-bottom: 17px;
+}
+.Grid__Col .Box {
+	margin-bottom: 0;
+}
+.Box__Title {
+	margin: 0 0 11px 0;
+	font-weight: bold;
+	font-size: 129%; /* 18px */
+	line-height: 1.55;
+}
+.Box__Title a,
+.Box__Title a:link {
+	color: #000;
+}
+.Box__Title a:visited {
+	color: #464f9a;
+}
+.Box__Title a:hover,
+.Box__Title a:active,
+.Box__Title a:focus {
+	color: #0099cc;
+	text-decoration: none;
+}
+.Box .Box__Title {
+	margin-bottom: 6px;
+	color:#000;
+	text-transform: uppercase;
+}
+.Box__Body:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.Box > dl,
+.Box dd.Box__Body,
+.Box__Body p:last-child,
+.Box__Body dl:last-child,
+.Box__Body dl:last-child dd:last-child,
+.Box__Body ul:last-child,
+.Box__Body ol:last-child,
+.Box__Body ul:last-child li:last-child,
+.Box__Body ol:last-child li:last-child,
+.Box__Body .Grid:last-child {
+	margin-bottom: 0;
+}
+
+.Box__Body.gen-PaddingNone .Block__Img p {
+	margin-bottom: 0;
+}
+.Box__Body.gen-PaddingNone .Block__Img--Left {
+	margin-right: 0;
+}
+.Box__Body.gen-PaddingNone .Block__Img--Right {
+	margin-left: 0;
+}
+.Box__Body.gen-PaddingNone .Block__Content {
+	padding: 16px 20px;
+}
+.Box--ColorBlackBox .Box__Body.gen-PaddingNone .Block__Content {
+	padding: 22px 25px;
+}
+
+/* Box--ColorBox */
+.Box--ColorBox .Box__Body {
+	padding: 16px 20px;
+	background: #edf2f5;
+}
+.gen-BgBlack .Box--ColorBox .Box__Body {
+	background: #19191a;
+}
+
+/* Box--ColorBlackBox */
+.Box--ColorBlackBox .Box__Body .Box__Title {
+	color: #FFF;
+}
+.Box--ColorBlackBox .Box__Body {
+	padding: 16px 20px;
+	color: #FFF;
+	background: #2C3033;
+}
+.Box--ColorBlackBox .Box__Body a,
+.Box--ColorBlackBox .Box__Body a:link {
+	color: #FFF;
+}
+
+/* Box--BorderBox */
+.Box--BorderBox .Box__Body {
+	padding: 15px 19px;
+	border: 1px solid #d2d6d9;
+	background: #FFF;
+}
+.gen-BgBlack .Box--BorderBox .Box__Body {
+	border: 1px solid #19191a;
+	background: #000;
+}
+.TabSet .Box--BorderBox .Box__Body {
+	border-top: none;
+}
+
+/* Box--BorderBlueBox */
+.Box--BorderBlueBox .Box__Title{
+	color: #014260;
+}
+.Box--BorderBlueBox .Box__Body {
+	padding: 15px 19px;
+	color: #014260;
+	border: 1px solid #a6e9ff;
+	background: #FFF;
+}
+
+/* Box--TopLineColorBox */
+.Box--TopLineColorBox .Box__Body {
+	padding: 16px 20px;
+	border-top: 4px solid #000;
+	background: #edf2f5;
+}
+
+/* Box--ColorGrayBox */
+.Box--ColorGrayBox .Box__Title.Box__TitleBg {
+	margin-bottom: 0;
+	padding: 6px 15px;
+	color: #FFF;
+	background: #697881;
+}
+.Box--ColorGrayBox .Box__Body {
+	padding: 16px 15px;
+	color: #000;
+	background: #c5d0d7;
+}
+
+/* Box--ColorBlueBox */
+.Box--ColorBlueBox .Box__Title.Box__TitleBg {
+	margin-bottom: 0;
+	padding: 6px 15px;
+	color: #FFF;
+	background: #01649a;
+}
+.Box--ColorBlueBox .Box__Body {
+	padding: 16px 15px;
+	color: #000;
+	background: #54b2e6;
+}
+
+/* Box--Blank */
+.Box--Blank .Box__Body {
+	padding: 16px 20px;
+}
+
+/* Box--CategoryNav */
+.Box--CategoryNav .CategoryNav li.is-Current {
+	background: #00c6f7;
+}
+.Box--CategoryNav .CategoryNav li a {
+	display: block;
+	padding: 6px 0 6px 23px;
+	text-indent: -14px;
+}
+.Box--CategoryNav .CategoryNav li.is-Current a {
+	padding-right: 6px;
+	color: #FFF;
+	font-weight: bold;
+}
+.Box--CategoryNav .CategoryNav li i {
+	display: inline-block;
+	width: 7px;
+	height: 10px;
+	margin-right: 7px;
+	background-image: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/mkr_sprite.png");
+	background-repeat: no-repeat;
+	background-position: -20px -20px;
+	vertical-align: baseline;
+}
+.Box--CategoryNav .CategoryNav li.is-Current i {
+	background-image: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/mkr_sprite.png");
+	background-position: -20px -60px;
+}
+.Box--CategoryNav .CategoryNav .Grid__Col {
+	margin-bottom: 0;
+}
+
+
+/* X-07. Text
+---------- ---------- */
+strong {
+	font-weight:bold;
+}
+sup {
+	font-size: 72%;
+	font-style: normal;
+	vertical-align: super;
+}
+sub {
+	font-size: 72%;
+	font-style: normal;
+	vertical-align: sub;
+}
+blockquote:before {
+	content: "";
+	display: block;
+	padding-top: 30px;
+	background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/mkr_blockquote_before.png") no-repeat top left;
+}
+blockquote:after {
+	content: "";
+	display: block;
+	padding-bottom: 30px;
+	background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/mkr_blockquote_after.png") no-repeat bottom right;
+}
+blockquote p:last-child, blockquote dl:last-child, blockquote dl:last-child dd:last-child, blockquote ul:last-child, blockquote ul:last-child li:last-child {
+	margin-bottom: 0;
+}
+.ImgCaption {
+	margin: -10px 0 17px;
+    color: #666;
+    font-size: 86%; /* 12px */
+    line-height: 1.3;
+}
+.TableCaption {
+	margin-top: -14px;
+}
+
+
+/* X-08. Definition List
+---------- ---------- */
+dl dt.Title {
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+
+/* DlType--DlTable */
+.DlType--DlTable {
+	border-top: 1px solid #bababa;
+}
+.DlType--DlTable > dd p:last-child,
+.DlType--DlTable > dd ul:last-child,
+.DlType--DlTable > dd ul:last-child li:last-child,
+.DlType--DlTable > dd ol:last-child,
+.DlType--DlTable > dd ol:last-child li:last-child,
+.DlType--DlTable > dd dl:last-child,
+.DlType--DlTable > dd dl:last-child dd:last-child {
+	margin-bottom: 0;
+}
+.DlType--DlTable > dt {
+	clear: both;
+	float: left;
+	width: 160px;
+	padding: 13px 15px 0 0;
+	margin-top: -1px;
+	color: #999;
+	line-height: 1;
+	font-size: 186%; /* 26px */
+	font-weight: bold;
+ 	border-top: 1px solid #bababa;
+}
+.DlType--DlTable > dd {
+	margin: 0 0 0 175px;
+	padding: 15px 15px 15px 0px;
+	border-bottom: 1px solid #bababa;
+}
+.DlType--DlTable > dd:last-child {
+	margin: 0;
+	padding: 15px 15px 15px 175px;
+}
+
+/* DlType--DtBgColor */
+.DlType--DtBgColor > dt {
+	padding: 15px;
+	font-weight: bold;
+	background: #f0f4f7;
+}
+.Flex .DlType--DtBgColor > dt {
+	padding: 0;
+}
+.Flex .DlType--DtBgColor > dt .Flex__Toggle {
+	padding: 15px 15px 15px 35px;
+}
+.DlType--DtBgColor > dd {
+	margin-bottom: 0;
+}
+.List .DlType--DtBgColor {
+	margin-bottom: 0;
+}
+
+/* DlType--DtToggle */
+.DlType--DtToggle,
+.Grid__Col .DlType--DtToggle,
+.Grid__Col .DlType--DtToggle:last-child {
+	margin-bottom: 17px;
+}
+.DlType--DtToggle.is-Open dd:last-child {
+	margin-bottom: 0;
+}
+.DlType--DtToggle > dt {
+	margin-bottom: 0;
+	font-size: 129%;
+	font-weight: bold;
+    line-height: 1.33;
+}
+.DlType--DtToggle > dd {
+	margin-top: 7px;
+}
+
+/* DlType--Inline */
+.DlType--Inline:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.DlType--Inline > dt {
+	clear: left;
+	float: left;
+	margin-right: 0.5em;
+}
+.DlType--Inline > dt.Title {
+	margin-bottom: 0;
+}
+
+/* DlType--TextOrdered1em */
+.DlType--TextOrdered1em > dt > .TextMkr ,
+.DlType--TextOrdered1em > dd > .TextMkr {
+	float: left;
+	width: 1em;
+}
+.DlType--TextOrdered1em > dt > span ,
+.DlType--TextOrdered1em > dd > .List__Body {
+	display: block;
+	overflow: hidden;
+}
+
+/* DlType--TextOrdered2em */
+.DlType--TextOrdered2em > dt > .TextMkr ,
+.DlType--TextOrdered2em > dd > .TextMkr {
+	float: left;
+	width: 2em;
+}
+.DlType--TextOrdered2em > dt > span ,
+.DlType--TextOrdered2em > dd > .List__Body {
+	display: block;
+	overflow: hidden;
+}
+
+/* DlType--TextOrdered3em */
+.DlType--TextOrdered3em > dt > .TextMkr ,
+.DlType--TextOrdered3em > dd > .TextMkr {
+	float: left;
+	width: 3em;
+}
+.DlType--TextOrdered3em > dt > span ,
+.DlType--TextOrdered3em > dd > .List__Body {
+	display: block;
+	overflow: hidden;
+}
+
+/* X-09. List
+---------- ---------- */
+.List {
+	margin-bottom: 15px;
+}
+.List .List {
+	margin-bottom: 0;
+}
+.List li {
+	margin-bottom: 5px;
+}
+.ContentsArea_Double .List.Grid--TypeCol2 > li.Grid__Col--Size1,
+.ContentsArea_Single .MainContentsArea__Main .List.Grid--TypeCol2 > li.Grid__Col--Size1 {
+	width: 319px;
+	width: calc(46% - 18px);
+}
+.ContentsArea_Double .Box .List.Grid--TypeCol2 > li.Grid__Col--Size1,
+.ContentsArea_Single .MainContentsArea__Main .Box .List.Grid--TypeCol2 > li.Grid__Col--Size1 {
+	width: 300px;
+	width: calc(46% - 18px);
+}
+.ContentsArea_Double .Box .Grid--TypeCol3 .List.Grid--TypeCol2 > li.Grid__Col--Size1 {
+	width: 187px;
+}
+.ContentsArea_Double .List.Grid--TypeCol3 > li.Grid__Col--Size1,
+.ContentsArea_Single .MainContentsArea__Main .List.Grid--TypeCol3 > li.Grid__Col--Size1{
+	width: 194px;
+	width: calc(29% - 18px);
+}
+.ContentsArea_Double .Box .List.Grid--TypeCol3 > li.Grid__Col--Size1,
+.ContentsArea_Single .MainContentsArea__Main .Box .List.Grid--TypeCol3 > li.Grid__Col--Size1 {
+	width: 183px;
+	width: calc(29% - 18px);
+}
+.ContentsArea_Single .List.Grid--TypeCol2 > li.Grid__Col--Size1 {
+	width: 447px;
+	width: calc(47% - 18px);
+}
+.ContentsArea_Single .Box .List.Grid--TypeCol2 > li.Grid__Col--Size1 {
+	width: 429px;
+	width: calc(47% - 18px);
+}
+.ContentsArea_Single .List.Grid--TypeCol3 > li.Grid__Col--Size1 {
+	width: 279px;
+	width: calc(30% - 18px);
+}
+.ContentsArea_Single .Box .List.Grid--TypeCol3 > li.Grid__Col--Size1 {
+	width: 267px;
+	width: calc(30% - 18px);
+}
+.ContentsArea_Single .List.Grid--TypeCol4 > li.Grid__Col--Size1 {
+	width: 202px;
+	width: calc(22.2% - 18px);
+}
+.ContentsArea_Single .Box .List.Grid--TypeCol4 > li.Grid__Col--Size1 {
+	width: 193px;
+	width: calc(22.2% - 18px);
+}
+
+.List li li {
+	margin-top: 5px;
+}
+.List--Horizontal li {
+	display: inline-block;
+}
+.ContentsArea_Double .Box .List--Horizontal.Grid--TypeCol2 > li.Grid__Col--Size1,
+.ContentsArea_Double .Box .List--Horizontal.Grid--TypeCol3 > li.Grid__Col--Size1,
+.ContentsArea_Double .Box .List--Horizontal.Grid--TypeCol3 > li.Grid__Col--Size2,
+.ContentsArea_Single .Box .List--Horizontal.Grid--TypeCol2 > li.Grid__Col--Size1,
+.ContentsArea_Single .Box .List--Horizontal.Grid--TypeCol3 > li.Grid__Col--Size1,
+.ContentsArea_Single .Box .List--Horizontal.Grid--TypeCol3 > li.Grid__Col--Size2,
+.ContentsArea_Single .MainContentsArea__Main .Box .List--Horizontal.Grid--TypeCol2 > li.Grid__Col--Size1,
+.ContentsArea_Single .MainContentsArea__Main .Box .List--Horizontal.Grid--TypeCol3 > li.Grid__Col--Size1,
+.ContentsArea_Single .MainContentsArea__Main .Box .List--Horizontal.Grid--TypeCol3 > li.Grid__Col--Size2 {
+	width: auto;
+}
+
+/* List--Line */
+.List--Line {
+	border-top: 1px solid #bababa;
+}
+.List--Line > li {
+	margin-bottom: 0;
+	border-bottom: 1px solid #bababa;
+}
+
+/* List--Link */
+.List--Link > li {
+	padding-left: 14px;
+	text-indent: -14px;
+}
+.List--Horizontal.List--Link {
+	margin-right: -35px;
+}
+.List--Horizontal.List--Link li {
+	margin-right: 35px;
+}
+
+/* List--Dot */
+.List--Dot > li {
+    padding-left: 14px;
+    text-indent: -14px;
+}
+.List--Horizontal.List--Dot {
+	margin-right: -35px;
+}
+.List--Horizontal.List--Dot li {
+	margin-right: 35px;
+}
+
+/* List--Hyphen */
+.List--Hyphen > li {
+    padding-left: 12px;
+    text-indent: -12px;
+}
+.List--Horizontal.List--Hyphen {
+	margin-right: -35px;
+}
+.List--Horizontal.List--Hyphen li {
+	margin-right: 35px;
+}
+
+/* List--Anchor */
+.Section + .List--Anchor {
+	margin-top: -22px;
+}
+.List--Anchor > li {
+    padding-left: 13px;
+    text-indent: -13px;
+}
+.List--Horizontal.List--Anchor {
+	margin-right: -25px;
+}
+.Box .List--Horizontal.List--Anchor {
+	margin-bottom: -5px;
+}
+.List--Horizontal.List--Anchor li {
+	margin-right: 25px;
+}
+
+/* List--Pict */
+.List--Horizontal.List--Pict {
+	margin-right: -15px;
+}
+.List--Pict > li {
+	margin: 0 0 12px 0;
+}
+.List--Pict > li li {
+	margin: 0 0 5px 0;
+}
+.List--Horizontal.List--Pict li {
+	margin: 0 15px 12px 0;
+}
+.List--Pict span {
+	margin-left: 7px;
+	padding-top:3px;
+	vertical-align: middle;
+}
+.List--Pict ul {
+	display: inline-block;
+	margin-left: 7px;
+	vertical-align: top;
+}
+.List--Pict a:hover,
+.List--Pict a:focus {
+	text-decoration: none;
+}
+.List--Pict a:hover span,
+.List--Pict a:focus span {
+	text-decoration: underline;
+}
+
+/* List--Partition */
+.List--Horizontal.List--Partition li {
+	margin-right: 5px;
+	padding-left: 15px;
+	background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/mkr_partition.png") no-repeat 0 50%;
+}
+.List--Horizontal.List--Partition li:first-child {
+	padding-left: 0;
+	background: none;
+}
+
+/* List--TextButton */
+.List--TextButton li {
+	margin-bottom: 13px;
+}
+.List--TextButton a {
+	display: inline-block;
+}
+.List--Horizontal.List--TextButton {
+	margin-right: -10px;
+}
+.List--Horizontal.List--TextButton li {
+	margin-right: 10px;
+}
+
+/* List--Text */
+.List--Text > li > i,
+.List--Text > li small > i {
+	float: left;
+	display: inline;
+	margin-right:3px;
+}
+.List--Text > li > div,
+.List--Text > li small > div  {
+	overflow: hidden;
+}
+
+/* List--Text1em */
+.List--Text1em > li {
+	padding-left: 1em;
+	text-indent: -1.3em;
+}
+.List--Text1em > li > .TextMkr,
+.List--Text1em > li > a > .TextMkr {
+	display: inline-block;
+	width: 1em;
+	text-align: right;
+}
+.List--Text1em.gen-TextNotes > li {
+	text-indent: -0.8em;
+}
+.ContentsArea_Double .List--Text1em.Grid--TypeCol2 > li.Grid__Col--Size1,
+.ContentsArea_Single .MainContentsArea__Main .List--Text1em.Grid--TypeCol2 > li.Grid__Col--Size1 {
+	width: 319px;
+	width: calc(46% - 1.3em);
+}
+.ContentsArea_Double .Box .List--Text1em.Grid--TypeCol2 > li.Grid__Col--Size1,
+.ContentsArea_Single .MainContentsArea__Main .Box .List--Text1em.Grid--TypeCol2 > li.Grid__Col--Size1 {
+	width: 300px;
+	width: calc(46% - 1.3em);
+}
+.ContentsArea_Double .List--Text1em.Grid--TypeCol3 > li.Grid__Col--Size1,
+.ContentsArea_Single .MainContentsArea__Main .List--Text1em.Grid--TypeCol3 > li.Grid__Col--Size1 {
+	width: 194px;
+	width: calc(29% - 1.3em);
+}
+.ContentsArea_Double .Box .List--Text1em.Grid--TypeCol3 > li.Grid__Col--Size1,
+.ContentsArea_Single .MainContentsArea__Main .Box .List--Text1em.Grid--TypeCol3 > li.Grid__Col--Size1 {
+	width: 182px;
+	width: calc(29% - 1.3em);
+}
+.ContentsArea_Single .List--Text1em.Grid--TypeCol2 > li.Grid__Col--Size1 {
+	width: 447px;
+	width: calc(47% - 1.3em);
+}
+.ContentsArea_Single .Box .List--Text1em.Grid--TypeCol2 > li.Grid__Col--Size1 {
+	width: 428px;
+	width: calc(47% - 1.3em);
+}
+.ContentsArea_Single .List--Text1em.Grid--TypeCol3 > li.Grid__Col--Size1 {
+	width: 279px;
+	width: calc(30% - 1.3em);
+}
+.ContentsArea_Single .Box .List--Text1em.Grid--TypeCol3 > li.Grid__Col--Size1 {
+	width: 267px;
+	width: calc(30% - 1.3em);
+}
+.ContentsArea_Single .List--Text1em.Grid--TypeCol4 > li.Grid__Col--Size1 {
+	width: 204px;
+	width: calc(22.2% - 1.3em);
+}
+.ContentsArea_Single .Box .List--Text1em.Grid--TypeCol4 > li.Grid__Col--Size1 {
+	width: 195px;
+	width: calc(22.2% - 1.3em);
+}
+
+/* List--Text2em */
+.List--Text2em > li {
+	padding-left: 2em;
+	text-indent: -2.3em;
+}
+.List--Text2em > li > .TextMkr,
+.List--Text2em > li > a > .TextMkr {
+	display: inline-block;
+	width: 2em;
+	text-align: right;
+}
+.List--Text2em.gen-TextNotes > li {
+	text-indent: -1.5em;
+}
+.ContentsArea_Double .List--Text2em.Grid--TypeCol2 > li.Grid__Col--Size1,
+.ContentsArea_Single .MainContentsArea__Main .List--Text2em.Grid--TypeCol2 > li.Grid__Col--Size1 {
+	width: 305px;
+	width: calc(46% - 2.3em);
+}
+.ContentsArea_Double .Box .List--Text2em.Grid--TypeCol2 > li.Grid__Col--Size1,
+.ContentsArea_Single .MainContentsArea__Main .Box .List--Text2em.Grid--TypeCol2 > li.Grid__Col--Size1 {
+	width: 286px;
+	width: calc(46% - 2.3em);
+}
+.ContentsArea_Double .List--Text2em.Grid--TypeCol3 > li.Grid__Col--Size1,
+.ContentsArea_Single .MainContentsArea__Main .List--Text2em.Grid--TypeCol3 > li.Grid__Col--Size1 {
+	width: 180px;
+	width: calc(29% - 2.3em);
+}
+.ContentsArea_Double .Box .List--Text2em.Grid--TypeCol3 > li.Grid__Col--Size1,
+.ContentsArea_Single .MainContentsArea__Main .Box .List--Text2em.Grid--TypeCol3 > li.Grid__Col--Size1 {
+	width: 168px;
+	width: calc(29% - 2.3em);
+}
+.ContentsArea_Single .List--Text2em.Grid--TypeCol2 > li.Grid__Col--Size1 {
+	width: 433px;
+	width: calc(47% - 2.3em);
+}
+.ContentsArea_Single .Box .List--Text2em.Grid--TypeCol2 > li.Grid__Col--Size1 {
+	width: 414px;
+	width: calc(47% - 2.3em);
+}
+.ContentsArea_Single .List--Text2em.Grid--TypeCol3 > li.Grid__Col--Size1 {
+	width: 265px;
+	width: calc(30% - 2.3em);
+}
+.ContentsArea_Single .Box .List--Text2em.Grid--TypeCol3 > li.Grid__Col--Size1 {
+	width: 253px;
+	width: calc(30% - 2.3em);
+}
+.ContentsArea_Single .List--Text2em.Grid--TypeCol4 > li.Grid__Col--Size1 {
+	width: 188px;
+	width: calc(22.2% - 2.3em);
+}
+.ContentsArea_Single .Box .List--Text2em.Grid--TypeCol4 > li.Grid__Col--Size1 {
+	width: 179px;
+	width: calc(22.2% - 2.3em);
+}
+
+/* List--Text3em */
+.List--Text3em > li {
+	padding-left: 3.5em;
+	text-indent: -3.2em;
+}
+.List--Text3em > li > .TextMkr,
+.List--Text3em > li > a > .TextMkr {
+	display: inline-block;
+	width: 3em;
+	text-align: right;
+}
+
+/* List--Text4em */
+.List--Text4em > li {
+	padding-left: 4em;
+	text-indent: -4em;
+}
+.List--Text4em > li > .TextMkr,
+.List--Text4em > li > a > .TextMkr {
+	display: inline-block;
+	width: 4em;
+	text-align: right;
+}
+
+/* List--TextOrdered */
+/* 1em */
+.List--TextOrdered1em i.TextMkr {
+	float: left;
+	width: 1em;
+}
+.List--TextOrdered1em .List__Body {
+	overflow: hidden;
+}
+/* 2em */
+.List--TextOrdered2em i.TextMkr {
+	float: left;
+	width: 2em;
+}
+.List--TextOrdered2em .List__Body {
+	overflow: hidden;
+}
+/* 3em */
+.List--TextOrdered3em i.TextMkr {
+	float: left;
+	width: 3em;
+}
+.List--TextOrdered3em .List__Body {
+	overflow: hidden;
+}
+
+
+/* X-10. Mkr
+---------- ---------- */
+.Mkr {
+	display: inline-block;
+	background-image: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/mkr_sprite.png");
+	background-repeat: no-repeat;
+	vertical-align: baseline;
+}
+.Mkr--Medium {
+	width: 10px;
+	height: 10px;
+}
+.Mkr--Large {
+	width: 14px;
+	height: 14px;
+}
+.Mkr--xLarge {
+	width: 20px;
+	height: 16px;
+}
+.TextMkr {
+	font-style: normal;
+}
+
+/* ArwBlue
+---------- */
+a .Mkr--Medium.Mkr--ArwBlue,
+a:link .Mkr--Medium.Mkr--ArwBlue {
+	margin-right: 4px;
+	background-position: -20px -20px;
+}
+h2 a .Mkr--Medium.Mkr--ArwBlue,
+h2 a:link .Mkr--Medium.Mkr--ArwBlue {
+	position:relative;
+	top: -3px;
+	margin-right: 4px;
+	background-position: -20px -20px;
+}
+a:hover .Mkr--Medium.Mkr--ArwBlue,
+a:active .Mkr--Medium.Mkr--ArwBlue,
+a:focus .Mkr--Medium.Mkr--ArwBlue {
+	background-position: -20px -20px;
+}
+a:visited .Mkr--Medium.Mkr--ArwBlue {
+	background-position: -20px -40px;
+}
+
+/* ArwBlueLt
+---------- */
+ .Mkr--Medium.Mkr--ArwBlueLt {
+	margin-right: 4px;
+	background-position: -40px -20px;
+}
+a:hover .Mkr--Medium.Mkr--ArwBlueLt,
+a:active .Mkr--Medium.Mkr--ArwBlueLt,
+a:focus .Mkr--Medium.Mkr--ArwBlueLt {
+	background-position: -40px -20px;
+}
+a:visited .Mkr--Medium.Mkr--ArwBlueLt {
+	background-position: -40px -40px;
+}
+
+/* ArwBlueThin
+---------- */
+.Mkr--Medium.Mkr--ArwBlueThin {
+	margin-right: 4px;
+	background-position: -60px 0;
+}
+a:hover .Mkr--Medium.Mkr--ArwBlueThin,
+a:focus .Mkr--Medium.Mkr--ArwBlueThin {
+	background-position: -60px 0;
+}
+a:visited .Mkr--Medium.Mkr--ArwBlueThin {
+	background-position: -60px 0;
+}
+
+/* ArwLightBlue
+---------- */
+.Mkr--Medium.Mkr--ArwLightBlue {
+	margin-right: 4px;
+	background-position: -20px 0;
+}
+.Mkr--Large.Mkr--ArwLightBlue {
+	background-position: -40px 0;
+}
+
+/* Dot
+---------- */
+.Mkr--Dot {
+	margin-right: 4px;
+ 	background-position: 0 0;
+}
+.Mkr--DotWhite {
+	margin-right: 4px;
+ 	background-position: 0 -20px;
+}
+
+/* Hyphen
+---------- */
+.Mkr--Hyphen {
+	margin-right: 2px;
+	background-position: -100px -20px;
+}
+
+/* Anchor
+---------- */
+.Mkr--Anchor {
+	margin-right: 3px;
+	background-position: -120px 0;
+}
+
+/* Toggle
+---------- */
+.Mkr--Toggle {
+	background-image: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/mkr_sprite.png");
+	background-position: -80px 1px;
+}
+.is-Open .Mkr--Toggle {
+	background-image: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/mkr_sprite.png");
+	background-position: -80px -20px;
+}
+.Mkr--ToggleArw {
+	background-image: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/mkr_sprite.png");
+	background-position: -120px -20px;
+}
+.is-Open .Mkr--ToggleArw {
+	background-image: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/mkr_sprite.png");
+	background-position: -120px -40px;
+}
+
+
+/* X-11. Button
+---------- ---------- */
+/* TextButton
+--------- */
+.TextButton {
+	display: inline-block;
+	color: #FFF;
+	font-weight: bold;
+	background-color: #000;
+}
+.TextButton .Icon {
+	margin-right: 0;
+}
+.TextButton .Mkr--Medium.Mkr--ArwLightBlue,
+.TextButtonBlue .Mkr--Medium.Mkr--ArwLightBlue {
+	margin-right: 0;
+}
+.TextButton:link,
+.TextButton:visited {
+	color: #FFF;
+	text-decoration: none;
+}
+.TextButton:hover,
+.TextButton:active,
+.TextButton:focus {
+	color: #FFF;
+	text-decoration: none;
+	background-color: #596066;
+}
+
+/* TextButtonBlue
+--------- */
+.TextButtonBlue {
+	display: inline-block;
+	color: #FFF;
+	font-weight: bold;
+	background-color: #0080ab;
+}
+.TextButtonBlue .Icon {
+	margin-right: 0;
+}
+.TextButtonBlue:link,
+.TextButtonBlue:visited {
+	color: #FFF;
+	text-decoration: none;
+}
+.TextButtonBlue:hover,
+.TextButtonBlue:active,
+.TextButtonBlue:focus {
+	color: #FFF;
+	text-decoration: none;
+	background-color: #596066;
+}
+
+/* TextButton--Medium */
+.TextButton--Medium {
+	padding: 2px 10px;
+	font-size: 93%; /* 13px */
+}
+.TextButton--Medium .Mkr--Medium {
+    width: 7px;
+    height: 10px;
+}
+.TextButton--Medium .Mkr {
+    margin-left: 5px;
+}
+a.TextButton--Medium:hover .Mkr--Medium.Mkr--ArwBlue,
+a.TextButton--Medium:focus .Mkr--Medium.Mkr--ArwBlue,
+a.TextButton--Medium:visited .Mkr--Medium.Mkr--ArwBlue {
+	background-position: -20px -20px;
+}
+
+/* TextButton--Large */
+.TextButton--Large {
+	padding: 5px 18px;
+	font-size: 115%; /* 16px */
+}
+.TextButton--Large .Mkr--Large {
+    width: 8px;
+    height: 13px;
+}
+.TextButton--Large .Mkr {
+    margin-left: 10px;
+}
+a.TextButton--Large:hover .Mkr--Large.Mkr--ArwLightBlue,
+a.TextButton--Large:focus .Mkr--Large.Mkr--ArwLightBlue,
+a.TextButton--Large:visited .Mkr--Large.Mkr--ArwLightBlue {
+	background-position: -40px 0;
+}
+
+/* TextButton / input[type="buttom"]
+---------- */
+.TextButton__InputButton {
+	position: relative;
+	padding: inherit;
+	color: #fff;
+	font-weight: inherit;
+	font-family: inherit;
+	font-size: inherit;
+	vertical-align: baseline;
+	border: none;
+	background-color: transparent;
+	z-index: 2;
+}
+.TextButton__InputButton + .Mkr {
+	margin: 0;
+	position: relative;
+	z-index: 1;
+}
+
+/* TextButton--Medium */
+.TextButton--Medium > .TextButton__InputButton {
+	margin: -2px -10px;
+	padding-right: 22px;
+}
+.TextButton--Medium > .TextButton__InputButton + .Mkr {
+	margin-right: -7px;
+	left: -7px;
+}
+
+/* TextButton--Large */
+.TextButton--Large > .TextButton__InputButton {
+	margin: -5px -18px;
+	padding-right: 36px;
+}
+.TextButton--Large > .TextButton__InputButton + .Mkr {
+	margin-right: -8px;
+	left: -8px;
+}
+
+/* :focus */
+.TextButton__InputButton:focus {
+	background-color: #666;
+}
+.TextButton__InputButton:focus + .Mkr {
+	z-index: 2;
+}
+/* :active */
+.TextButton__InputButton:active {
+	background-color: #aaa;
+}
+.TextButton__InputButton:active + .Mkr {
+	z-index: 2;
+}
+/* disabled */
+.TextButton__InputButton[disabled] {
+	color: #999;
+	background-color: #ddd !important;
+}
+
+
+/* X-12. Tab
+---------- ---------- */
+.TabSet {
+	margin-bottom: 17px;
+}
+.Tab:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/* Tab--Normal */
+.Tab--Normal {
+	overflow: hidden;
+}
+.Tab--Normal li {
+	float: left;
+	margin-left: -1px;
+	border-left: 1px solid #bababa;
+}
+.Tab--Normal li a {
+	display: block;
+	padding: 10px 15px;
+	color: #444;
+	font-weight: bold;
+	background: #f0f4f7; /* Old browsers */
+	background: -moz-linear-gradient(top,  #f0f4f7 0%, #f0f4f7 85%, #d8dbde 100%, #d8dbde 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f0f4f7), color-stop(85%,#f0f4f7), color-stop(100%,#d8dbde), color-stop(100%,#d8dbde)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #f0f4f7 0%,#f0f4f7 85%,#d8dbde 100%,#d8dbde 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #f0f4f7 0%,#f0f4f7 85%,#d8dbde 100%,#d8dbde 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #f0f4f7 0%,#f0f4f7 85%,#d8dbde 100%,#d8dbde 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #f0f4f7 0%,#f0f4f7 85%,#d8dbde 100%,#d8dbde 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f4f7', endColorstr='#d8dbde',GradientType=0 ); /* IE6-9 */
+}
+.Tab--Normal li.is-Current a,
+.Tab--Normal li.is-Current a:hover {
+	padding: 5px 15px 10px;
+	color: #000;
+	border-top: 5px solid #BABABA;
+	background: #FFF;
+	filter: none; /* IE6-9 */
+}
+.Tab--Normal li a:hover {
+	color: #0099cc;
+	text-decoration: none;
+}
+
+/* Tab--Label */
+.Tab--Label {
+	border: 1px solid #bababa;
+	background: #f0f4f7; /* Old browsers */
+	background: -moz-linear-gradient(top,  #f0f4f7 0%, #f0f4f7 85%, #d8dbde 100%, #d8dbde 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f0f4f7), color-stop(85%,#f0f4f7), color-stop(100%,#d8dbde), color-stop(100%,#d8dbde)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #f0f4f7 0%,#f0f4f7 85%,#d8dbde 100%,#d8dbde 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #f0f4f7 0%,#f0f4f7 85%,#d8dbde 100%,#d8dbde 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #f0f4f7 0%,#f0f4f7 85%,#d8dbde 100%,#d8dbde 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #f0f4f7 0%,#f0f4f7 85%,#d8dbde 100%,#d8dbde 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f4f7', endColorstr='#d8dbde',GradientType=0 ); /* IE6-9 */
+}
+.Tab--Label li {
+	float: left;
+}
+.Tab--Label li a {
+	display: block;
+	padding: 10px;
+	color: #444;
+}
+.Tab--Label li a {
+	border-right: 1px solid #bababa;
+	background: #f0f4f7; /* Old browsers */
+	background: -moz-linear-gradient(top,  #f0f4f7 0%, #f0f4f7 85%, #d8dbde 100%, #d8dbde 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f0f4f7), color-stop(85%,#f0f4f7), color-stop(100%,#d8dbde), color-stop(100%,#d8dbde)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #f0f4f7 0%,#f0f4f7 85%,#d8dbde 100%,#d8dbde 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #f0f4f7 0%,#f0f4f7 85%,#d8dbde 100%,#d8dbde 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #f0f4f7 0%,#f0f4f7 85%,#d8dbde 100%,#d8dbde 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #f0f4f7 0%,#f0f4f7 85%,#d8dbde 100%,#d8dbde 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f4f7', endColorstr='#d8dbde',GradientType=0 ); /* IE6-9 */
+}
+.Tab--Label li a:hover {
+	color: #0099cc;
+	text-decoration: none;
+}
+.Tab--Label li.is-Selected a {
+	position: relative;
+	margin: -1px 0 -1px 0;
+	padding: 7px 10px 10px;
+	color: #444;
+	text-decoration: none;
+	border-top:5px solid #BABABA;
+	border-bottom: 1px solid #FFF;
+	background: #FFF;
+	filter: none; /* IE6-9 */
+}
+
+/* Tab--Partition */
+.Tab--Partition {
+	padding: 8px 10px 0;
+	border-right: 1px solid #bababa;
+	border-bottom: 1px solid #bababa;
+	border-left: 1px solid #bababa;
+	background: #FFF; /* Old browsers */
+	background: -moz-linear-gradient(top,  #FFFFFF 0%, #FFFFFF 90%, #e5e5e5 100%, #e5e5e5 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FFFFFF), color-stop(90%,#FFFFFF), color-stop(100%,#e5e5e5), color-stop(100%,#e5e5e5)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #FFFFFF 0%,#FFFFFF 90%,#e5e5e5 100%,#e5e5e5 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #FFFFFF 0%,#FFFFFF 90%,#e5e5e5 100%,#e5e5e5 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #FFFFFF 0%,#FFFFFF 90%,#e5e5e5 100%,#e5e5e5 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #FFFFFF 0%,#FFFFFF 90%,#e5e5e5 100%,#e5e5e5 100%); /* W3C */
+	overflow: hidden;
+}
+.Tab--Partition li {
+	float: left;
+	padding: 5px 5px 10px;
+}
+.Tab--Partition li a {
+	display: block;
+	padding: 4px 10px 5px;
+	margin-right: -11px;
+	border-right: 1px solid #dcdcdc;
+	border-left: 1px solid #dcdcdc;
+	color: #444;
+}
+.Tab--Partition li a:hover {
+	color: #0099cc;
+	text-decoration: none;
+}
+.Tab--Partition li.is-Selected a {
+	color: #000;
+	background: #BABABA;
+}
+
+
+/* X-13. Table
+---------- ---------- */
+.Table {
+	width: 100%;
+	margin-bottom: 17px;
+	border-width: 1px 0;
+	border-style: solid;
+	border-color: #c6c9cc;
+	border-collapse: collapse;
+}
+.Table col {
+	border-left: solid 1px #c6c9cc;
+}
+.Table col:first-child {
+	border-left-width: 0;
+}
+.Table tr th ,
+.Table tr td {
+	padding: 10px 15px 11px;
+	border-top: solid 1px #c6c9cc;
+	vertical-align: top;
+}
+.Table th {
+	color: #000;
+	text-align: left;
+	font-weight: bold;
+	background-color: #f0f4f7;
+}
+
+table td p:last-child,
+table td dl:last-child,
+table td dl:last-child dd:last-child,
+table td ul:last-child,
+table td ol:last-child,
+table td ul:last-child li:last-child,
+table td ol:last-child li:last-child {
+	margin-bottom: 0;
+}
+
+/* Table--BorderedTable
+---------- */
+.Table--BorderedTable {
+	border-width: 1px;
+}
+
+/* Table--ColorBlueTable
+---------- */
+.Table--ColorBlueTable {
+	border-top-width: 0;
+}
+.Table--ColorBlueTable thead th {
+	border-color: #fff;
+	border-left-width: 1px;
+	border-left-style: solid;
+	color: #fff;
+	background-color: #288fc8;
+}
+.Table--ColorBlueTable thead + tbody tr:first-child th,
+.Table--ColorBlueTable thead + tbody tr:first-child td {
+	border-top-width: 0;
+}
+.Table--ColorBlueTable thead th:first-child {
+	border-left-width: 0;
+	border-right: solid 1px #fff;
+}
+
+/* Table--Gl (for Global Locations)
+---------- */
+.Table--Gl tr th {
+	vertical-align: top;
+}
+.Table--Gl .Url {
+	display: block;
+	font-weight: normal;
+	font-size: 86%; /* 12px */
+}
+.Table--Gl tr td {
+	padding-bottom: 20px;
+}
+.Table--Gl tr td > dl {
+	margin-bottom: 20px;
+}
+.Table--Gl tr td > dl:last-child {
+	margin-bottom: 0;
+}
+.Table--Gl tr td > dl dt:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.Table--Gl tr td > dl dt {
+	margin-bottom: 2px;
+}
+.Table--Gl tr td > dl dt span {
+	float: left;
+	padding:0 10px;
+}
+.Table--Gl tr td > dl dt .Office {
+	margin-left: -10px;
+	color: #000;
+	font-weight: bold;
+}
+.Table--Gl tr td > dl dt .Business {
+	margin-left:-1px;
+	color: #009900;
+	font-weight: bold;
+	text-transform: uppercase;
+	border-right: 1px solid #bababa;
+	border-left: 1px solid #bababa;
+}
+.Table--Gl tr td dl dd {
+	margin-bottom: 6px;
+	line-height: 1.3;
+}
+.Table--Gl tr td .Email {
+	font-weight: bold;
+}
+.Table--Gl tr td .Tel {
+	font-weight: bold;
+	color: #555;
+}
+.Table--Gl tr td span:first-child img.Icon {
+	margin-left: 0;
+}
+
+
+/* X-14. Image
+---------- ---------- */
+.Img {
+	margin-bottom: 13px;
+	text-align: center;
+}
+a.HoverImg {
+	display :block;
+	background: #FFF;
+}
+a.HoverImg:hover > img {
+	opacity: 0.8;
+}
+img.Icon {
+	margin:-2px 5px 0;
+	vertical-align: middle;
+}
+img.Pict {
+	vertical-align: middle;
+}
+img.BrandLogo {
+	vertical-align: middle;
+}
+
+@media screen and (max-width: 481px) {
+  .set-responsiveWebDesign #pkg-Wrapper .pkg-TextButton.pkg-TextButton--Large:link {
+    position: relative;
+    width: 300px;
+    box-sizing: border-box;
+  }
+  .set-responsiveWebDesign #pkg-Wrapper .pkg-TextButton.pkg-TextButton--Large .pkg-Mkr--Medium.pkg-Mkr--ArwLightBlue {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    margin-top: -5px;
+  }
+}
+
+
+/* X-00. General Items
+---------- ---------- */
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.Reader {
+	width: 0;
+	height: 0;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+.gen-AlignCenter {text-align: center !important;}
+.gen-AlignRight {text-align: right !important;}
+.gen-AlignLeft {text-align: left !important;}
+
+.gen-MarginNone {margin: 0 !important;}
+.gen-MarginTopNone {margin-top: 0 !important;}
+.gen-MarginRightNone {margin-right: 0 !important;}
+.gen-MarginBottomNone {margin-bottom: 0 !important;}
+.gen-MarginLeftNone {margin-left: 0 !important;}
+
+.gen-PaddingNone {padding: 0 !important;}
+.gen-PaddingTopNone {padding-top: 0 !important;}
+.gen-PaddingRightNone {padding-right: 0 !important;}
+.gen-PaddingBottomNone {padding-bottom: 0 !important;}
+.gen-PaddingLeftNone {padding-left: 0 !important;}
+
+.gen-FloatNone {float: none !important;}
+.gen-FloatRight {float: right !important;}
+.gen-FloatLeft {float: left !important;}
+
+.gen-TopLine {
+	padding-top: 15px !important;
+	border-top: 1px solid #d2d6d9 !important;
+}
+.gen-TopLineWhite {
+	padding-top: 15px !important;
+	border-top: 1px solid #FFF !important;
+}
+.gen-TopLineBold {
+	padding-top: 15px !important;
+	border-top: 4px solid #d2d6d9!important;
+}
+.gen-TopLineBoldWhite {
+	padding-top: 15px !important;
+	border-top: 4px solid #FFF!important;
+}
+.gen-BtmLine {
+	padding-bottom: 15px !important;
+	border-bottom: 1px solid #d2d6d9;
+}
+.gen-BtmLineBold {
+	padding-bottom: 15px !important;
+	border-bottom: 4px solid #d2d6d9 !important;
+}
+
+.gen-BgBlack {
+	color: #FFF;
+	background-color: #000;
+}
+.gen-BgBlack a, .gen-BgBlack a:link,
+.gen-BgBlack h1, .gen-BgBlack h2, .gen-BgBlack h3, .gen-BgBlack h4, .gen-BgBlack h5 {
+	color: #FFF;
+}
+.gen-BgWhite {
+	background-color: #FFF;
+}
+.gen-BgGray {
+	background-color: #EDF2F5;
+}
+.gen-BgBlue {
+	background-color: #00C6F7;
+}
+.gen-BgColorNone {
+	background-color: transparent;
+}
+.gen-BgNone {
+	background: none;
+}
+
+.gen-TextNormal {
+	font-weight: normal !important;
+	font-style: normal !important;
+}
+.gen-TextBold {
+	font-weight: bold !important;
+}
+.gen-TextItalic {
+	margin-right: 0.2em !important;
+	font-style: italic !important;
+}
+.gen-TextItalic sup,
+.gen-TextItalic sub {
+	margin-left: 0.2em !important;
+}
+.gen-TextUppercase {
+	text-transform: uppercase !important;
+}
+.gen-TextResetUppercase {
+	text-transform: none !important;
+}
+.gen-TextNotes {
+	color: #666 !important;
+	font-size: 86% !important; /* 12px */
+}
+.gen-TextCaption {
+	margin-top: 5px !important;
+	color: #666 !important;
+    font-size: 86% !important; /* 12px */
+    line-height: 1.3 !important;
+}
+
+.gen-TextColorGray {
+	color: #666 !important;
+}
+.gen-TextColorBlack {
+	color: #000 !important;
+}
+.gen-TextColorWhite {
+	color: #FFF !important;
+}
+.gen-TextColorBlue {
+	color: #0099cc !important;
+}
+.gen-TextColorGreen {
+	color: #6a9f2c !important;
+}
+.gen-TextColorRed {
+	color: #D13232 !important;
+}
+.gen-TextShadow {
+	text-shadow: 0px 2px 2px rgb(100, 100, 100);
+	text-shadow: 0px 2px 2px rgba(100, 100, 100, 1);
+}
+a.gen-TextLinkBlack,
+a.gen-TextLinkBlack:link {
+	color: #000 !important;
+}
+a.gen-TextLinkBlack:visited {
+	color: #464f9a !important;
+}
+a.gen-TextLinkBlack:hover,
+a.gen-TextLinkBlack:active,
+a.gen-TextLinkBlack:focus {
+	color: #0099cc !important;
+	text-decoration: none !important;
+}
+
+.gen-TextLarge1 { font-size: 108% !important;}
+.gen-TextLarge2 { font-size: 115% !important;}
+.gen-TextLarge3 { font-size: 122% !important;}
+.gen-TextLarge4 { font-size: 129% !important;}
+.gen-TextLarge5 { font-size: 136% !important;}
+
+.gen-TextSmall1 { font-size: 93% !important;}
+.gen-TextSmall2 { font-size: 86% !important;}
+.gen-TextSmall3 { font-size: 79% !important;}
+.gen-TextSmall4 { font-size: 72% !important;}
+.gen-TextSmall5 { font-size: 65% !important;}
+
+
+
+/* XX. Function Modules
+---------- ---------- ---------- */
+/* XX-01 TabNav
+---------- ---------- */
+.TabNav:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.JS .TabNav {
+	display: block;
+	border-left: 1px solid #bababa;
+}
+.TabNav {
+	display: none;
+}
+.TabNav li {
+	float: left;
+}
+.TabNav li a {
+	display: block;
+	padding: 10px;
+	color: #444;
+}
+.TabNav--Top {
+	margin-bottom: 30px;
+	border-bottom: 1px solid #bababa;
+}
+.TabNav--Top li a {
+	border-top: 1px solid #bababa;
+	border-right: 1px solid #bababa;
+	background: #f0f4f7; /* Old browsers */
+	background: -moz-linear-gradient(top,  #f0f4f7 0%, #f0f4f7 85%, #d8dbde 100%, #d8dbde 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f0f4f7), color-stop(85%,#f0f4f7), color-stop(100%,#d8dbde), color-stop(100%,#d8dbde)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #f0f4f7 0%,#f0f4f7 85%,#d8dbde 100%,#d8dbde 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #f0f4f7 0%,#f0f4f7 85%,#d8dbde 100%,#d8dbde 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #f0f4f7 0%,#f0f4f7 85%,#d8dbde 100%,#d8dbde 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #f0f4f7 0%,#f0f4f7 85%,#d8dbde 100%,#d8dbde 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f4f7', endColorstr='#d8dbde',GradientType=0 ); /* IE6-9 */
+}
+.TabNav--Btm {
+	margin: 30px 0 17px;
+	border-top: 1px solid #bababa;
+}
+.TabNav--Btm li {
+	margin-top: -1px;
+}
+.TabNav--Btm li a {
+	border-bottom: 1px solid #bababa;
+	border-right: 1px solid #bababa;
+	background: #d8dbde; /* Old browsers */
+	background: -moz-linear-gradient(top,  #d8dbde 0%, #f0f4f7 20%, #f0f4f7 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d8dbde), color-stop(20%,#f0f4f7), color-stop(100%,#f0f4f7)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #d8dbde 0%,#f0f4f7 20%,#f0f4f7 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #d8dbde 0%,#f0f4f7 20%,#f0f4f7 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #d8dbde 0%,#f0f4f7 20%,#f0f4f7 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #d8dbde 0%,#f0f4f7 20%,#f0f4f7 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d8dbde', endColorstr='#f0f4f7',GradientType=0 ); /* IE6-9 */
+}
+.TabNav li a:hover {
+	color: #0099cc;
+	text-decoration: none;
+}
+.TabNav li.is-Selected a {
+	position: relative;
+	background: #FFF;
+	text-decoration: none;
+}
+.TabNav--Top li.is-Selected a {
+	margin-bottom: -1px;
+	padding: 7px 10px 10px;
+	color: #444;
+	border-top:4px solid #bababa;
+	border-bottom: 1px solid #FFF;
+	filter: none; /* IE6-9 */
+}
+.TabNav--Btm li a {
+	border-top: 1px solid #bababa;
+}
+.TabNav--Btm li.is-Selected a {
+	padding: 10px 10px 7px;
+	color: #444;
+	border-top: 1px solid #FFF;
+	border-bottom: 4px solid #bababa;
+	filter: none; /* IE6-9 */
+}
+.Tab__Content:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.JS .Tab__Content,
+.JS .Tab__ContentTitle {
+	display: none;
+}
+.Tab__Content.is-Show {
+	display: block;
+}
+.Tab__ContentTitle { /* JS off */
+	display: block;
+	margin: 10px 0;
+	font-weight: bold;
+}
+
+
+
+/* XX-02 TabViewer
+---------- ---------- */
+.TabViewer:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.TabViewer {
+	margin-bottom: 17px;
+	background: #e4e7eb;
+	overflow: hidden;
+}
+.TabViewer__List {
+	float: left;
+	width: 244px;
+	overflow: hidden;
+}
+.TabViewer__List li {
+	border-bottom: 1px solid #cdcfd3;
+}
+.TabViewer__List a {
+	display: block;
+	padding: 15px 15px 15px 27px;
+	text-indent: -14px;
+	color: #333;
+	font-size: 108%; /* 15px */
+	font-weight: bold;
+	line-height: 1.26;
+	background: #e4e7eb;
+}
+.TabViewer__List a:hover,
+.TabViewer__List .is-Selected a {
+	color: #FFF;
+	text-decoration: none;
+	background: #0099cc;
+}
+.TabViewer__List a i {
+	display: inline-block;
+	width: 7px;
+	height: 10px;
+	margin-right: 7px;
+	background-image: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/mkr_sprite.png");
+    background-position: -20px -20px;
+    background-repeat: no-repeat;
+    vertical-align: baseline;
+}
+.TabViewer__List a:hover i {
+	background-image: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/mkr_sprite.png");
+    background-position: -20px -60px;
+}
+.TabViewer__List .is-Selected a i {
+	background-image: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/mkr_sprite.png");
+    background-position: -20px -60px;
+}
+.TabViewer__Switch {
+	float: right;
+	width: 458px;
+	-moz-box-shadow: -5px 0 5px 0 rgba(150,150,150,0.4);
+	-webkit-box-shadow: -5px 0 5px 0 rgba(150,150,150,0.4);
+	box-shadow: -5px 0 5px 0 rgba(150,150,150,0.4);
+}
+.JS .TabViewer__Content {
+	display: none;
+}
+.TabViewer__Content {
+	display: none;
+	position: relative;
+	padding-top: 171px;
+}
+.JS .TabViewer__Content.is-Show,
+.TabViewer__Content {
+	display: block;
+}
+.TabViewer__Content .TabViewer__Summary {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	padding: 15px 20px 18px;
+	color: #FFF;
+	background: #2C3033;
+	overflow: hidden;
+}
+.JS .TabViewer__Content.is-Show .TabViewer__Summary {
+	min-height: 95px;
+	height: 138px;
+}
+.TabViewer__Content .TabViewer__Summary,
+.JS .TabViewer__Content.is-Show .TabViewer__Summary.is-Show  {
+	height: auto;
+}
+.TabViewer__Content .TabViewer__Summary h3 {
+	color: #FFF;
+}
+
+.TabViewer__Content .TabViewer__Summary .TabViewer__Toggle {
+	display: block;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 17px;
+	text-align: center;
+	border-top: 1px solid #adb0b3;
+	background: #2C3033 url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/mkr_triangle_down_blue.png") no-repeat scroll 50% 50%;
+    cursor: pointer;
+    overflow: hidden;
+}
+.TabViewer__Content .TabViewer__Summary .TabViewer__Toggle.is-Close {
+	background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/mkr_triangle_up_blue.png") no-repeat 50% 50%;
+}
+.TabViewer__Content .TabViewer__Summary .TabViewer__Toggle.Disable {
+	border: none;
+	background: none;
+	cursor: default;
+}
+.TabViewer__Content .TabViewer__Summary .BlindMask {
+	position: absolute;
+    bottom: 18px;
+    left: 0;
+    width: 100%;
+    height: 41px;
+    margin: 0;
+    background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/bg_texthidegrad.png") repeat-x 0 100%;
+}
+.TabViewer__Content .TabViewer__Summary.is-Show .BlindMask {
+    background: none;
+}
+.TabViewer__Content .TabViewer__Summary .BlindMask.Disable {
+    display: none;
+}
+
+
+/* XX-03 Flex
+---------- ---------- */
+.Flex {
+}
+.Flex__Toggle {
+	display: block;
+	padding-left: 20px;
+	text-indent: -20px;
+	color: #000;
+}
+.Flex__Toggle:link {
+	color: #000;
+	text-decoration: none;
+}
+.Flex__Toggle:hover {
+	color: #0099CC;
+	text-decoration: none;
+}
+.Flex__Content {
+	padding-left: 14px;
+	overflow: hidden;
+}
+dd.Flex__Content .Flex__ContentInner {
+	padding: 15px 15px 15px 0;
+}
+
+
+
+/* XX-04 Tooltip
+---------- ---------- */
+/* Tooltip--TypeContent
+---------- */
+.Tooltip.Tooltip--TypeContent {
+	margin: 0 0 17px;
+	position: relative;
+	padding: 17px 20px;
+	background: #edf1f5;
+}
+.Tooltip--TypeContent .Tooltip__Title {
+	margin-bottom: 6px;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 129%;
+	line-height: 1.55;
+}
+.Tooltip--TypeContent .Tooltip__Image {
+	margin-right: -20px;
+	margin-left: -20px;
+	position: relative;
+}
+.Tooltip--TypeContent a.Btn {
+	display: block;
+	width: 23px;
+	height: 23px;
+	overflow: hidden;
+	background-image: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/mkr_tooltip.png");
+	background-repeat: no-repeat;
+}
+.Tooltip--TypeContent a.Btn.Btn--Blue {
+	background-position: 0 0;
+}
+.Tooltip--TypeContent a.Btn.Btn--Green {
+	background-position: -23px 0 ;
+}
+.Tooltip--TypeContent a.Btn:hover.Btn--Blue  {
+	background-position: 0 -23px;
+}
+.Tooltip--TypeContent a.Btn:hover.Btn--Green  {
+	background-position: -23px -23px;
+}
+.Tooltip--TypeContent .Tooltip__Image .Btn_01 {
+	position: absolute;
+	top: 20px;
+	left: 148px;
+}
+.Tooltip--TypeContent .Tooltip__Image .Btn_02 {
+	position: absolute;
+	top: 32px;
+	left: 276px;
+}
+.Tooltip--TypeContent .Tooltip__Image .Btn_03 {
+	position: absolute;
+	top: 14px;
+	left: 385px;
+}
+.Tooltip--TypeContent .Tooltip__Image .Btn_04 {
+	position: absolute;
+	top: 254px;
+	left: 203px;
+}
+.Tooltip--TypeContent .Tooltip__Image .Btn_05 {
+	position: absolute;
+	top: 248px;
+	left: 311px;
+}
+.Tooltip--TypeContent .Tooltip__Image .Btn_06 {
+	position: absolute;
+	top: 233px;
+	left: 398px;
+}
+.Tooltip--TypeContent .Tooltip__Image .Btn_07 {
+	position: absolute;
+	top: 193px;
+	left: 425px;
+}
+.JS .Tooltip--TypeContent .Tooltip__Content {
+	display: none;
+}
+.JS .Tooltip--TypeContent .Tooltip__Content.is-Show,
+.Tooltip--TypeContent .Tooltip__Content {
+	display: block;
+	width: 638px;
+	padding: 10px 12px;
+	color: #303131;
+	background: #FFF;
+}
+.JS .Tooltip--TypeContent #TooltipType01_01,
+.JS .Tooltip--TypeContent #TooltipType01_02,
+.JS .Tooltip--TypeContent #TooltipType01_03 {
+	margin: 0 20px;
+	min-height: 42px;
+}
+.Tooltip--TypeContent #TooltipType01_01,
+.Tooltip--TypeContent #TooltipType01_02,
+.Tooltip--TypeContent #TooltipType01_03 {
+	margin: 0 0 2px;
+	min-height: 42px;
+}
+.JS .Tooltip--TypeContent #TooltipType01_04,
+.JS .Tooltip--TypeContent #TooltipType01_05,
+.JS .Tooltip--TypeContent #TooltipType01_06,
+.JS .Tooltip--TypeContent #TooltipType01_07 {
+	margin-bottom: 0;
+	min-height: 63px;
+}
+.Tooltip--TypeContent #TooltipType01_04,
+.Tooltip--TypeContent #TooltipType01_05,
+.Tooltip--TypeContent #TooltipType01_06,
+.Tooltip--TypeContent #TooltipType01_07 {
+	margin-bottom:2px;
+	min-height: 63px;
+}
+
+/* Tooltip--TypeBalloon
+---------- */
+.Tooltip.Tooltip--TypeBalloon {
+	position: relative;
+}
+.Tooltip.Tooltip--TypeBalloon .BgImg {
+	position: relative;
+}
+.Tooltip.Tooltip--TypeBalloon ul.Tooltip__List li {
+	position: absolute;
+}
+.JS .Tooltip.Tooltip--TypeBalloon .Tooltip__Content {
+	display: none;
+}
+.JS .Tooltip.Tooltip--TypeBalloon .Tooltip__Content.is-Show,
+.Tooltip.Tooltip--TypeBalloon .Tooltip__Content {
+	position: absolute;
+	display: block;
+}
+.Tooltip.Tooltip--TypeBalloon .Tooltip__Content--Box {
+	width: 240px;
+	padding: 10px 15px;
+	-webkit-box-shadow: 0 0 10px #d2d2d2;
+	-moz-box-shadow: 0 0 10px #d2d2d2;
+	box-shadow: 0 0 10px #d2d2d2;
+	background: #FFF;
+}
+
+
+/* XX-05. Colorbox (Modal)
+---------- ---------- */
+#ModalOverlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: #000;
+	z-index: 2000;
+}
+#ModalboxWrapper {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	z-index: 2001;
+	-webkit-overflow-scrolling: touch;
+}
+#colorbox {
+	position: absolute;
+	top: 0;
+	left: 0;
+	outline: 0;
+	z-index: 2002;
+}
+#ModalWrapper {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2003;
+}
+#ModalMiddleLeft,
+#ModalBottomLeft {
+	clear: left;
+}
+#ModalContent {
+	position: relative;
+	margin: 0 30px;
+	background: #fff;
+	overflow: visible;
+}
+#ModalLoadedContent {
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+}
+#colorbox,
+#ModalContent,
+#ModalLoadedContent {
+	box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+}
+#ModalTitle {
+	display: none;
+	position: absolute;
+	margin: 0;
+	width: 100%;
+	color: #999;
+	text-align: center;
+}
+#ModalLoadingOverlay,
+#ModalLoadingGraphic {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+#ModalLoadingOverlay {
+	background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/modal/loading_background.png") no-repeat center center;
+}
+#ModalLoadingGraphic {
+	background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/air/common/images/modal_responsive/loading.gif") no-repeat center center;
+}
+.ModalPhoto {
+	display: block;
+	float: left;
+	max-width: none;
+	margin: auto;
+	border: 0;
+	-ms-interpolation-mode: bicubic;
+}
+.ModalIframe {
+	display: block;
+	width: 100%;
+	height: 100%;
+	border: 0;
+	background: #fff;
+}
+#ModalError {
+	padding: 50px;
+	border: 1px solid #ccc;
+}
+#ModalCurrent {
+	position: absolute;
+	top: 80px;
+	right: 0;
+	width: 39px;
+	height: 39px;
+	text-align: center;
+	line-height: 3.4;
+	color: #fff;
+	background-color: #000;
+}
+#ModalPrevious, #ModalNext, #ModalSlideshow, #ModalClose, #ModalPrint {
+	position: absolute;
+	overflow: visible;
+	border: none;
+	color: #fff;
+	text-indent:-9999px;
+	cursor: pointer;
+}
+#ModalPrevious:active, #ModalNext:active, #ModalSlideshow:active, #ModalClose:active, #ModalPrint:active {
+	outline:0;
+}
+#ModalPrevious {
+	position: fixed;
+	top: 50%;
+	width: 30px;
+	height: 71px;
+	margin-top: -35px;
+	background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/modal/btn_modal_arw_left.png") 0 0 no-repeat;
+}
+#ModalNext {
+	position: fixed;
+	top: 50%;
+	width: 30px;
+	height: 71px;
+	margin-top: -35px;
+	background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/modal/btn_modal_arw_right.png") 0 0 no-repeat;
+}
+#ModalClose {
+	width: 39px;
+	height: 39px;
+	top: 0;
+	right: 0;
+	background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/modal/btn_close.png") 0 0 no-repeat;
+}
+#ModalPrint {
+	width: 39px;
+	height: 39px;
+	bottom: 0;
+	right: 0;
+	background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/modal/btn_print.png") 0 0 no-repeat;
+}
+
+.LightBoxContent:after {
+	content: "";
+	display: block;
+	visibility: hidden;
+}
+.LightBoxContent {
+	margin: 0 auto;
+	width: 760px;
+	font-size: 117%; /* 14px */
+}
+#colorbox .LightBoxContent {
+	padding: 50px 0 10px;
+}
+.LightBoxContent .Grid--TypeCol2 .Grid__Col--Size1 {
+	width: 365px;
+}
+.LightBoxContent .Grid--TypeCol3 .Grid__Col--Size1 {
+	width: 233px;
+}
+.LightBoxContent .Grid--TypeCol3 .Grid__Col--Size2 {
+	width: 496px;
+}
+.LightBoxContent .Box .Grid {
+	margin-right: -20px;
+}
+.LightBoxContent .Box .Grid__Col {
+	margin-right: 20px;
+}
+.LightBoxContent .Box .Grid--TypeCol2 .Grid__Col--Size1 {
+	width: 350px;
+}
+.LightBoxContent .Box .Grid--TypeCol3 .Grid__Col--Size1 {
+	width: 226px;
+}
+.LightBoxContent .Box .Grid--TypeCol3 .Grid__Col--Size2 {
+	width: 472px;
+}
+.LightBoxContent .Box .Grid--TypeCol4 .Grid__Col--Size1 {
+	width: 165px;
+}
+.LightBoxContent .Box .Grid--TypeCol4 .Grid__Col--Size2 {
+	width: 350px;
+}
+.LightBoxContent h1 {
+ 	font-size: 143%; /* 20px*/
+ 	margin-bottom: 13px;
+ 	line-height: 1.4;
+ 	text-transform: none;
+}
+.LightBoxContent h2 {
+ 	font-size: 108%; /* 15px*/
+ 	margin-bottom: 7px;
+ 	line-height: 1.33;
+ 	text-transform: none;
+}
+
+
+
+/* XX-06. SlideImg (Rollup / Carousel)
+---------- ---------- */
+.SlideImg {
+	margin-bottom: 17px;
+	text-align: center;
+}
+.SlideImg__List:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.SlideImg__List {
+	margin-bottom: 15px;
+}
+.SlideImg__List li {
+	position: relative;
+	float: left;
+	height: 200px;
+	margin: 0 1px 0 0;
+	vertical-align: top;
+	border-bottom: 1px solid #FFF; /* JS off*/
+	background-color: #00f;
+	overflow: hidden;
+}
+.JS .SlideImg__List li {
+	border-bottom: 0;
+}
+.SlideImg__List li a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	display: block;
+	height: 180px;
+	padding: 10px;
+	color: #fff;
+	text-align: left;
+	background-color: #000;
+	background-color: rgb(0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.8);
+	overflow: hidden;
+}
+.js-SlideImg .SlideImg__List li a {
+	top: 136px;
+}
+.SlideImg__List li a .Mkr--Toggle,
+.SlideImg__List li a .Mkr--Toggle {
+	background-position: -80px -79px;
+}
+.SlideImg__List li a:hover ,
+.SlideImg__List li a:focus {
+	background-color: rgb(0, 153, 204);
+	background-color: rgba(0, 153, 204, 0.8);
+	text-decoration: none;
+}
+.SlideImg__List li a:hover .Mkr--Toggle,
+.SlideImg__List li a:focus .Mkr--Toggle {
+	background-position: -80px -39px;
+}
+.SlideImg__List li a h3 {
+	padding-left: 14px;
+	text-indent: -14px;
+	font-size: 100%;
+	color: #fff;
+	overflow: hidden;
+}
+.SlideImg__List li p {
+	margin: 0;
+}
+.SlideImg__List li .Position--Bottom {
+	position: absolute;
+	display: block;
+	bottom: 5px;
+	left: 5px;
+	right: auto;
+}
+.SlideImg .Carouselviewport {
+	text-align: left;
+}
+.SlideImg #ControlWrapper {
+	position: relative;
+	display: inline-block;
+	padding: 0 25px;
+}
+.SlideImg ol.Carouselcontrol-nav {
+	display: inline-block;
+	margin: 0 auto;
+	padding-top: 1px;
+	text-align: center;
+}
+.SlideImg ol.Carouselcontrol-nav li {
+	display: inline-block;
+	margin: 0 5px;
+}
+.SlideImg ol.Carouselcontrol-nav li a {
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	text-indent: -9999px;
+	cursor: pointer;
+	overflow: hidden;
+	background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/slideimg/pager.png") 0 0 no-repeat;
+}
+.SlideImg ol.Carouselcontrol-nav li a.Carouselactive {
+	background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/slideimg/pager_on.png") 0 0 no-repeat;
+}
+.SlideImg ul.Carouseldirection-nav li a.Carouselprev {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: inline-block;
+	width: 13px;
+	height: 20px;
+	text-indent: -9999px;
+	cursor: pointer;
+	overflow: hidden;
+	background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/slideimg/arw_left.png") 0 0 no-repeat;
+}
+.SlideImg ul.Carouseldirection-nav li a.Carouselnext {
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: inline-block;
+	width: 13px;
+	height: 20px;
+	text-indent: -9999px;
+	cursor: pointer;
+	overflow: hidden;
+	background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/slideimg/arw_right.png") 0 0 no-repeat;
+}
+.SlideImg ul.Carouseldirection-nav li a.Carouseldisabled {
+	display: none;
+}
+
+
+/* InnerLinkArea
+---------- ---------- */
+#pkg-Wrapper .InnerLinkArea{
+	border-top:#d2d6d9 solid 1px;
+	border-left:#d2d6d9 solid 1px;
+	margin-bottom:40px;
+}
+
+#pkg-Wrapper .InnerLinkArea ul{
+	margin: 0 -10px 0 -1px;
+}
+
+#pkg-Wrapper .InnerLinkArea li{
+	float:left;
+	width:319px;
+	text-align:left;
+	border-right:#d2d6d9 solid 1px;
+	border-bottom:#d2d6d9 solid 1px;
+}
+
+#pkg-Wrapper .InnerLinkArea li a,
+#pkg-Wrapper .InnerLinkArea li a:link,
+#pkg-Wrapper .InnerLinkArea li a:visited,
+#pkg-Wrapper .InnerLinkArea li span{
+	display:block;
+	font-weight:bold;
+	color:#000;
+	padding:10px 20px;
+}
+
+#pkg-Wrapper .InnerLinkArea li a .Mkr,
+#pkg-Wrapper .InnerLinkArea li a:link .Mkr,
+#pkg-Wrapper .InnerLinkArea li a:visited .Mkr {
+    background-image: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/pkg_common/images/mkr_sprite.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: baseline;
+    height: 10px;
+    width: 10px;
+    background-position: -20px -20px;
+    margin-right: 4px;
+}
+
+#pkg-Wrapper .InnerLinkArea li a:hover,
+#pkg-Wrapper .InnerLinkArea li.is-Current a,
+#pkg-Wrapper .InnerLinkArea li.is-Current span{
+	background:#33ccff;
+	font-weight:bold;
+	color:#FFF !important;
+	text-decoration:none;
+}
+
+#pkg-Wrapper .InnerLinkArea li.is-Current span{
+	padding-left:34px;
+}
+
+#pkg-Wrapper .InnerLinkArea li.pre span{
+	color:#a3a3a3 !important;
+	font-weight:normal;
+	padding-left:34px;
+}
+
+@media screen and (max-width: 960px) {
+  .set-responsiveWebDesign #pkg-Wrapper .InnerLinkArea ul {
+    margin: 0;
+  }
+  .set-responsiveWebDesign #pkg-Wrapper .InnerLinkArea li {
+    float: none;
+    width: 100%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+  }
+  .set-responsiveWebDesign #pkg-Wrapper .InnerLinkArea li a,
+  .set-responsiveWebDesign #pkg-Wrapper .InnerLinkArea li a:link,
+  .set-responsiveWebDesign #pkg-Wrapper .InnerLinkArea li a:visited,
+  .set-responsiveWebDesign #pkg-Wrapper .InnerLinkArea li span{
+    position: relative;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+  }
+  .set-responsiveWebDesign #pkg-Wrapper .InnerLinkArea li.is-Current span {
+    padding-left: 20px;
+  }
+  .set-responsiveWebDesign #pkg-Wrapper .InnerLinkArea li a .Mkr,
+  .set-responsiveWebDesign #pkg-Wrapper .InnerLinkArea li a:link .Mkr,
+  .set-responsiveWebDesign #pkg-Wrapper .InnerLinkArea li a:visited .Mkr {
+    display: none;
+  }
+  .set-responsiveWebDesign #pkg-Wrapper .InnerLinkArea li a:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+  	width: 11px;
+  	height: 13px;
+    margin-top: -6px;
+  	margin-right: 9px;
+  	background-image: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/pkg_common/images/mkr_sprite.png");
+  	background-repeat: no-repeat;
+    background-position: -20px -20px;
+  	vertical-align: middle;
+  }
+
+}
+
+@media screen and (max-width: 769px) {
+  .set-responsiveWebDesign #pkg-Wrapper .InnerLinkArea {
+    margin-bottom: 20px;
+  }
+}

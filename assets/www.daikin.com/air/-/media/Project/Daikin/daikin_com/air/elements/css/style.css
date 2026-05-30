@@ -1,0 +1,405 @@
+/* -------------------------
+BASE
+------------------------- */
+.brand-Wrapper {
+  font-family: helvetica, arial, meiryo, san-serif;
+}
+
+.lg-content:before,
+.lg-content:after,
+.md-content:before,
+.md-content:after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* Layout */
+.lg-content {
+  width: 100%;
+}
+
+.md-content {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.mg-default {
+  margin: 120px auto;
+}
+
+/* 見出し */
+.brand-Wrapper h2:not([class]) {
+  color: #0097E0;
+  font-size: 30px;
+  line-height: 1.2em;
+  font-weight: bold;
+  margin: 0 0 40px;
+  text-align: center;
+}
+
+.brand-Wrapper h3 {
+  color: #000;
+  font-size: 26px;
+  line-height: 1.2em;
+  font-weight: bold;
+  margin: 0 0 40px;
+  text-align: center;
+}
+
+/* img */
+.for_comortable_air {
+  max-width: 420px;
+  width: 100%;
+  margin: 120px auto 180px;
+  display: block;
+}
+
+.for_valued_air {
+  width: 100%;
+  max-height: calc(100vh - 300px);
+  aspect-ratio: 1.08;
+  max-width: 918px;
+  margin: 120px auto 40px;
+  display: block;
+}
+
+/* text */
+p {
+  font-size: 18px;
+}
+
+p.min {
+  font-size: 16px;
+}
+
+.aling-center {
+  text-align: center;
+}
+
+/* ボタン */
+.g-btn {
+  padding: 12px;
+  margin-bottom: 17px;
+}
+
+/* -------------------------
+MAIN Visual
+------------------------- */
+.main-v-area {
+  position: relative;
+  height: 660px;
+  overflow: hidden;
+  display: flex;
+  margin: 0 0 80px;
+}
+
+.main-v {
+  width: 100%;
+  background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/air/elements/images/bnr_possibility_PC.jpg") no-repeat center / cover;
+  display: flex;
+  align-items: center;
+  padding: 0 14px;
+}
+
+.main-v-area img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.main-v-text {
+  font-size: 40px;
+  line-height: 1.2em;
+  color: #fff;
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, .4);
+}
+
+
+/* -------------------------
+4 elements
+------------------------- */
+.elements-4-link {
+  margin: 0 0 32px;
+}
+
+.elements-4-link ul {
+  display: grid;
+  gap: 2px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.elements-4-link>ul li {
+  position: relative;
+  min-height: 240px;
+}
+
+.elements-4-link>ul li>a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  cursor: pointer;
+}
+
+.elements-4-link>ul li>a:after {
+  content: '';
+  background: rgba(0, 151, 224, .64);
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  transition: all .3s ease;
+}
+
+.elements-4-link>ul li a:hover {
+  text-decoration: none;
+}
+
+.elements-4-link>ul li a:hover:after {
+  background: rgba(0, 151, 224, .9);
+}
+
+.elements-4-link img.bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.element-4-inner-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.element-4-inner-content span {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+
+/* -------------------------
+4 elements
+------------------------- */
+.cover-img {
+  margin: 180px 0;
+}
+
+.cover-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* -------------------------
+Beyond 4 elements
+------------------------- */
+.advancing-the-future-air {
+  margin: 180px 0 140px;
+}
+
+.advancing-the-future-air img {
+  width: 100%;
+  margin: 0 0 32px;
+}
+
+/* -------------------------
+Elements-page-footer
+------------------------- */
+.elements-page-footer {
+  padding: 140px 0 0;
+  width: 100%;
+  background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/air/elements/images/elements_index_06.jpg") no-repeat center / cover;
+  min-height: 1340px;
+}
+
+.elements-page-footer p {
+  color: #000;
+}
+
+
+/* -------------------------
+lottie anim
+------------------------- */
+
+
+
+/* -------------------------
+modal
+------------------------- */
+.modal-inner {
+  width: 100%;
+  max-width: 100%;
+}
+
+
+@media screen and (max-width: 960px) {
+  .md-content {
+    width: auto;
+    padding: 0 14px;
+  }
+}
+
+@media screen and (min-width: 770px) {
+  .main-v-area {
+    height: calc(100vh - (82.26px + 48.04px));
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .brand-Wrapper h2:not([class]) {
+    font-weight: bold;
+    font-size: 22px;
+    margin: 0 0 32px;
+  }
+
+  .brand-Wrapper h3 {
+    font-size: 14px;
+    margin: 0 0 32px;
+  }
+
+  p,
+  p.min {
+    font-size: 14px;
+  }
+
+  .main-v-area {
+    max-height: 320px;
+    margin: 0 0 42px;
+  }
+
+  .main-v {
+    align-items: flex-end;
+    background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/air/elements/images/bnr_possibility_SP.jpg") no-repeat center / cover;
+  }
+
+  .main-v-text {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 30px;
+    font-size: min(8vw, 40px);
+  }
+
+  .mg-default {
+    margin: 88px 0 0;
+  }
+
+  .for_comortable_air {
+    max-width: 50%;
+  }
+
+  .elements-page-footer .md-content {
+    margin: -100px 0 0;
+  }
+
+  .elements-page-footer {
+    min-height: 360px;
+    background-size: cover;
+    background-position: top center;
+  }
+}
+
+
+
+@media screen and (max-width: 480px) {
+  .main-v-text {
+    font-size: 32px;
+  }
+
+  .g-btn-em {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .for_comortable_air {
+    max-width: 158px;
+    margin: 60px auto 120px;
+  }
+
+  .elements-4-link {
+    margin: 0 0 20px;
+  }
+
+  .elements-4-link ul {
+    grid-template-columns: 1fr;
+  }
+
+  .elements-4-link>ul li {
+    min-height: 173px;
+  }
+
+  .element-4-inner-content {
+    gap: 8px;
+  }
+
+  .element-4-inner-content img {
+    margin: 0 0 4px;
+  }
+
+  .element-4-inner-content svg {
+    width: 12px;
+  }
+
+  .element-4-inner-content span {
+    font-size: 18px;
+  }
+
+  .elements-4-link li:nth-child(1) .element-4-inner-content>img {
+    width: 27.93px;
+  }
+
+  .elements-4-link li:nth-child(2) .element-4-inner-content>img {
+    width: 18.84px;
+  }
+
+  .elements-4-link li:nth-child(3) .element-4-inner-content>img {
+    width: 41.14px;
+  }
+
+  .elements-4-link li:nth-child(4) .element-4-inner-content>img {
+    width: 40.73px;
+  }
+
+  .cover-img {
+    margin: 120px 0;
+  }
+
+  .for_valued_air {
+    margin: 80px auto 32px;
+  }
+
+  .md-content .g-btn-em {
+    max-width: 200px;
+  }
+
+  .advancing-the-future-air {
+    margin: 120px 0 140px;
+  }
+
+  .elements-page-footer .md-content {
+    margin: 0;
+  }
+
+  .elements-page-footer {
+    padding: 0;
+    margin: 0;
+    height: 460px;
+    min-height: 460px;
+    background-size: contain;
+    background-position: bottom center;
+    box-sizing: border-box;
+  }
+}

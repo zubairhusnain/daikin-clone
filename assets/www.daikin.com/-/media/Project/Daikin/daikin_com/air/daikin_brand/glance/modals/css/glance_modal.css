@@ -1,0 +1,111 @@
+.brand-m-ContentsArea {
+  color: var(--color-text);
+}
+
+.brand-Page .brand-m-ContentsArea {
+  padding: 50px 40px;
+}
+
+.brand-m-ContentsArea img {
+  max-width: 100%;
+  height: auto;
+}
+
+.brand-m-ContentsArea h1 {
+  text-transform: initial;
+}
+
+.brand-ModalPage .brand-m-ContentsArea_inner {
+  max-width: calc(var(--width-contents-max-size-modal) + var(--width-contents-padding) * 2);
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: var(--width-contents-padding);
+  padding-right: var(--width-contents-padding);
+  padding-top: 50px;
+  padding-bottom: 80px;
+}
+
+@media screen and (max-width: 768px) {
+  .brand-ModalPage .brand-m-ContentsArea_inner {
+    padding-top: 25px;
+    padding-bottom: 50px;
+  }
+}
+
+.brand-Page .brand-m-ContentsArea_inner {
+  max-width: 760px;
+}
+
+.glance-m-Title {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 38px;
+}
+
+@media screen and (max-width: 480px) {
+  .glance-m-Title {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+.glance-m-Title h1 {
+  font-size: calc(20 / var(--font-size-root) * 1rem);
+  line-height: 1.4;
+  font-weight: bold;
+  margin: 0;
+  color: var(--color-heading);
+}
+
+@media screen and (max-width: 768px) {
+  .glance-m-Title h1 {
+    font-size: calc(16 / var(--font-size-root) * 1rem);
+  }
+}
+
+.glance-m-Title img {
+  flex: 0 0 auto;
+}
+
+.glance-m-Detail > :last-child {
+  margin-bottom: 0;
+}
+
+.glance-m-Img {
+  margin-bottom: 17px;
+}
+
+.glance-m-Text {
+  font-size: calc(14 / var(--font-size-root) * 1rem);
+  line-height: 1.57;
+  margin-bottom: 17px;
+}
+
+.glance-m-Button {
+  display: inline-block;
+  color: #fff !important;
+  background: var(--color-button-bg);
+  font-weight: bold;
+  text-align: center;
+  padding: 2px 10px;
+  font-size: calc(13 / var(--font-size-root) * 1rem);
+  line-height: 1.57;
+}
+
+.glance-m-Button:hover, .glance-m-Button:focus {
+  background: var(--color-button-bg-hover);
+}
+
+.glance-m-Button:after {
+  content: "";
+  position: relative;
+  display: inline-block;
+  background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/air/common/images/icon/icon_link_arrow_8_blue.svg") 0 0 no-repeat;
+  width: 6px;
+  height: 8px;
+  margin-left: 5px;
+}
+
+.glance-m-Note {
+  font-size: calc(11 / var(--font-size-root) * 1rem);
+}

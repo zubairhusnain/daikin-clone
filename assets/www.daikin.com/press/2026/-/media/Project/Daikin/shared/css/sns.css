@@ -1,0 +1,135 @@
+.g-snsbtn-box {
+  margin-top: 10px;
+}
+.g-snsbtn-list {
+  display: flex;
+  justify-content: flex-end;
+}
+.g-snsbtn-iteam {
+  width: 30px;
+  height: 30px;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+.g-snsbtn-iteam:not(:first-child) {
+  margin-left: 5px;
+}
+.g-snsbtn-iteam a {
+  display: inline-block;
+  height: 30px;
+}
+.g-snsbtn-iteam a:hover {
+  background:rgba(255, 255, 255, 0.2);
+}
+.g-snsbtn-iteam.ic_facebook {
+  background: #3b5998;
+}
+svg.svg-facebook {
+  height: 30px;
+  width: 30px;
+  padding: 7px 0;
+  color: #fff;
+}
+.g-snsbtn-iteam.ic_twitter {
+  background: #000;
+  border-radius: 2px;
+}
+svg.svg-twitter {
+  height: 30px;
+  width: 30px;
+  padding: 7px 0;
+  color: #fff;
+}
+.g-snsbtn-iteam.ic_line {
+  background: #06c755;
+}
+.g-snsbtn-iteam.ic_line a {
+  display: inline-block;
+}
+.g-snsbtn-iteam.ic_line .ic_line_inner {
+  height: 20px;
+  width: 20px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+}
+span.ic_line_inner:hover {
+  opacity: 0.8;
+}
+svg.svg-line {
+  color: #06c755;
+  margin-left: -3px;
+  margin-right: -3px;
+  height: 32px;
+  width: 30px;
+}
+
+svg.svg-line #svg-line {
+  color: #06c755;
+  background: #fff;
+}
+.g-snsbtn-iteam.ic_rss {
+  background: #ee802f;
+}
+svg.svg-rss {
+  height: 30px;
+  width: 30px;
+  padding: 4px 0;
+  color: #fff;
+}
+
+.g-snsbtn-iteam.ic_linkedin {
+  background: #2867B2;
+}
+svg.svg-linkedin {
+  height: 30px;
+  width: 30px;
+  padding: 4px 0;
+  color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+  .g-snsbtn-box {
+    margin-top: 25px;
+  }
+  .g-snsbtn-list {
+    justify-content: center;
+  }
+  .g-snsbtn-iteam:not(:first-child) {
+    margin-left: 25px;
+  }
+  .g-snsbtn-iteam {
+    width: 50px;
+    height: 50px;
+  }
+	.g-snsbtn-iteam a {
+		height: 50px;
+	}
+  svg.svg-facebook {
+    height: 50px;
+    width: 50px;
+  }
+  svg.svg-twitter {
+    height: 50px;
+    width: 50px;
+  }
+  .g-snsbtn-iteam.ic_line .ic_line_inner {
+    height: 39px;
+    width: 39px;
+  }
+  svg.svg-line {
+    height: 50px;
+    width: 50px;
+  }
+  svg.svg-rss {
+    height: 50px;
+    width: 50px;
+  }
+	svg.svg-linkedin {
+		height: 50px;
+		width: 50px;
+	}
+
+}

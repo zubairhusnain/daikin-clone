@@ -1,0 +1,1020 @@
+@charset "UTF-8";
+.g-main {
+  padding: 0 !important;
+}
+
+.brand-Breadcrumbs {
+  background-color: #EDF9FD;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sip-slider,
+  .swiper-container,
+  .swiper-wrapper,
+  .swiper-slide,
+  .swiper-slide img {
+    transition-duration: 100ms !important;
+  }
+}
+
+.stories-Btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 14vw;
+  padding: 2%;
+  font-size: 1.2vw;
+  letter-spacing: 0.16em;
+  background: linear-gradient(135deg, #0bbafb, #4285ec);
+  color: #fff;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.stories-BtnBgAnime {
+  position: absolute;
+  top: 0;
+  right: 100%;
+  width: 300%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.8) 94%, transparent 100%);
+}
+
+@media (min-width: 721px) {
+  .stories-Btn:hover {
+    border: 0;
+  }
+  .stories-Btn:hover .stories-BtnBgAnime {
+    right: -300%;
+    transition: right 1s;
+  }
+}
+
+@media (max-width: 720px) {
+  .stories-Btn {
+    width: 32vw;
+    height: 9.6vw;
+    font-size: 3.2vw;
+    letter-spacing: 0.06em;
+    border-radius: 1.067vw;
+  }
+  .stories-BtnBgAnime {
+    display: none;
+  }
+}
+
+.stories-Story {
+  padding-top: 3rem;
+  padding-bottom: 50px;
+  background-color: #c6ebfd;
+}
+
+.stories-Heading2 {
+  font-size: calc(30 / var(--font-size-root) * 1rem);
+  margin-bottom: 1em;
+  color: #0097e0;
+  line-height: 1.25;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 480px) {
+  .stories-Heading2 {
+    font-size: calc(24 / var(--font-size-root) * 1rem);
+    margin-bottom: 36px;
+  }
+}
+
+.stories-Box {
+  padding: 5%;
+  background-color: #fff;
+  display: flex;
+  margin-top: 5rem;
+}
+
+.stories-Box:first-of-type {
+  margin-top: 0;
+}
+
+.stories-BoxList .stories-Box:nth-child(odd) {
+  margin-left: 5%;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+.stories-BoxList .stories-Box:nth-child(even) {
+  margin-right: 5%;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.stories-Box_txtArea {
+  width: 29vw;
+}
+
+.stories-Box:nth-child(odd) .stories-Box_txtArea {
+  padding-right: 3rem;
+}
+
+.stories-Box:nth-child(even) .stories-Box_txtArea {
+  padding-left: 3rem;
+}
+
+@media screen and (max-width: 768px) {
+  .stories-BoxList .stories-Box:nth-child(odd) .stories-Box_txtArea {
+    padding-right: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .stories-BoxList .stories-Box:nth-child(even) .stories-Box_txtArea {
+    padding-left: 2rem;
+  }
+}
+
+.stories-BoxList .stories-Box:nth-child(odd) .stories-Box_movieWrap {
+  order: 1;
+}
+
+.stories-Box_icon {
+  color: #0097e0;
+  line-height: 1;
+  font-size: 1.3vw;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.06em;
+}
+
+.stories-Box_icon img {
+  margin-right: 2.7rem;
+  width: 5rem;
+}
+
+@media all and (-ms-high-contrast: none) {
+  .stories-Box_icon img {
+    height: 5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .stories-Box_icon img {
+    margin-right: 1rem;
+    width: 2.5rem;
+  }
+}
+
+.stories-m-Icon {
+  color: #0097e0;
+  line-height: 1;
+  font-size: 1.3vw;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.06em;
+}
+
+.stories-m-Icon img {
+  margin-right: 2.7rem;
+  width: 5rem;
+}
+
+@media all and (-ms-high-contrast: none) {
+  .stories-m-Icon img {
+    height: 5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .stories-m-Icon img {
+    margin-right: 1rem;
+    width: 2.5rem;
+  }
+}
+
+@media (max-width: 720px) {
+  .stories-m-Icon {
+    font-size: 3.2vw;
+  }
+  .stories-m-Icon img {
+    margin-right: 3.333vw;
+    width: 8.533vw;
+  }
+}
+
+.stories-Box_heading {
+  font-size: 1.4vw;
+  line-height: 1.8;
+  margin-top: 3.4rem;
+  font-weight: 700;
+  color: #1e3c72;
+}
+
+@media screen and (max-width: 768px) {
+  .stories-Box_heading {
+    margin-top: 1.4rem;
+  }
+}
+
+.stories-Box_btn {
+  margin-top: 3rem;
+  width: 20vw;
+  padding: 4%;
+}
+
+@media screen and (max-width: 768px) {
+  .stories-Box_btn {
+    margin-top: 1.4rem;
+  }
+}
+
+.stories-Box_movieWrap {
+  width: 56vw;
+  height: 0;
+  padding-top: 39%;
+  position: relative;
+  border-radius: 1.4rem;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.stories-Box_movie {
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 720px) {
+  .stories-Box {
+    padding: 10.664vw 7.332vw;
+    display: block;
+    margin-top: 10.667vw;
+  }
+  .stories-Box + .stories-Box {
+    margin-top: 8.53vw;
+  }
+  .stories-BoxList .stories-Box:nth-child(odd) {
+    margin-left: 7.333vw;
+    border-top-left-radius: 2.133vw;
+    border-bottom-left-radius: 2.133vw;
+  }
+  .stories-BoxList .stories-Box:nth-child(even) {
+    margin-right: 7.333vw;
+    border-top-right-radius: 2.133vw;
+    border-bottom-right-radius: 2.133vw;
+  }
+  .stories-Box_txtArea {
+    width: 100%;
+    margin-top: 7.733vw;
+  }
+  .stories-BoxList .stories-Box:nth-child(odd) .stories-Box_txtArea {
+    padding-right: 0;
+  }
+  .stories-BoxList .stories-Box:nth-child(even) .stories-Box_txtArea {
+    padding-left: 0;
+  }
+  .stories-Box_icon {
+    font-size: 3.2vw;
+  }
+  .stories-Box_icon img {
+    margin-right: 3.333vw;
+    width: 8.533vw;
+  }
+  .stories-Box_heading {
+    font-size: 4.267vw;
+    margin-top: 5.333vw;
+  }
+  .stories-Box_btn {
+    margin-top: 6.667vw;
+    width: 42.667vw;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .stories-Box_btn {
+    width: 48vw;
+  }
+}
+
+@media (max-width: 720px) {
+  .stories-Box_movieWrap {
+    width: 100%;
+    height: 46.667vw;
+    border-radius: 1.867vw;
+  }
+}
+
+.stories-Logo {
+  display: grid;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  place-items: center;
+}
+
+.stories-Logo_img {
+  width: 24vw;
+}
+
+@media screen and (min-width: 480.1px) and (max-width: 768.1px) {
+  .stories-Logo_img {
+    width: 42vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .stories-Logo_img {
+    width: 58vw;
+  }
+}
+
+/* ------------
+     modal
+------------ */
+body.is_modal_show {
+  overflow: hidden;
+}
+
+#modal_movie {
+  z-index: 1100;
+}
+
+.modal_content {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  opacity: 0;
+  transform: translateY(100%);
+  background: rgba(30, 60, 114, 0.7);
+  transition: opacity 0.6s 0s, transform 0s 0.3s;
+  color: #231815;
+}
+
+.modal_content.is_modal_show {
+  opacity: 1;
+  transform: translateY(0%);
+  transition: opacity 0.6s 0s, transform 0s 0s;
+}
+
+.modal_scroll {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  text-align: right;
+  letter-spacing: -0.5em;
+  /*inline-blockの隙間をなくす*/
+}
+
+.modal_scroll_inner {
+  text-align: center;
+  margin: auto;
+  width: 68vw;
+  letter-spacing: normal;
+  /* letter-spacing 戻す*/
+  line-height: 1.5;
+}
+
+.modal_inner {
+  background-color: #fff;
+  position: relative;
+  opacity: 0;
+  transition: opacity ease-out 1s, transform cubic-bezier(0.33, 1, 0.68, 1) 1s;
+  text-align: left;
+  min-height: 100vh;
+  transform: translate(100%, 0);
+  position: relative;
+  padding-bottom: 9rem;
+}
+
+.modal_movie_content .modal_inner {
+  transform: translate(0, 0);
+}
+
+.is_modal_show .modal_inner {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+@media (max-width: 720px) {
+  .modal_scroll_inner {
+    width: 100%;
+  }
+}
+
+.modal_scroll_inner,
+.modal_scroll:after {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.modal_scroll:after {
+  content: "";
+  height: 100%;
+}
+
+.modal_close {
+  position: absolute;
+  width: 3.2rem;
+  height: 3.2rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .modal_close {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+
+.modal_close_top {
+  top: 3rem;
+  right: 3rem;
+}
+
+@media screen and (max-width: 768px) {
+  .modal_close_top {
+    top: 1.2rem;
+    right: 1.2rem;
+  }
+}
+
+.modal_close::before,
+.modal_close::after {
+  content: "";
+  display: block;
+  width: 3.2rem;
+  height: 0.2rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  background-color: #47403e;
+  transition: background-color 0.3s;
+}
+
+@media screen and (max-width: 768px) {
+  .modal_close::before,
+  .modal_close::after {
+    width: 1.5rem;
+    height: 0.1rem;
+  }
+}
+
+.modal_close::before {
+  transform: rotate(45deg);
+}
+
+.modal_close::after {
+  transform: rotate(-45deg);
+}
+
+@media (min-width: 721px) {
+  .modal_close:hover::before,
+  .modal_close:hover::after {
+    background-color: #0092de;
+  }
+}
+
+@media (max-width: 720px) {
+  .modal_inner {
+    padding-bottom: 16vw;
+  }
+  .modal_close {
+    width: 4.267vw;
+    height: 4.267vw;
+  }
+  .modal_close_top {
+    top: 4vw;
+    right: 4vw;
+  }
+  .modal_close::before,
+  .modal_close::after {
+    width: 4.267vw;
+    height: 0.267vw;
+  }
+}
+
+.swiper-container-modal {
+  overflow: hidden;
+}
+
+.modal_top_youtube_wrap {
+  margin-top: 8.2rem;
+  position: relative;
+  padding-top: 56.26%;
+  background-color: #edf9fd;
+}
+
+@media screen and (max-width: 768px) {
+  .modal_top_youtube_wrap {
+    margin-top: 4rem;
+  }
+}
+
+.modal_top_youtube {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.modal_content_inner {
+  padding: 7%;
+}
+
+.stories-m-Heading1 {
+  font-size: 2.2vw;
+  line-height: 1.5625;
+  color: #1e3c72;
+  font-weight: 700;
+  margin: 4rem 0;
+}
+
+@media screen and (max-width: 768px) {
+  .stories-m-Heading1 {
+    margin: 2rem 0;
+  }
+}
+
+.stories-m-Img {
+  margin-top: 4rem;
+}
+
+.stories-m-Img img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .stories-m-Img {
+    margin-top: 2rem;
+  }
+}
+
+.stories-m-Img img {
+  border-radius: 1.6rem;
+}
+
+.stories-m-Img_txt {
+  font-size: 1.3vw;
+  line-height: 1.55;
+  margin-top: 1.9rem;
+  text-align: right;
+}
+
+@media screen and (max-width: 768px) {
+  .stories-m-Img_txt {
+    margin-top: 0.6rem;
+  }
+}
+
+.stories-m-Img_name {
+  font-size: 1.6vw;
+  line-height: 1;
+  margin-top: 1.2rem;
+  text-align: right;
+}
+
+@media screen and (max-width: 768px) {
+  .stories-m-Img_name {
+    margin-top: 0.6rem;
+  }
+}
+
+.stories-m-Heading2 {
+  font-size: 1.5vw;
+  line-height: 1;
+  color: #1e3c72;
+  font-weight: 700;
+  margin-top: 3rem;
+  margin-bottom: 2.6rem;
+}
+
+@media screen and (max-width: 768px) {
+  .stories-m-Heading2 {
+    font-size: 1.7vw;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.stories-m-Text {
+  font-size: 1.3vw;
+  line-height: 1.57;
+  margin-top: 2vw;
+}
+
+.stories-m-Text em {
+  color: #0092de;
+}
+
+@media screen and (max-width: 768px) {
+  .stories-m-Text {
+    font-size: 1.5vw;
+  }
+}
+
+.modal_arrow_wrap {
+  width: 100%;
+  height: 9rem;
+  background-color: #edf9fd;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .modal_arrow_wrap {
+    height: 5rem;
+  }
+}
+
+.modal_close_bottom {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.modal_arrow {
+  width: 3.3rem;
+  height: 2.4rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  .modal_arrow {
+    width: 3rem;
+    height: 1rem;
+  }
+}
+
+.modal_arrow svg {
+  top: 0;
+  left: 0;
+}
+
+.modal_arrow path {
+  fill: #231815;
+  fill-rule: evenodd;
+  transition: fill 0.3s;
+}
+
+@media (min-width: 721px) {
+  .modal_arrow:hover path {
+    fill: #0092de;
+  }
+}
+
+.modal_arrow:focus {
+  outline: none;
+}
+
+.modal_arrow_left {
+  left: 6rem;
+  background: 0 0 no-repeat url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/air/stories/images/modal_arrow_l.svg");
+  background-size: auto 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .modal_arrow_left {
+    left: 2rem;
+  }
+}
+
+.modal_arrow_right {
+  right: 6rem;
+  background: right 0 no-repeat url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/air/stories/images/modal_arrow_r.svg");
+  background-size: auto 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .modal_arrow_right {
+    right: 2rem;
+  }
+}
+
+.modal_movie_content .modal_scroll_inner {
+  width: 100%;
+}
+
+.modal_movie_content .modal_inner {
+  background-color: transparent;
+  width: 100%;
+  position: relative;
+}
+
+.modal_close_movie::before,
+.modal_close_movie::after {
+  background-color: #fff;
+}
+
+.modal_close_movie {
+  top: 3.4rem;
+  right: 1.4rem;
+}
+
+@media screen and (max-width: 768px) {
+  .modal_close_movie {
+    top: 2.4rem;
+    right: 2.4rem;
+  }
+}
+
+@media (max-width: 720px) {
+  .modal_top_youtube_wrap {
+    padding-top: 53.333vw;
+  }
+  .modal_top_youtube {
+    width: 100%;
+    height: 56.267vw;
+  }
+  .modal_content_inner {
+    padding: 10.667vw 7.333vw;
+  }
+  .stories-m-Heading1 {
+    font-size: 4.267vw;
+    line-height: 1.55;
+    margin: 8vw 0;
+  }
+  .stories-m-Text {
+    font-size: 3.2vw;
+    line-height: 1.83;
+    margin-top: 5.856vw;
+  }
+  .stories-m-Img {
+    margin-top: 7.067vw;
+  }
+  .stories-m-Img img {
+    border-radius: 4.267vw;
+  }
+  .stories-m-Img_txt {
+    font-size: 5.333vw;
+    line-height: 1.33;
+    margin-top: 4.267vw;
+  }
+  .stories-m-Img_name {
+    font-size: 4.8vw;
+    margin-top: 2.8vw;
+  }
+  .stories-m-Heading2 {
+    font-size: 4.267vw;
+    margin-top: 8.533vw;
+    margin-bottom: 6.933vw;
+  }
+  .modal_arrow_wrap {
+    height: 16vw;
+  }
+}
+
+@media screen and (max-width: 720px) and (max-width: 768px) {
+  .modal_arrow_wrap {
+    height: 4rem;
+  }
+}
+
+@media (max-width: 720px) {
+  .modal_arrow {
+    width: 4.4vw;
+    height: 3.2vw;
+    background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/air/stories/images/modal_arrow.svg") no-repeat top center/cover;
+  }
+  .modal_arrow_left {
+    left: 7.067vw;
+    transform: rotate(180deg);
+  }
+  .modal_arrow_right {
+    right: 7.067vw;
+  }
+  .modal_movie_content .modal_scroll_inner {
+    width: 100%;
+  }
+  .modal_close_movie {
+    top: 10.667vw;
+    right: 5.333vw;
+  }
+}
+
+#Pagetop {
+  z-index: 999;
+}
+
+.stories-Intro {
+  background: #c2eafc url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/air/stories/images/pin_bg.png") 50% 0 no-repeat;
+  background-size: cover;
+  min-height: calc(900 / 1366 * 100vw);
+  color: #0097e0;
+}
+
+@media screen and (min-width: 480.1px) and (max-width: 768.1px) {
+  .stories-Intro {
+    background-image: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/air/stories/images/pin_bg_tb.png");
+    min-height: calc(830 / 768 * 100vw);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .stories-Intro {
+    background-image: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/air/stories/images/pin_bg_sp.png");
+    min-height: calc(560 / 375 * 100vw);
+  }
+}
+
+.stories-Intro_inner {
+  max-width: calc(var(--width-contents-max-size) + var(--width-contents-padding) * 2);
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: var(--width-contents-padding);
+  padding-right: var(--width-contents-padding);
+  text-align: center;
+  padding-top: 1px;
+  margin-top: -1px;
+  padding-bottom: 60vw;
+}
+
+.stories-Intro_heading {
+  font-size: calc(40 / var(--font-size-root) * 1rem);
+  line-height: 1.125;
+  margin-top: calc(124 / 1366 * 100vw);
+}
+
+@media screen and (min-width: 480.1px) and (max-width: 768.1px) {
+  .stories-Intro_heading {
+    margin-top: calc(173 / 768 * 100vw);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .stories-Intro_heading {
+    font-size: calc(32 / var(--font-size-root) * 1rem);
+    margin-top: 100px;
+  }
+}
+
+.stories-Intro_heading span {
+  display: inline-block;
+}
+
+.stories-Intro_p {
+  font-size: calc(18 / var(--font-size-root) * 1rem);
+  line-height: 1.67;
+  margin-top: 13px;
+}
+
+@media screen and (max-width: 480px) {
+  .stories-Intro_p {
+    font-size: calc(16 / var(--font-size-root) * 1rem);
+  }
+}
+
+.stories-Anchor {
+  margin: 0 5% 80px;
+}
+
+@media screen and (max-width: 480px) {
+  .stories-Anchor {
+    margin-bottom: 60px;
+  }
+}
+
+.stories-Anchor ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 32px;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 480px) {
+  .stories-Anchor ul {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 720px) {
+  .stories-Anchor {
+    margin-right: 7.333vw;
+    margin-left: 7.333vw;
+  }
+}
+
+.stories-Anchor_item {
+  font-size: calc(17 / var(--font-size-root) * 1rem);
+}
+
+@media screen and (max-width: 480px) {
+  .stories-Anchor_item {
+    min-width: calc((100% - 32px) / 2);
+  }
+}
+
+.stories-Anchor_item img {
+  width: 30px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.stories-Anchor_item a {
+  color: #000;
+}
+
+.stories-Anchor_item a:after {
+  content: "";
+  position: relative;
+  display: inline-block;
+  background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/air/common/images/icon/icon_link_arrow_12_blue.svg") 0 0 no-repeat;
+  width: 12px;
+  height: 12px;
+  margin-left: 8px;
+  transform: rotate(90deg);
+  top: 0.2em;
+}
+
+.stories-Anchor_item a:hover {
+  color: var(--color-link-text);
+}
+
+.stories-Outro {
+  background: #d7f1fb url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/air/stories/images/outro_bg.png") 50% 100% no-repeat;
+  background-size: cover;
+  min-height: calc(650 / 1366 * 100vw);
+  color: #fff;
+}
+
+@media screen and (min-width: 480.1px) and (max-width: 768.1px) {
+  .stories-Outro {
+    background-image: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/air/stories/images/outro_bg_tb.png");
+    min-height: calc(600 / 768 * 100vw);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .stories-Outro {
+    background-image: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/air/stories/images/outro_bg_sp.png");
+    min-height: calc(450 / 375 * 100vw);
+  }
+}
+
+.stories-Outro_inner {
+  max-width: calc(var(--width-contents-max-size) + var(--width-contents-padding) * 2);
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: var(--width-contents-padding);
+  padding-right: var(--width-contents-padding);
+  padding-top: calc(110 / 1366 * 100vw);
+  text-align: center;
+}
+
+@media screen and (min-width: 480.1px) and (max-width: 768.1px) {
+  .stories-Outro_inner {
+    padding-top: calc(50 / 768 * 100vw);
+    padding-bottom: 60vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .stories-Outro_inner {
+    padding-top: calc(42 / 375 * 100vw);
+    padding-bottom: 60vw;
+  }
+}
+
+.stories-Outro_text {
+  font-size: calc(24 / 1366 * 100vw);
+  text-shadow: 0 0 11px #48a2db;
+  line-height: 1.5;
+}
+
+@media screen and (min-width: 480.1px) and (max-width: 768.1px) {
+  .stories-Outro_text {
+    font-size: calc(24 / 768 * 100vw);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .stories-Outro_text {
+    font-size: calc(18 / 375 * 100vw);
+  }
+}

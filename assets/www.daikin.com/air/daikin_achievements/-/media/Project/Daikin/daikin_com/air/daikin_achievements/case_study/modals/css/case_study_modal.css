@@ -1,0 +1,104 @@
+.brand-m-ContentsArea {
+  font-size: calc(14 / var(--font-size-root) * 1rem);
+  line-height: 1.57;
+  color: var(--color-text);
+}
+
+.brand-Page .brand-m-ContentsArea {
+  padding: 50px 40px;
+}
+
+.brand-m-ContentsArea img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.brand-ModalPage .brand-m-ContentsArea_inner {
+  max-width: calc(var(--width-contents-max-size-modal) + var(--width-contents-padding) * 2);
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: var(--width-contents-padding);
+  padding-right: var(--width-contents-padding);
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .brand-ModalPage .brand-m-ContentsArea_inner {
+    padding-top: 20px;
+  }
+}
+
+.brand-Page .brand-m-ContentsArea_inner {
+  max-width: 760px;
+}
+
+.case-m-Title {
+  margin-bottom: 20px;
+}
+
+.case-m-Title > h1 {
+  font-size: calc(30 / var(--font-size-root) * 1rem);
+  color: var(--color-heading);
+  text-transform: uppercase;
+}
+
+.case-m-Heading2 {
+  font-size: calc(15 / var(--font-size-root) * 1rem);
+  margin-bottom: 6px;
+  color: var(--color-heading);
+}
+
+.case-m-Text {
+  margin-bottom: 17px;
+}
+
+.case-m-Grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px 30px;
+  margin-bottom: 17px;
+}
+
+@media screen and (max-width: 480px) {
+  .case-m-Grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.case-m-List {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.case-m-Button {
+  display: inline-block;
+  color: #fff !important;
+  background: var(--color-button-bg);
+  font-weight: bold;
+  text-align: center;
+  padding: 12px;
+  font-size: calc(14 / var(--font-size-root) * 1rem);
+  margin-bottom: 17px;
+}
+
+.case-m-Button:hover, .case-m-Button:focus {
+  background: var(--color-button-bg-hover);
+}
+
+.case-m-Button:before {
+  content: "";
+  position: relative;
+  display: inline-block;
+  background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/air/common/images/icon/icon_link_arrow_8_blue.svg") 0 0 no-repeat;
+  width: 10px;
+  height: 10px;
+  margin-right: 4px;
+}
+
+.case-m-Button::before {
+  top: .05em;
+}

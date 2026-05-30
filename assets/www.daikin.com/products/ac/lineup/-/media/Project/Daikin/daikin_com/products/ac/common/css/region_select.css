@@ -1,0 +1,75 @@
+.region_select {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+@media screen and (max-width: 512px) {
+  .region_select {
+    display: block;
+  }
+}
+.region_select .select_wrap {
+  overflow: hidden;
+  width: 65%;
+  border: 1px solid #ccc;
+  height: auto;
+  position: relative;
+}
+@media screen and (max-width: 512px) {
+  .region_select .select_wrap {
+    display: block;
+    margin-bottom: 15px;
+    width: 100%;
+  }
+}
+.region_select .select_wrap::after {
+  position: absolute;
+  content: "";
+  width: 6px;
+  height: 6px;
+  border: 0;
+  border-bottom: solid 2px #09c;
+  border-right: solid 2px #09c;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 0;
+  right: 1em;
+  bottom: 0;
+  margin: auto;
+}
+.region_select .select_wrap .dropdown {
+  width: 100%;
+  padding: 1em;
+  cursor: pointer;
+  text-indent: 0.01px;
+  text-overflow: ellipsis;
+  border: none;
+  outline: none;
+  background: transparent;
+  background-image: none;
+  box-shadow: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  color: #333;
+}
+.region_select .select_wrap .dropdown::-ms-expand {
+  display: none;
+}
+.region_select .select_wrap .dropdown option:first-of-type {
+  color: #ccc;
+}
+.region_select button {
+  margin-bottom: 0;
+  border: 0;
+  max-width: 33%;
+  cursor: pointer;
+}
+@media screen and (max-width: 512px) {
+  .region_select button {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=region_select.css.map */

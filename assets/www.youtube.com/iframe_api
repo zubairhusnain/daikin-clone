@@ -1,0 +1,1 @@
+/* youtube offline stub */window.YT=window.YT||{ready:function(cb){cb&&cb();},Player:function(){}};

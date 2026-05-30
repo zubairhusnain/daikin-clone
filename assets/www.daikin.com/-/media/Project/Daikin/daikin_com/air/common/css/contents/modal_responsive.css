@@ -1,0 +1,257 @@
+.brand-modal body {
+  overflow-y: hidden;
+}
+
+@media screen and (max-width: 480px) {
+  .brand-modal body {
+    /*
+    overflow-y: visible;
+    */
+  }
+}
+
+.brand-modal_if {
+  display: none;
+}
+
+.brand-modal_wrapper {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1005;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  background-color: rgba(0, 0, 0, 0.7);
+  -webkit-overflow-scrolling: touch;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 480px) {
+  .brand-modal-init .brand-modal_wrapper {
+    /*
+      position: static;
+      overflow: visible;
+      */
+  }
+}
+
+.brand-modal_outer {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 480px) {
+  .brand-modal-init .brand-modal_outer {
+    display: inline;
+  }
+}
+
+.brand-modal_inner {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 480px) {
+  .brand-modal-init .brand-modal_inner {
+    display: inline;
+  }
+}
+
+.brand-modal_box {
+  width: 100%;
+  max-width: 860px;
+  height: 450px;
+  display: inline-block;
+  background: #fff url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/air/common/images/modal_responsive/loading.gif") no-repeat 50% 50%;
+  background-attachment: fixed;
+  text-align: left;
+  position: relative;
+}
+
+@media screen and (max-width: 480px) {
+  .brand-modal_box {
+    min-height: 100%;
+    height: 100%;
+  }
+}
+
+.brand-modal-init .brand-modal_box {
+  height: auto !important;
+  background-image: none;
+}
+
+@media screen and (max-width: 480px) {
+  .brand-modal-init .brand-modal_box {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 11;
+  }
+}
+
+.brand-modal_close, .brand-modal_print {
+  margin: auto;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  width: 39px;
+  height: 39px;
+  background: 0 0 no-repeat;
+}
+
+.brand-modal_close {
+  top: 0;
+  background-image: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/air/common/images/modal_responsive/btn_close.png");
+}
+
+@media screen and (max-width: 480px) {
+  .brand-modal_close {
+    position: fixed;
+  }
+}
+
+.brand-modal_print {
+  bottom: 0;
+  background-image: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/air/common/images/modal_responsive/btn_print.png");
+}
+
+@media screen and (max-width: 480px) {
+  .brand-modal_print {
+    display: none;
+  }
+}
+
+.brand-modal_pagination {
+  display: none;
+  text-align: center;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  width: 39px;
+  height: 39px;
+  line-height: 39px;
+  color: #fff;
+  background-color: #000;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 768px) {
+  .brand-modal_pagination {
+    top: 0;
+    right: 50px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .brand-modal_pagination {
+    position: fixed;
+    top: 0;
+    right: 50px;
+  }
+}
+
+.brand-modal-multi .brand-modal_pagination {
+  display: inline-block;
+}
+
+.brand-modal_ctrl {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 50%;
+}
+
+.brand-modal_ctrlInner {
+  position: relative;
+}
+
+@media screen and (max-width: 480px) {
+  .brand-modal_ctrlInner {
+    margin-right: 0 !important;
+  }
+}
+
+.brand-modal_prev, .brand-modal_next {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 30px;
+  height: 71px;
+  transform: translateY(-50%);
+  background: 0 0 no-repeat;
+  cursor: pointer;
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  .brand-modal-init .brand-modal_prev, .brand-modal-init .brand-modal_next {
+    top: 0;
+    bottom: 0;
+    transform: translateY(0);
+  }
+}
+
+.brand-modal_prev {
+  margin-left: -460px;
+  background-image: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/air/common/images/modal_responsive/btn_modal_arw_left.png");
+}
+
+@media only screen and (max-width: 920px) {
+  .brand-modal_prev {
+    left: 0;
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .brand-modal-init .brand-modal_prev {
+    left: 0;
+    margin-left: 0;
+  }
+}
+
+.brand-modal-prev .brand-modal_prev {
+  display: block;
+}
+
+.brand-modal_next {
+  margin-left: 430px;
+  background-image: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/air/common/images/modal_responsive/btn_modal_arw_right.png");
+}
+
+@media only screen and (max-width: 920px) {
+  .brand-modal_next {
+    left: initial;
+    right: 0;
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .brand-modal-init .brand-modal_next {
+    left: auto;
+    right: 0;
+    margin-left: 0;
+  }
+}
+
+.brand-modal-next .brand-modal_next {
+  display: block;
+}
+
+.brand-m-Wrapper {
+  transition: opacity .3s;
+}
+
+.brand-modal .brand-modal_wrapper .brand-m-Wrapper {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.brand-modal-init .brand-modal_wrapper .brand-m-Wrapper {
+  visibility: visible;
+  opacity: 1;
+}

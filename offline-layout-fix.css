@@ -1,0 +1,102 @@
+/**
+ * Offline layout fixes: remove gap below global nav when mega menu is closed.
+ */
+#GlobalNavWrap .MegaMenuWrap {
+  padding-bottom: 0 !important;
+}
+
+/* Keep mega menu panels usable after link trim */
+#GlobalNavWrap .MegaMenu_ContentInner {
+  min-height: 0;
+}
+#GlobalNavWrap .Category_Content .Grid__Col:empty,
+#GlobalNavWrap .Category_Content dd:empty {
+  display: none;
+}
+#GlobalNavWrap .MegaMenu_Content .Category_Content {
+  overflow: hidden;
+}
+
+#GlobalNavWrap .MegaMenu_ContentInner .Category_Content .List.Grid--TypeCol3 {
+  display: flex;
+  flex-wrap: wrap;
+}
+#GlobalNavWrap .MegaMenu_ContentInner .Category_Content .Grid__Col {
+  flex: 0 0 33.333%;
+  max-width: 33.333%;
+  box-sizing: border-box;
+}
+
+/* Mega menu open state is toggled via jQuery .show() — do not force display:none here */
+#GlobalNavWrap .MegaMenuArea {
+  margin: 0;
+  padding: 0;
+}
+
+#GlobalNavWrap .MegaMenuWrap:not(.is-Active) .MegaMenuArea[style*="display: none"],
+#GlobalNavWrap .MegaMenuWrap:not(.is-Active) .MegaMenuArea[style*="height: 0"] {
+  overflow: hidden !important;
+}
+
+#HeaderSubstitution {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+/* Hide OneTrust cookie consent UI (offline mirror) */
+/* Crisp media rendering offline */
+video {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Products AC: hide lineup tiles removed from offline mirror */
+#g-main .g-grid .g-grid_el:has(> a.g-hover[href="#"]) {
+  display: none !important;
+}
+
+/* Homepage: external product lines not in offline mirror */
+.Top_PS__Area--Area-2 .Top_PS__Heading-A a,
+.Top_PS__Area--Area-3 .Top_PS__Heading-A a {
+  pointer-events: none;
+  cursor: default;
+}
+
+picture img,
+.g-poster-hero_inner,
+#KeyVisualWrap {
+  background-size: cover !important;
+  background-position: center center !important;
+}
+
+.g-poster-hero--s .g-poster-hero_inner {
+  min-height: 480px;
+}
+
+.g-poster-hero_inner .g-poster-hero_img {
+  display: block;
+  width: 100%;
+  min-height: 480px;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Hide OneTrust cookie consent UI (offline mirror) */
+#onetrust-consent-sdk,
+#onetrust-banner-sdk,
+#onetrust-pc-sdk,
+#ot-sdk-btn-floating,
+#ot-sync-ntfy,
+.onetrust-pc-dark-filter,
+#ot-sdk-cookie-policy {
+  display: none !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+  opacity: 0 !important;
+  height: 0 !important;
+  max-height: 0 !important;
+  overflow: hidden !important;
+}

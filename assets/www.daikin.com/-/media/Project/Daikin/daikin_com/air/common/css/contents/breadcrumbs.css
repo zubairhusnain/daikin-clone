@@ -1,0 +1,65 @@
+.brand-Breadcrumbs {
+  width: 100%;
+  padding: 13px 0 14px;
+  position: absolute;
+  z-index: 2;
+}
+
+@media screen and (max-width: 768px) {
+  .brand-Breadcrumbs {
+    display: none;
+  }
+}
+
+.brand-Breadcrumbs ol {
+  max-width: calc(var(--width-contents-max-size) + var(--width-contents-padding) * 2);
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: var(--width-contents-padding);
+  padding-right: var(--width-contents-padding);
+  font-size: calc(11 / var(--font-size-root) * 1rem);
+  display: flex;
+  box-sizing: border-box;
+}
+
+.brand-Breadcrumbs li::before {
+  content: ">";
+  margin: 0 5px;
+}
+
+.brand-Breadcrumbs li:first-child::before {
+  display: none;
+}
+
+.brand-Breadcrumbs a {
+  color: #0099cc;
+  text-decoration: none;
+}
+
+.brand-Breadcrumbs a:hover {
+  text-decoration: underline;
+}
+
+.brand-Breadcrumbs.-text-white li {
+  color: #fff;
+}
+
+.brand-Breadcrumbs.-text-white a {
+  color: #fff;
+}
+
+.brand-Breadcrumbs.-underline a {
+  text-decoration: underline;
+}
+
+.brand-Breadcrumbs.-underline a:hover {
+  text-decoration: none;
+}
+
+.brand-Breadcrumbs.-bg-white {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.brand-Page .brand-m-Breadcrumbs {
+  display: none;
+}

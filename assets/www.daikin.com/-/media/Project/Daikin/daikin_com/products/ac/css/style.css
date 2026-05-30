@@ -1,0 +1,302 @@
+/* 2020 03.04 Key Visual */
+.g-poster-hero_inner {
+  background-size: cover;
+  background-position: center center; }
+
+/* ---------- ---------- ---------- 
+  ::index::
+
+ A. KeyVisual
+ B. AC_Lineup
+ C. ContentsArea
+ D. AC_CaseStudy
+ E. AC_Brands
+ F. applications / LightBoxContent
+ G. Print
+
+---------- ---------- ---------- */
+/* A. KeyVisual
+---------- ---------- ---------- */
+.KeyVisual #KeyVisualWrap {
+  /* JS off*/
+  position: static;
+  background: #288fc8; }
+
+.JS .KeyVisual #KeyVisualWrap {
+  position: absolute; }
+
+.KeyVisual #KeyVisualArea {
+  width: 960px;
+  padding: 75px 0 41px;
+  margin: 0 auto; }
+
+.KeyVisual #KeyVisualArea .KeyVisualArea__Text {
+  float: none; }
+
+/* RollupImg */
+.RollupImg {
+  position: relative;
+  text-align: left; }
+
+.RollupImg.Loading {
+  /*background: url(/dg_common/images/modal/loading_background png") no-repeat center center;*/ }
+
+.RollupImg.Loading .LoadingArea {
+  background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/modal/loading_bluebk.gif") no-repeat center center; }
+
+.Loading .RollupImgInner {
+  visibility: hidden; }
+
+.RollupImgInner {
+  height: 299px;
+  padding: 0;
+  overflow: hidden; }
+
+.RollupImgInner ul {
+  display: none;
+  position: absolute;
+  padding: 0 0 0 21px;
+  top: 7px;
+  left: 0;
+  width: 945px;
+  -moz-transition: left 0.6s ease-in-out 0;
+  -webkit-transition: left 0.6s ease-in-out 0;
+  -o-transition: left 0.6s ease-in-out 0;
+  -ms-transition: left 0.6s ease-in-out 0; }
+
+.RollupImg__List:after {
+  content: "";
+  display: block;
+  clear: both; }
+
+.RollupImg__List {
+  padding: 7px 1px 0 21px; }
+
+.RollupImg__List li {
+  position: relative;
+  float: left;
+  width: 225px;
+  height: 140px;
+  margin: 0 6px 6px 0;
+  vertical-align: top;
+  background-color: #00f;
+  overflow: hidden; }
+
+.RollupImg__List li a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  height: 122px;
+  padding: 8px 10px 10px;
+  color: #4c4c4c;
+  background-color: #FFF;
+  background-color: rgba(255, 255, 255, 0.9);
+  overflow: hidden; }
+
+.RollupImg__List li a:hover,
+.RollupImg__List li a:focus {
+  background-color: #FFF;
+  text-decoration: none; }
+
+.RollupImg__List li a:hover .Mkr--Toggle,
+.RollupImg__List li a:focus .Mkr--Toggle {
+  background-image: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/mkr_sprite.png");
+  background-position: -80px -39px; }
+
+.RollupImg__List li a dl dt {
+  display: block;
+  height: auto;
+  padding: 0 0 8px 14px;
+  text-indent: -14px;
+  overflow: hidden; }
+
+.RollupImg__List li .Position--Bottom {
+  position: absolute;
+  display: block;
+  bottom: 5px;
+  left: 5px;
+  right: auto; }
+
+#js-CustomScroll {
+  position: relative; }
+
+#js-CustomScroll .Carouseldirection-nav li a.Carouselprev {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 35px;
+  height: 90px;
+  margin-top: -45px;
+  text-indent: -9999px;
+  overflow: hidden;
+  background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/products/ac/images/arw_left_ac.png") 0 0 no-repeat;
+  z-index: 10; }
+
+#js-CustomScroll .Carouseldirection-nav li a.Carouselprev:hover {
+  background-position: -35px 0; }
+
+#js-CustomScroll .Carouseldirection-nav li a.Carouselnext {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 35px;
+  height: 90px;
+  margin-top: -45px;
+  text-indent: -9999px;
+  overflow: hidden;
+  background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/products/ac/images/arw_right_ac.png") 0 0 no-repeat;
+  z-index: 11; }
+
+#js-CustomScroll .Carouseldirection-nav li a.Carouselnext:hover {
+  background-position: -35px 0; }
+
+#js-CustomScroll .Carouseldirection-nav li a.Carouseldisabled {
+  display: none; }
+
+#ScrollShadowLeft {
+  position: absolute;
+  top: 0;
+  left: -1px;
+  width: 21px;
+  height: 302px;
+  background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/products/ac/images/bg_scrollshadow_left.png") 0 0 no-repeat;
+  z-index: 9; }
+
+#ScrollShadowRight {
+  position: absolute;
+  top: 0;
+  right: -1px;
+  width: 21px;
+  height: 302px;
+  background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/products/ac/images/bg_scrollshadow_right.png") 100% 0 no-repeat;
+  z-index: 8; }
+
+.LightBoxContent .Box .Grid__Col .Img {
+  height: 95px;
+  margin-bottom: 5px;
+  line-height: 95px; }
+
+.LightBoxContent .Box .Grid__Col .Img img {
+  vertical-align: middle; }
+
+/* top visual navi */
+#actop_navi {
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  width: 50%;
+  height: 14px;
+  text-align: center;
+  overflow: hidden; }
+
+#actop_navi a {
+  display: block;
+  margin: 0 14px 0 0;
+  width: 14px;
+  height: 14px;
+  float: left;
+  -moz-transition: opacity 0.3s linear 0;
+  -webkit-transition: opacity 0.3s linear 0;
+  -o-transition: opacity 0.3s linear 0;
+  -ms-transition: opacity 0.3s linear 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  background: transparent no-repeat url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/products/ac/images/top_nav_dot.gif") 0 -14px; }
+
+#actop_navi a.selected {
+  background-position: 0 0; }
+
+/* B. AC_Lineup
+---------- ---------- ---------- */
+.JS #ContentsInner {
+  padding-top: 464px; }
+
+#ContentsInner {
+  /* JS off*/
+  padding-top: 0; }
+
+#AC_Lineup {
+  padding: 38px 0 0;
+  background: #f0f4f7; }
+
+#AC_Lineup .ContentsInnerArea {
+  position: relative;
+  padding-bottom: 25px;
+  overflow: hidden; }
+
+#AC_Lineup .Block {
+  margin-top: -10px;
+  padding-bottom: 17px; }
+
+#AC_Lineup .Block.Block--GridLineBoldTop {
+  padding-bottom: 0; }
+
+#AC_Lineup .Grid.Grid--TypeCol6 {
+  padding-top: 20px; }
+
+#AC_Lineup .Img {
+  height: 100px;
+  margin-bottom: 10px;
+  line-height: 100px;
+  text-align: center; }
+
+#AC_Lineup .Img img {
+  vertical-align: middle; }
+
+#AC_Lineup .Img img:hover {
+  opacity: 0.8; }
+
+#AC_Lineup ul.List {
+  font-weight: bold;
+  line-height: 1.2; }
+
+/* C. ContentsArea
+---------- ---------- ---------- */
+.ContentsArea_Single #ContentsArea {
+  margin-top: 32px; }
+
+/* D. AC_CaseStudy
+---------- ---------- ---------- */
+#AC_CaseStudy .SlideImg {
+  width: 936px;
+  margin-bottom: 25px; }
+
+/* E. AC_Brands
+---------- ---------- ---------- */
+#AC_Brands .g-grid_el {
+  height: 55px;
+  position: relative;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center; }
+
+/*
+#AC_Brands ul:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#AC_Brands ul li {
+  float: left;
+  width: 192px;
+  height: 80px;
+  line-height: 80px;
+  text-align:center;
+  vertical-align: middle;
+}
+#AC_Brands ul li img {
+  vertical-align: middle;
+}
+*/
+/* F. applications / LightBoxContent
+---------- ---------- ---------- */
+.LightBoxContent .Box.Box--ColorBox a .Img img:hover {
+  opacity: 0.8; }
+
+/* G. Print
+---------- ---------- ---------- */
+@media print {
+  .KeyVisual #KeyVisualWrap {
+    position: relative !important; } }

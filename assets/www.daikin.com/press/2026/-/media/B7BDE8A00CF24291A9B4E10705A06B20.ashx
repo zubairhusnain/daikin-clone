@@ -1,0 +1,27 @@
+@charset "utf-8";
+/*
+This CSS resource incorporates links to font software which is the valuable copyrighted
+property of Monotype Imaging and/or its suppliers. You may not attempt to copy, install,
+redistribute, convert, modify or reverse engineer this font software. Please contact Monotype
+Imaging with any questions regarding Web Fonts:  http://webfonts.fonts.com
+*/
+
+
+@font-face{
+font-family:"FrutigerLTW02-55Roman";
+src:url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/font/724827/c94bd41e-23b3-4522-8237-0a0f7bd0e953.eot");
+src:url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/font/724827/c94bd41e-23b3-4522-8237-0a0f7bd0e953.eot") format("eot"),url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/font/724827/409b4bec-c67e-4764-a141-054db8df81d2.woff") format("woff"),url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/font/724827/efe9def0-77d1-4c28-8fd2-371236a3c8ed.ttf") format("truetype"),url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/font/724827/70b07d32-76f5-474e-83b0-7d5a3fefb15b.svg") format("svg");
+}
+
+@import url("//fast.fonts.net/lt/1.css?apiType=css&c=1a1a37bc-f75e-4f80-911e-8df06b7af8c8&fontids=1475746");
+@font-face{
+font-family:"FrutigerLTW02-65Bold";
+src:url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/font/1475746/eb06b4c3-c0fd-4cd0-a9d9-a2954f6839a7.eot");
+src:url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/font/1475746/eb06b4c3-c0fd-4cd0-a9d9-a2954f6839a7.eot") format("eot"),url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/font/1475746/8c92eb68-ce37-4962-a9f4-5b47d336bd1c woff2") format("woff2"),url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/font/1475746/9bdfdcac-bbd4-46a9-9280-056c9a4438a2.woff") format("woff"),url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/font/1475746/5dae3a6e-9b07-4c2f-aed2-1f5b8951261b.ttf") format("truetype"),url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/font/1475746/eae74276-dd78-47e4-9b27-dac81c3411ca.svg") format("svg");
+}
+
+@font-face{
+font-family:"Frutiger LT W02_45 Light";
+src:url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/font/1572245/a454c345-b8ff-40d1-8dad-dbb16e33daf0.eot");
+src:url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/font/1572245/a454c345-b8ff-40d1-8dad-dbb16e33daf0.eot") format("eot"),url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/font/1572245/0e18fa83-4d3c-4ae6-84a4-2d9f616c443e woff2") format("woff2"),url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/font/1572245/569dd51c-b527-40ee-a37a-e11f4e7ec601.woff") format("woff"),url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/font/1572245/7a967460-fc25-4663-988a-08f989b02b61.ttf") format("truetype");
+}

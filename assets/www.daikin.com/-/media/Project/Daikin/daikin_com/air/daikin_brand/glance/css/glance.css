@@ -1,0 +1,115 @@
+@media screen and (max-width: 960px) {
+  .set-responsiveWebDesign.header-open .brand-Wrapper {
+    display: none;
+  }
+}
+
+.brand-ContentsArea {
+  background: #0099cc url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/air/daikin_brand/glance/images/keyvisual.jpg") 50% 0 no-repeat;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 768.1px) {
+  .brand-ContentsArea {
+    height: 914px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .brand-ContentsArea {
+    background-size: cover;
+    padding-bottom: 170px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .brand-ContentsArea {
+    background-image: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/air/daikin_brand/glance/images/keyvisual-sp.jpg");
+  }
+}
+
+.brand-ContentsArea_inner {
+  max-width: calc(var(--width-contents-max-size) + var(--width-contents-padding) * 2);
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: var(--width-contents-padding);
+  padding-right: var(--width-contents-padding);
+  height: 100%;
+}
+
+.brand-ContentsArea_inner img {
+  max-width: 100%;
+  height: auto;
+}
+
+.glance-Title {
+  color: #fff;
+  font-weight: bold;
+  padding-top: 107px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .glance-Title {
+    padding-top: 54px;
+    margin-bottom: 35px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .glance-Title {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+}
+
+.glance-Title img {
+  display: block;
+  margin: 0 auto;
+}
+
+.glance-Title_heading {
+  font-size: calc(35 / var(--font-size-root) * 1rem);
+  line-height: 1.18;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 480px) {
+  .glance-Title_heading {
+    margin-bottom: 15px;
+  }
+}
+
+.glance-Facts > ul {
+  display: grid;
+  gap: 20px 30px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media screen and (min-width: 480.1px) and (max-width: 768.1px) {
+  .glance-Facts > ul {
+    gap: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .glance-Facts > ul {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+.glance-Facts a {
+  display: block;
+}
+
+.glance-Facts a:hover {
+  opacity: var(--opacity-hover);
+  background: transparent url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/air/daikin_brand/glance/images/bg_pict_hover.png") no-repeat 0 0;
+}

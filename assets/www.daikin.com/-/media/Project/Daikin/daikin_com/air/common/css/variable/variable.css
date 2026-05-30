@@ -1,0 +1,19 @@
+:root {
+  --font-size-root: 16;
+  --width-contents-max-size: 960px;
+  --width-contents-max-size-modal-nav: 860px;
+  --width-contents-max-size-modal: 760px;
+  --width-contents-padding: 14px;
+  --color-heading: #000;
+  --color-text: #666;
+  --color-button-bg: #000;
+  --color-button-bg-hover: #596066;
+  --color-button-blue-bg: #0080ab;
+  --color-button-blue-bg-hover: #596066;
+  --color-link-text: #09c;
+  --color-link-text-visited-com: #464f9a;
+  --color-link-text-visited-jp: #4c3c94;
+  --color-link-bg: #3cf;
+  --color-border: #d2d6d9;
+  --opacity-hover: 0.8;
+}
