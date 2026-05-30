@@ -53,15 +53,8 @@ video {
 }
 
 /* Products AC: hide lineup tiles removed from offline mirror */
-#g-main .g-grid .g-grid_el:has(> a.g-hover[href="#"]) {
+#g-main .g-grid .g-grid_el:has(> a.g-hover[href*="no-page"]) {
   display: none !important;
-}
-
-/* Homepage: external product lines not in offline mirror */
-.Top_PS__Area--Area-2 .Top_PS__Heading-A a,
-.Top_PS__Area--Area-3 .Top_PS__Heading-A a {
-  pointer-events: none;
-  cursor: default;
 }
 
 picture img,

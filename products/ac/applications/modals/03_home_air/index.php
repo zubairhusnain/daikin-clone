@@ -1,0 +1,55 @@
+<?php
+declare(strict_types=1);
+require_once __DIR__ . '/../../../../../base-url.php';
+dk_start_output_rewrite();
+?>
+<!DOCTYPE html><html lang="en"><head><base href="/daikin-clone/daikin_offline/">
+<link href="assets/www.daikin.com/-/media/Base-Themes/Core-Libraries/styles/pre-optimized-min.css?rev=eb767e6c208348869206404cabaab874&t=20240823T055411Z&hash=F75D3B2D40A059220C6B64CEE3BA7A57" rel="stylesheet" />
+</head><body>
+<div id="ModalHeaderArea">
+<p class="Logo"><a href="/"><img src="assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/logo_daikin-png.png" width="171" height="36" alt="DAIKIN" /></a></p>
+<p class="Region">GLOBAL</p>
+<!-- / #ModalHeaderArea --></div>
+
+
+
+
+
+		<div id="g-main" class="g-main">
+			<div class="g-modal_el">
+				<div class="g-grid g-grid-2 g-block">
+					<div class="g-grid_el">
+						<p><img src="assets/www.daikin.com/-/media/Project/Daikin/daikin_com/products/ac/applications/modals/03_home_air/images/pic_01-jpg.jpg" class="g-img" alt=""></p>
+					</div>
+					<div class="g-grid_el">
+						<h2 class="g-ttl-2">Home Air Quality</h2>
+						<p>Nothing is more refreshing to city dwellers than leaving the airtight buildings of the city for the fresh air of the country. This is because air quality is an essential component to our physical and emotional well being. Daikin recognizes this by offering a range of residential air purification and home ventilation solutions to ensure the utmost in air quality and comfort for all living environments. In this way, Daikin endeavors to provide you with the same fresh air of the country without ever leaving your home.</p>
+					</div>
+				</div>
+				<div>
+					<h3 class="g-ttl-3">Related Products</h3>
+					<div class="g-column">
+						<div class="g-grid g-grid-4 g-grid-keep g-block">
+							<div class="g-grid_el"> <a href="/products/ac/applications/modals/03_home_air/products/ac/lineup/air_purifiers/">
+									<p class="g-talign-c"><img src="assets/www.daikin.com/-/media/Project/Daikin/daikin_com/products/ac/common/images/pic_lineup_air_purifiers-png.png" width="54" height="78" alt=""></p>
+									<span class="g-link">Air Purifiers</span>
+								</a> </div>
+							<div class="g-grid_el"> <a href="/products/ac/applications/modals/03_home_air/products/ac/lineup/ventilation/">
+									<p class="g-talign-c"><img src="assets/www.daikin.com/-/media/Project/Daikin/daikin_com/products/ac/common/images/pic_lineup_ventilation-png.png" width="93" height="44" alt=""></p>
+									<span class="g-link">Ventilation Products</span>
+								</a> </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+<div id="ModalFooterArea">
+  <div class="FooterBtm">
+    <p class="Copyright">©DAIKIN INDUSTRIES, Ltd., 2026</p>
+    <!-- / .FooterBtm -->
+  </div>
+  <!-- / #ModalFooterArea -->
+<script src="/products/ac/applications/modals/03_home_air/offline-media-fix.js/"></script>
+</body></html>

@@ -1,0 +1,15 @@
+RewriteEngine On
+
+# Subfolder install (XAMPP): uncomment if auto-detect is wrong
+# RewriteBase /daikin-clone/daikin_offline/
+
+DirectoryIndex disabled
+
+RewriteRule ^index\.html$ ./ [R=301,L]
+RewriteRule ^(.+/)index\.html$ $1 [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteCond %{REQUEST_URI} !/index\.php$
+RewriteRule ^ - [L]
+
+RewriteRule ^ router.php [L,QSA]
