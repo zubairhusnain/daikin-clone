@@ -126,7 +126,7 @@
     (a.o = function (e, t) {
       return Object.prototype.hasOwnProperty.call(e, t);
     }),
-    (a.p = "/air/js/"),
+    (a.p = "/daikin-clone/daikin_offline/assets/www.daikin.com/air/js/"),
     (a.oe = function (e) {
       throw (console.error(e), e);
     });

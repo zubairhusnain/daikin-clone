@@ -54,7 +54,7 @@
                 airIdeal: "airIdeal",
                 topMainVisual: "topMainVisual",
               }[e] || e) +
-              "modulebundle js"
+              "modulebundle.js"
             );
           })(e));
         var u = new Error();
@@ -126,7 +126,7 @@
     (a.o = function (e, t) {
       return Object.prototype.hasOwnProperty.call(e, t);
     }),
-    (a.p = "/-/media/Project/Daikin/daikin_com/air/js/"),
+    (a.p = "/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/air/js/"),
     (a.oe = function (e) {
       throw (console.error(e), e);
     });

@@ -92,13 +92,14 @@
         o = e.n(r),
         d = e(114);
       function h() {
-        var i = document.querySelector("#js-air-ideal"),
-          t = document.querySelectorAll(".js-video"),
+        var i = document.querySelector("#js-air-ideal");
+        if (!i) return;
+        var t = document.querySelectorAll(".js-video"),
           e = new d.a();
         e.add(() => {
           var t = document.querySelector("#HeaderWrap")
-            , e = document.querySelector("#GlobalNavWrap")
-            , s = t.clientHeight + e.clientHeight
+            , n = document.querySelector("#GlobalNavWrap")
+            , s = (t ? t.clientHeight : 0) + (n ? n.clientHeight : 0)
             , r = window.innerHeight - s + "px";
           i.style.height = r;
         }),

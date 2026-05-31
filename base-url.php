@@ -313,7 +313,7 @@ function dk_rewrite_asset_urls_in_html(string $html): string
     ) ?? $html;
 
     $html = preg_replace(
-        '~\b(href|src)=(["\'])/(assets/[^"\']*)\2~i',
+        '~\b(href|src)=(["\'])/(assets/[^"\']*?)/?\2~i',
         '$1=$2' . $base . '/$3$2',
         $html
     ) ?? $html;
@@ -345,11 +345,22 @@ function dk_rewrite_asset_urls_in_html(string $html): string
     ];
     foreach ($offlineFiles as $file) {
         $html = preg_replace(
-            '~\b(href|src)=(["\'])[^"\']*' . preg_quote($file, '~') . '\2~i',
+            '~\b(href|src)=(["\'])[^"\']*' . preg_quote($file, '~') . '/?\2~i',
             '$1=$2' . $base . '/' . $file . '$2',
             $html
         ) ?? $html;
     }
+
+    $html = preg_replace(
+        '~<script[^>]*\bsrc=(["\'])[^"\']*maps\.googleapis\.com[^"\']*\1[^>]*>\s*</script>~i',
+        '',
+        $html
+    ) ?? $html;
+    $html = preg_replace(
+        '~<script[^>]*\bsrc=(["\'])[^"\']*maps-api-v3[^"\']*\1[^>]*>\s*</script>~i',
+        '',
+        $html
+    ) ?? $html;
 
     $html = dk_rewrite_external_urls($html);
 

@@ -116,7 +116,7 @@
 }
 
 .panel-link .g-media_body.g-media_body-management {
-  background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/investor/images/New-management.jpg") no-repeat 0 100%/cover;
+  background: url("/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/investor/images/New-management-jpeg.jpeg") no-repeat 0 100%/cover;
 }
 
 .panel-link .g-media_body.g-media_body-financial {

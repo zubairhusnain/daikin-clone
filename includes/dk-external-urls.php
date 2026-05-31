@@ -58,6 +58,10 @@ function dk_map_external_url(string $url): string
     $query = isset($parts['query']) ? ('?' . $parts['query']) : '';
     $fragment = isset($parts['fragment']) ? ('#' . $parts['fragment']) : '';
 
+    if ($host === 'www.youtube.com' && preg_match('#^/embed/#i', $path)) {
+        return $url;
+    }
+
     if (in_array($host, dk_daikin_hosts(), true)) {
         if (preg_match('#^/-/?media/#i', $path) || dk_is_asset_path($path)) {
             return $base . '/assets/www.daikin.com' . $path . $query . $fragment;
