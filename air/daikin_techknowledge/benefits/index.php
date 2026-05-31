@@ -48,7 +48,7 @@ dk_start_output_rewrite();
 <link type="text/css" rel="stylesheet" href="assets/www.daikin.com/air/daikin_techknowledge/-/media/9707797D3FAB418897531D86598B3C64.ashx">
 <link type="text/css" rel="stylesheet" href="assets/www.daikin.com/air/daikin_techknowledge/-/media/A642235C80914D2FA4EFB7476A2ABCF4.ashx">
 <!--[if lt IE 9]><script src="assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/js/html5shiv-printshiv.js" charset="utf-8"><script src="assets/www.daikin.com/-/media/CA23A41690DB4A2FA2AF10DB54EF75AA.ashx" charset="utf-8"></script><![endif]-->
-<!-- ==================== sources from package ==================== --><link rel="stylesheet" href="assets/www.daikin.com/-/media/Project/Daikin/daikin_com/air/common/css/import.css"><link rel="stylesheet" href="assets/www.daikin.com/-/media/Project/Daikin/daikin_com/air/daikin_techknowledge/benefits/common/css/benefits.css" media="all"><!-- ==================== /sources from package ==================== --><meta property="og:url" content="https://www.daikin.com/air/daikin_techknowledge/benefits">
+<!-- ==================== sources from package ==================== --><link rel="stylesheet" href="assets/www.daikin.com/-/media/Project/Daikin/daikin_com/air/common/css/import.css"><link rel="stylesheet" href="assets/www.daikin.com/-/media/Project/Daikin/daikin_com/air/daikin_techknowledge/benefits/common/css/benefits.css" media="all"><!-- ==================== /sources from package ==================== --><meta property="og:url" content="/air/daikin_techknowledge/benefits">
   </head>
 <body class="set-responsiveWebDesign default-device bodyclass brand-Page default-device bodyclass">
     

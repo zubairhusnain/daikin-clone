@@ -10,7 +10,7 @@ dk_start_output_rewrite();
     
 
 
-<link rel="canonical" href="//www.daikin.com/press/2026/20260527">
+<link rel="canonical" href="/press/2026/20260527">
 
 
 
@@ -19,7 +19,7 @@ dk_start_output_rewrite();
 
 
 
-<meta property="og:url" content="https://www.daikin.com/press/2026/20260527">
+<meta property="og:url" content="/press/2026/20260527">
 
     <title>Daikin Global | Press Releases | Daikin Joins GlobalABC, a UNEP-Led Initiative</title>
 
@@ -327,19 +327,19 @@ dk_start_output_rewrite();
             <div class="g-snsbtn-box">
                 <ul class="g-snsbtn-list js-snsUrl">
                     <li class="g-snsbtn-iteam ic_facebook">
-                        <a href="https://www.facebook.com/share.php?u=http://www.daikin.com/press/2026/20260527" target="_blank" rel="nofollow">
+                        <a href="https://www.facebook.com/share.php?u=/press/2026/20260527" target="_blank" rel="nofollow">
                             <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f" class="svg-facebook svg-inline--fa fa-facebook-f fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 960"><path fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg>
                         </a>
                     </li>
                     <li class="g-snsbtn-iteam ic_twitter">
-                        <a href="https://twitter.com/share?url=http://www.daikin.com/press/2026/20260527&amp;text=Daikin Global - Press Releases - Daikin Joins GlobalABC, a UNEP-Led Initiative" target="_blank" rel="nofollow">
+                        <a href="https://twitter.com/share?url=/press/2026/20260527&amp;text=Daikin Global - Press Releases - Daikin Joins GlobalABC, a UNEP-Led Initiative" target="_blank" rel="nofollow">
                             <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" class="svg-twitter svg-inline--fa fa-twitter fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="-600 0 2400 2300">
                                 <path fill="currentColor" d="M714.163 519.284L1160.89 0H1055.03L667.137 450.887L357.328 0H0L468.492 681.821L0 1226.37H105.866L515.491 750.218L842.672 1226.37H1200L714.137 519.284H714.163ZM569.165 687.828L521.697 619.934L144.011 79.6944H306.615L611.412 515.685L658.88 583.579L1055.08 1150.3H892.476L569.165 687.854V687.828Z"></path>
                             </svg>
                         </a>
                     </li>
                     <li class="g-snsbtn-iteam ic_linkedin">
-                        <a href="https://www.linkedin.com/sharing/share-offsite/?url=http://www.daikin.com/press/2026/20260527" target="_blank" rel="nofollow">
+                        <a href="https://www.linkedin.com/sharing/share-offsite/?url=/press/2026/20260527" target="_blank" rel="nofollow">
                             <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin-in" class="svg-linkedin svg-inline--fa fa-linkedin-in fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 720"><path fill="currentColor" d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg>
                         </a>
                     </li>

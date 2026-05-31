@@ -13,7 +13,7 @@ dk_start_output_rewrite();
 <title>Daikin Global | News</title>
 
 
-<link rel="canonical" href="//www.daikin.com/news">
+<link rel="canonical" href="/news">
 
 
 
@@ -48,7 +48,7 @@ dk_start_output_rewrite();
 <link type="text/css" rel="stylesheet" href="assets/www.daikin.com/-/media/9707797D3FAB418897531D86598B3C64.ashx">
 <link type="text/css" rel="stylesheet" href="assets/www.daikin.com/-/media/A642235C80914D2FA4EFB7476A2ABCF4.ashx">
 <!--[if lt IE 9]><script src="assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/js/html5shiv-printshiv.js" charset="utf-8"><script src="assets/www.daikin.com/-/media/CA23A41690DB4A2FA2AF10DB54EF75AA.ashx" charset="utf-8"></script><![endif]-->
-  <link type="text/css" rel="stylesheet" href="assets/www.daikin.com/-/media/8F3DF59CDEF544F4932E9810FEB1971B.ashx">  <link type="text/css" rel="stylesheet" href="assets/www.daikin.com/-/media/4A73B1C0851D420DBDB3CB8100FB6599.ashx">  <link type="text/css" rel="stylesheet" href="assets/www.daikin.com/-/media/BF13453A21A3495E859F5420D8BFEC76.ashx"><meta property="og:url" content="https://www.daikin.com/news">
+  <link type="text/css" rel="stylesheet" href="assets/www.daikin.com/-/media/8F3DF59CDEF544F4932E9810FEB1971B.ashx">  <link type="text/css" rel="stylesheet" href="assets/www.daikin.com/-/media/4A73B1C0851D420DBDB3CB8100FB6599.ashx">  <link type="text/css" rel="stylesheet" href="assets/www.daikin.com/-/media/BF13453A21A3495E859F5420D8BFEC76.ashx"><meta property="og:url" content="/news">
   </head>
 <body class="g-page-dept g-page-sidebar set-responsiveWebDesign default-device bodyclass">
     
@@ -278,7 +278,7 @@ dk_start_output_rewrite();
 
 
                     <li>
-                        <a href=https://www.daikin.com/>Top</a>
+                        <a href=/>Top</a>
                     </li>
 
             <li> News</li>

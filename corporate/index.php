@@ -13,7 +13,7 @@ dk_start_output_rewrite();
 <title>About Daikin | Daikin Global</title>
 
 
-<link rel="canonical" href="//www.daikin.com/corporate">
+<link rel="canonical" href="/corporate">
 
 
 
@@ -48,7 +48,7 @@ dk_start_output_rewrite();
 <link type="text/css" rel="stylesheet" href="assets/www.daikin.com/-/media/9707797D3FAB418897531D86598B3C64.ashx">
 <link type="text/css" rel="stylesheet" href="assets/www.daikin.com/-/media/A642235C80914D2FA4EFB7476A2ABCF4.ashx">
 <!--[if lt IE 9]><script src="assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/js/html5shiv-printshiv.js" charset="utf-8"><script src="assets/www.daikin.com/-/media/CA23A41690DB4A2FA2AF10DB54EF75AA.ashx" charset="utf-8"></script><![endif]-->
-	<link type="text/css" rel="stylesheet" href="assets/www.daikin.com/-/media/3322EF58677D4AFA84E5E466E6481879.ashx">	<link type="text/css" rel="stylesheet" href="assets/www.daikin.com/-/media/09179A574A4946C0A42F55D810352EC7.ashx"><meta property="og:url" content="https://www.daikin.com/corporate">
+	<link type="text/css" rel="stylesheet" href="assets/www.daikin.com/-/media/3322EF58677D4AFA84E5E466E6481879.ashx">	<link type="text/css" rel="stylesheet" href="assets/www.daikin.com/-/media/09179A574A4946C0A42F55D810352EC7.ashx"><meta property="og:url" content="/corporate">
   </head>
 <body class="g-page-dept set-responsiveWebDesign default-device bodyclass">
     

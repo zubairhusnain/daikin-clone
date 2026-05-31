@@ -13,7 +13,7 @@ dk_start_output_rewrite();
 <title>People-Centered Management | Careers | Daikin Global</title>
 
 
-<link rel="canonical" href="//www.daikin.com/careers/management">
+<link rel="canonical" href="/careers/management">
 
 
 
@@ -41,7 +41,7 @@ dk_start_output_rewrite();
 <script src="assets/www.daikin.com/careers/-/media/D91AD01E61914F1792C936E6756A73F3.ashx" charset="utf-8"></script>
 <script src="assets/www.daikin.com/careers/-/media/477CD24733A94E68A5367AFF590A4620.ashx" charset="utf-8"></script>
 <script src="assets/www.daikin.com/careers/-/media/7EB5D3C993564954A460FD940208DC42.ashx" charset="utf-8"></script>
-<!--[if lt IE 9]><script src="assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/js/html5shiv-printshiv.js" charset="utf-8"><script src="assets/www.daikin.com/-/media/CA23A41690DB4A2FA2AF10DB54EF75AA.ashx" charset="utf-8"></script><![endif]-->	<link rel="stylesheet" href="assets/www.daikin.com/careers/-/media/7CB13E1992944AB3A0F896E6F185C300.ashx" media="all">	<link rel="stylesheet" href="assets/www.daikin.com/careers/-/media/EDA647A80D534E31B6957E6B659F3617.ashx" media="all"><meta property="og:url" content="https://www.daikin.com/careers/management">
+<!--[if lt IE 9]><script src="assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/js/html5shiv-printshiv.js" charset="utf-8"><script src="assets/www.daikin.com/-/media/CA23A41690DB4A2FA2AF10DB54EF75AA.ashx" charset="utf-8"></script><![endif]-->	<link rel="stylesheet" href="assets/www.daikin.com/careers/-/media/7CB13E1992944AB3A0F896E6F185C300.ashx" media="all">	<link rel="stylesheet" href="assets/www.daikin.com/careers/-/media/EDA647A80D534E31B6957E6B659F3617.ashx" media="all"><meta property="og:url" content="/careers/management">
   </head>
 <body class="default-device bodyclass">
     

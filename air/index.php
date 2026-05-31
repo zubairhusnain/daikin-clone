@@ -13,7 +13,7 @@ dk_start_output_rewrite();
 <title>Perfecting the Air TOP | Daikin Global</title>
 
 
-<link rel="canonical" href="//www.daikin.com/air">
+<link rel="canonical" href="/air">
 
 
 
@@ -48,7 +48,7 @@ dk_start_output_rewrite();
 <link type="text/css" rel="stylesheet" href="assets/www.daikin.com/-/media/9707797D3FAB418897531D86598B3C64.ashx">
 <link type="text/css" rel="stylesheet" href="assets/www.daikin.com/-/media/A642235C80914D2FA4EFB7476A2ABCF4.ashx">
 <!--[if lt IE 9]><script src="assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/js/html5shiv-printshiv.js" charset="utf-8"><script src="assets/www.daikin.com/-/media/CA23A41690DB4A2FA2AF10DB54EF75AA.ashx" charset="utf-8"></script><![endif]-->
-  <!-- ==================== sources from package ==================== -->  <link rel="stylesheet" href="assets/www.daikin.com/-/media/8523EFBBF55745989201D92219C51A80.ashx">  <link rel="stylesheet" href="assets/www.daikin.com/-/media/89A0D125FC7B4E51AF383FD03C981A4B.ashx" media="all">  <link rel="stylesheet" href="assets/www.daikin.com/-/media/CA358C0569A244D0A40C30B542BD64AA.ashx" media="all">  <script src="assets/www.daikin.com/-/media/870F39F68C1F4504995C0EDCC3E8706C.ashx" defer></script>  <script src="assets/www.daikin.com/-/media/142EBC64650F41E884AA0E1C33EA1497.ashx" defer></script>  <script src="assets/www.daikin.com/-/media/7C42BD34108540A0939181365E586E1B.ashx" defer></script>  <script src="assets/www.daikin.com/-/media/0C3F8966D3214FB4B514C5CBE0C75E81.ashx" defer></script>  <script src="assets/www.daikin.com/-/media/5E36772A035D4877B39F3F157B5DFE64.ashx" defer></script>  <!-- ==================== /sources from package ==================== --><meta property="og:url" content="https://www.daikin.com/air">
+  <!-- ==================== sources from package ==================== -->  <link rel="stylesheet" href="assets/www.daikin.com/-/media/8523EFBBF55745989201D92219C51A80.ashx">  <link rel="stylesheet" href="assets/www.daikin.com/-/media/89A0D125FC7B4E51AF383FD03C981A4B.ashx" media="all">  <link rel="stylesheet" href="assets/www.daikin.com/-/media/CA358C0569A244D0A40C30B542BD64AA.ashx" media="all">  <script src="assets/www.daikin.com/-/media/870F39F68C1F4504995C0EDCC3E8706C.ashx" defer></script>  <script src="assets/www.daikin.com/-/media/142EBC64650F41E884AA0E1C33EA1497.ashx" defer></script>  <script src="assets/www.daikin.com/-/media/7C42BD34108540A0939181365E586E1B.ashx" defer></script>  <script src="assets/www.daikin.com/-/media/0C3F8966D3214FB4B514C5CBE0C75E81.ashx" defer></script>  <script src="assets/www.daikin.com/-/media/5E36772A035D4877B39F3F157B5DFE64.ashx" defer></script>  <!-- ==================== /sources from package ==================== --><meta property="og:url" content="/air">
   <script charset="utf-8" src="assets/www.daikin.com/air/js/topMainVisual.module.bundle.js"></script></head>
 <body class="g-page-dept set-responsiveWebDesign default-device bodyclass brand-Page default-device bodyclass">
     

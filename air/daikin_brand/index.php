@@ -13,7 +13,7 @@ dk_start_output_rewrite();
 <title>Daikin Brand | Perfecting the Air | Daikin Global</title>
 
 
-<link rel="canonical" href="//www.daikin.com/air/daikin_brand">
+<link rel="canonical" href="/air/daikin_brand">
 
 
 
@@ -48,7 +48,7 @@ dk_start_output_rewrite();
 <link type="text/css" rel="stylesheet" href="assets/www.daikin.com/air/-/media/9707797D3FAB418897531D86598B3C64.ashx">
 <link type="text/css" rel="stylesheet" href="assets/www.daikin.com/air/-/media/A642235C80914D2FA4EFB7476A2ABCF4.ashx">
 <!--[if lt IE 9]><script src="assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/js/html5shiv-printshiv.js" charset="utf-8"><script src="assets/www.daikin.com/-/media/CA23A41690DB4A2FA2AF10DB54EF75AA.ashx" charset="utf-8"></script><![endif]-->
-<!-- ==================== sources from package ==================== --><link rel="stylesheet" href="assets/www.daikin.com/-/media/8523EFBBF55745989201D92219C51A80.ashx"><link rel="stylesheet" href="assets/www.daikin.com/-/media/CABF971BBA6049588794B840DFB26541.ashx" media="all"><!-- ==================== /sources from package ==================== --><meta property="og:url" content="https://www.daikin.com/air/daikin_brand">
+<!-- ==================== sources from package ==================== --><link rel="stylesheet" href="assets/www.daikin.com/-/media/8523EFBBF55745989201D92219C51A80.ashx"><link rel="stylesheet" href="assets/www.daikin.com/-/media/CABF971BBA6049588794B840DFB26541.ashx" media="all"><!-- ==================== /sources from package ==================== --><meta property="og:url" content="/air/daikin_brand">
   </head>
 <body class="g-page-dept set-responsiveWebDesign default-device bodyclass brand-Page default-device bodyclass">
     

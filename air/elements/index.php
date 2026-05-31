@@ -13,7 +13,7 @@ dk_start_output_rewrite();
 <title>The Power to Create the Air of the Future | Daikin Global</title>
 
 
-<link rel="canonical" href="//www.daikin.com/air/elements">
+<link rel="canonical" href="/air/elements">
 
 
 
@@ -48,7 +48,7 @@ dk_start_output_rewrite();
 <link type="text/css" rel="stylesheet" href="assets/www.daikin.com/air/-/media/9707797D3FAB418897531D86598B3C64.ashx">
 <link type="text/css" rel="stylesheet" href="assets/www.daikin.com/air/-/media/A642235C80914D2FA4EFB7476A2ABCF4.ashx">
 <!--[if lt IE 9]><script src="assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/js/html5shiv-printshiv.js" charset="utf-8"><script src="assets/www.daikin.com/-/media/CA23A41690DB4A2FA2AF10DB54EF75AA.ashx" charset="utf-8"></script><![endif]-->
-<!-- ==================== sources from package ==================== --><link rel="stylesheet" href="assets/www.daikin.com/-/media/Project/Daikin/daikin_com/air/common/css/import.css"><!-- 固有css、js --><link rel="stylesheet" href="assets/www.daikin.com/-/media/Project/Daikin/daikin_com/air/elements/css/modal_responsive.css"><link rel="stylesheet" href="assets/www.daikin.com/-/media/Project/Daikin/daikin_com/air/elements/modals/css/elements_modal.css"><link rel="stylesheet" href="assets/www.daikin.com/-/media/Project/Daikin/daikin_com/air/elements/css/style.css"><script src="assets/www.daikin.com/-/media/Project/Daikin/daikin_com/air/elements/js/jquery-371.js"></script><script src="assets/www.daikin.com/-/media/Project/Daikin/daikin_com/air/elements/js/modal_responsive.js" defer></script><script src="assets/www.daikin.com/-/media/Project/Daikin/daikin_com/air/elements/js/lottie-web.js" defer></script><script src="assets/www.daikin.com/-/media/Project/Daikin/daikin_com/air/elements/js/lottie.js" defer></script>  <!-- ==================== /sources from package ==================== --><style>#gnav-air a{color:#0097e0 !important;}</style><meta property="og:url" content="https://www.daikin.com/air/elements">
+<!-- ==================== sources from package ==================== --><link rel="stylesheet" href="assets/www.daikin.com/-/media/Project/Daikin/daikin_com/air/common/css/import.css"><!-- 固有css、js --><link rel="stylesheet" href="assets/www.daikin.com/-/media/Project/Daikin/daikin_com/air/elements/css/modal_responsive.css"><link rel="stylesheet" href="assets/www.daikin.com/-/media/Project/Daikin/daikin_com/air/elements/modals/css/elements_modal.css"><link rel="stylesheet" href="assets/www.daikin.com/-/media/Project/Daikin/daikin_com/air/elements/css/style.css"><script src="assets/www.daikin.com/-/media/Project/Daikin/daikin_com/air/elements/js/jquery-371.js"></script><script src="assets/www.daikin.com/-/media/Project/Daikin/daikin_com/air/elements/js/modal_responsive.js" defer></script><script src="assets/www.daikin.com/-/media/Project/Daikin/daikin_com/air/elements/js/lottie-web.js" defer></script><script src="assets/www.daikin.com/-/media/Project/Daikin/daikin_com/air/elements/js/lottie.js" defer></script>  <!-- ==================== /sources from package ==================== --><style>#gnav-air a{color:#0097e0 !important;}</style><meta property="og:url" content="/air/elements">
   </head>
 <body class="g-page-dept set-responsiveWebDesign default-device bodyclass brand-Page default-device bodyclass default-device bodyclass">
     

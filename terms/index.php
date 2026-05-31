@@ -13,7 +13,7 @@ dk_start_output_rewrite();
 <title>Daikin Global | Terms of Use</title>
 
 
-<link rel="canonical" href="//www.daikin.com/terms">
+<link rel="canonical" href="/terms">
 
 
 
@@ -48,7 +48,7 @@ dk_start_output_rewrite();
 <link type="text/css" rel="stylesheet" href="assets/www.daikin.com/-/media/9707797D3FAB418897531D86598B3C64.ashx">
 <link type="text/css" rel="stylesheet" href="assets/www.daikin.com/-/media/A642235C80914D2FA4EFB7476A2ABCF4.ashx">
 <!--[if lt IE 9]><script src="assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/js/html5shiv-printshiv.js" charset="utf-8"><script src="assets/www.daikin.com/-/media/CA23A41690DB4A2FA2AF10DB54EF75AA.ashx" charset="utf-8"></script><![endif]-->
-<meta property="og:url" content="https://www.daikin.com/terms">
+<meta property="og:url" content="/terms">
   </head>
 <body class="g-page-dept g-page-sidebar set-responsiveWebDesign default-device bodyclass">
     
@@ -345,7 +345,7 @@ dk_start_output_rewrite();
       <ul class="g-blist">
         <li>Links to the Daikin website (each hereinafter referred to as a "Link Source") do not signify, either directly or indirectly, any relationship between Daikin and the person, or entity, managing the Link Source, nor do they imply Daikin's recommendation or responsibility for the content of the Link Source website.</li>
         <li>Those persons or entities, having a Link Source to the Daikin website are required to follow the terms of use of such Link Source. In no event shall Daikin be liable for any damages or losses arising from any Link Source.</li>
-        <li>As a general rule, links to the Daikin website should be set to the top page of the Daikin website (https://www.daikin.com/). Without any notice or prenotification, the contents of Daikin website may be updated or revised at sole discretion of Daikin.</li>
+        <li>As a general rule, links to the Daikin website should be set to the top page of the Daikin website (/). Without any notice or prenotification, the contents of Daikin website may be updated or revised at sole discretion of Daikin.</li>
         <li>Links to the Daikin website that result in acts corresponding to those described above in the section "Prohibited Acts" are prohibited.</li>
       </ul>
         <p class="g-p">Links from the Daikin website (each hereinafter referred to as a "Link Destination") do not signify, either directly or indirectly, any relationship between Daikin and the person or entity, managing the Link Destination, nor do they imply Daikin's recommendation or responsibility for the content of the Link Destination website.</p>

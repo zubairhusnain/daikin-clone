@@ -13,7 +13,7 @@ dk_start_output_rewrite();
 <title>Careers - Endless Possibilities to Impact the World | Daikin Global</title>
 
 
-<link rel="canonical" href="//www.daikin.com/careers">
+<link rel="canonical" href="/careers">
 
 
 
@@ -41,7 +41,7 @@ dk_start_output_rewrite();
 <script src="assets/www.daikin.com/-/media/D91AD01E61914F1792C936E6756A73F3.ashx" charset="utf-8"></script>
 <script src="assets/www.daikin.com/-/media/477CD24733A94E68A5367AFF590A4620.ashx" charset="utf-8"></script>
 <script src="assets/www.daikin.com/-/media/7EB5D3C993564954A460FD940208DC42.ashx" charset="utf-8"></script>
-<!--[if lt IE 9]><script src="assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/js/html5shiv-printshiv.js" charset="utf-8"><script src="assets/www.daikin.com/-/media/CA23A41690DB4A2FA2AF10DB54EF75AA.ashx" charset="utf-8"></script><![endif]-->    <link rel="stylesheet" href="assets/www.daikin.com/-/media/7CB13E1992944AB3A0F896E6F185C300.ashx" media="all">    <link rel="stylesheet" href="assets/www.daikin.com/-/media/055343FC8DD64573AC29774E1FC2B6F9.ashx" media="all">    <link rel="stylesheet" href="assets/www.daikin.com/-/media/301CAC0F52554B7EB7AFAAD0E8E399EE.ashx" media="all">    <script src="assets/www.daikin.com/-/media/AC2C76CEE5FF434E8B3AC6638EA881C0.ashx" charset="utf-8"></script>    <script src="assets/www.daikin.com/-/media/8636F000496C4CABAA76BA3B71A12BDE.ashx" charset="utf-8"></script>    <script src="assets/www.daikin.com/-/media/F775C41677CF416CB164AFACB79E09E9.ashx" charset="utf-8"></script>    <script src="assets/www.daikin.com/-/media/6FDE2A5BC78D4CD1862643DED4A869B9.ashx" charset="utf-8"></script>    <!--[if lte IE 8 ]><script src="assets/www.daikin.com/-/media/6BA03705A4B042899986A5B4F637786D.ashx" charset="utf-8"></script><![endif]--><meta property="og:url" content="https://www.daikin.com/careers">
+<!--[if lt IE 9]><script src="assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/js/html5shiv-printshiv.js" charset="utf-8"><script src="assets/www.daikin.com/-/media/CA23A41690DB4A2FA2AF10DB54EF75AA.ashx" charset="utf-8"></script><![endif]-->    <link rel="stylesheet" href="assets/www.daikin.com/-/media/7CB13E1992944AB3A0F896E6F185C300.ashx" media="all">    <link rel="stylesheet" href="assets/www.daikin.com/-/media/055343FC8DD64573AC29774E1FC2B6F9.ashx" media="all">    <link rel="stylesheet" href="assets/www.daikin.com/-/media/301CAC0F52554B7EB7AFAAD0E8E399EE.ashx" media="all">    <script src="assets/www.daikin.com/-/media/AC2C76CEE5FF434E8B3AC6638EA881C0.ashx" charset="utf-8"></script>    <script src="assets/www.daikin.com/-/media/8636F000496C4CABAA76BA3B71A12BDE.ashx" charset="utf-8"></script>    <script src="assets/www.daikin.com/-/media/F775C41677CF416CB164AFACB79E09E9.ashx" charset="utf-8"></script>    <script src="assets/www.daikin.com/-/media/6FDE2A5BC78D4CD1862643DED4A869B9.ashx" charset="utf-8"></script>    <!--[if lte IE 8 ]><script src="assets/www.daikin.com/-/media/6BA03705A4B042899986A5B4F637786D.ashx" charset="utf-8"></script><![endif]--><meta property="og:url" content="/careers">
   </head>
 <body class="default-device bodyclass">
     
