@@ -1,6 +1,14 @@
 <?php
 declare(strict_types=1);
 require_once __DIR__ . '/../base-url.php';
+require_once __DIR__ . '/../includes/dk-contact-form.php';
+
+$formState = ['ok' => false, 'message' => '', 'values' => []];
+if (strtoupper($_SERVER['REQUEST_METHOD'] ?? 'GET') === 'POST') {
+    $formState = dk_contact_form_handle($_POST);
+}
+$dkContactForm = dk_contact_form_render($formState);
+
 dk_start_output_rewrite();
 ?>
 <!DOCTYPE html><html class="js JS no-touchevents no-applicationcache geolocation history svg postmessage websockets localstorage sessionstorage no-websqldatabase webworkers hashchange audio canvas canvastext video webgl cssgradients multiplebgs opacity rgba inlinesvg hsla supports svgclippaths smil fontface generatedcontent textshadow cssanimations backgroundsize borderimage borderradius boxshadow csscolumns csscolumns-width csscolumns-span csscolumns-fill csscolumns-gap csscolumns-rule csscolumns-rulecolor csscolumns-rulestyle csscolumns-rulewidth csscolumns-breakbefore csscolumns-breakafter csscolumns-breakinside flexbox cssreflections csstransforms csstransforms3d csstransitions indexeddb mac chrome indexeddb-deletedatabase" lang="en"><!--<![endif]--><head><base href="/daikin-clone/daikin_offline/">
@@ -296,115 +304,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <li>Contact</li>
 </ol>
 </div>
-<div class="g-container">
+<div class="g-container dk-contact-page-main">
 <h1 class="g-ttl-1">Contact</h1>
-<p class="g-p">The Daikin Group welcomes your comments and inquiries and provides the following links for contacting us.</p>
-<!--- <strong> Information</strong><br>
-<p class="g-p">Daikin Industries, Ltd. is closed from August 9th, 2025 to August 17th, 2025.<br>
-We apologize for any inconvenience caused and appreciate your understanding in this matter.
-</p> --->
-&nbsp;&nbsp;<!--#include virtual="/sitecore/content/Daikin/daikin_com/Home/contact/include/info" -->
-<div class="g-section-lv2">
-<h2 class="g-ttl-2">Before Sending Your Inquiry</h2>
-<h3 class="g-ttl-3">Find Your Local Website</h3>
-<p class="g-p">For details concerning products and services, please direct inquiries to your nearest Daikin business location.</p>
-<ul class="g-vline">
-    <li class="g-vline_el"><a href="no-page/" class="g-link">Global Locations</a></li>
-</ul>
-<h3 class="g-ttl-3">Ask our Check FAQ</h3>
-<p class="g-p">
-Answers to frequently asked questions may be found on our FAQ page.<br>
-Select the item below corresponding to your area of interest.
-</p>
-<ul class="g-vline g-mb-15">
-    <li class="g-hline_el"><a href="no-page/" class="g-link" onclick="dataLayer.push({'event':'ev_track','evCategory':'contact','evAction':'contact_faq_link','evLabel':this.href.toString()});">Troubleshooting (FAQ)</a></li>
-</ul>
-<ul class="g-hline g-mt-0">
-    <li class="g-hline_el g-mt-0"><a href="no-page/" class="g-link" onclick="dataLayer.push({'event':'ev_track','evCategory':'contact','evAction':'contact_faq_link','evLabel':this.href.toString()});">Corporate Information</a></li>
-    <li class="g-hline_el g-mt-0"><a href="no-page/" class="g-link" onclick="dataLayer.push({'event':'ev_track','evCategory':'contact','evAction':'contact_faq_link','evLabel':this.href.toString()});">Investor Relations</a></li>
-    <li class="g-hline_el g-mt-0"><a href="no-page/" class="g-link" onclick="dataLayer.push({'event':'ev_track','evCategory':'contact','evAction':'contact_faq_link','evLabel':this.href.toString()});">Sustainability</a></li>
-</ul>
+<?php echo $dkContactForm; ?>
 </div>
-<div class="g-section-lv2">
-<h2 class="g-ttl-2">Air Conditioners and Refrigeration</h2>
-<div class="g-grid g-grid-2 g-block">
-<div class="g-grid_el">
-<h3 class="g-ttl-3">Products</h3>
-<div class="g-media-h g-media-mq">
-<div class="g-media_left g-width-40"><img alt="" src="assets/www.daikin.com/-/media/Project/Daikin/daikin_com/contact/images/pic_ac_contact-jpg.jpg" height="132" width="190"></div>
-<div class="g-media_body">
-<ul class="g-vline">
-    <li class="g-vline_el"><a href="no-page/" class="g-link" onclick="dataLayer.push({'event':'ev_track','evCategory':'contact','evAction':'contact_link','evLabel':this.href.toString()});">Air Conditioners and Refrigeration</a></li>
-    <li class="g-vline_el"><a href="no-page/" class="g-link" onclick="dataLayer.push({'event':'ev_track','evCategory':'contact','evAction':'contact_link','evLabel':this.href.toString()});">Marine Vessel Air Conditioners</a></li>
-    <li class="g-vline_el"><a href="no-page/" class="g-link" onclick="dataLayer.push({'event':'ev_track','evCategory':'contact','evAction':'contact_link','evLabel':this.href.toString()});">Marine Container Refrigeration Units</a></li>
-</ul>
-</div>
-</div>
-</div>
-<div class="g-grid_el">
-<h3 class="g-ttl-3">After Sales Service</h3>
-<div class="g-media-h g-media-mq">
-<div class="g-media_left g-width-40"><img alt="" src="assets/www.daikin.com/-/media/Project/Daikin/daikin_com/contact/images/pic_ac_services_01-jpg.jpg" height="132" width="190"></div>
-<div class="g-media_body">
-<ul class="g-vline">
-    <li class="g-vline_el"><a href="no-page/" class="g-link" onclick="dataLayer.push({'event':'ev_track','evCategory':'contact','evAction':'contact_link','evLabel':this.href.toString()});">Air Conditioners and Refrigeration</a></li>
-    <li class="g-vline_el"><a rel="noopener noreferrer" href="https://www.ref.daikin.com/" class="g-link g-blank" target="_blank" onclick="dataLayer.push({'event':'ev_track','evCategory':'contact','evAction':'contact_link','evLabel':this.href.toString()});">Marine Container Refrigeration Units</a></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="g-section-lv2">
-<div class="g-grid g-grid-2 g-block">
-<div class="g-grid_el">
-<h2 class="g-ttl-2">Fluorochemicals</h2>
-<div class="g-media-h g-media-mq">
-<div class="g-media_left g-width-40"><img alt="" src="assets/www.daikin.com/-/media/Project/Daikin/daikin_com/contact/images/pic_chm_01-jpg.jpg" height="132" width="190"></div>
-<div class="g-media_body">
-<ul class="g-vline">
-    <li class="g-vline_el"><a href="javascript:;" class="g-link">Fluoropolymers, Fluoroelastomers, Fluoro Coatings, Refrigerants</a></li>
-</ul>
-</div>
-</div>
-</div>
-<div class="g-grid_el">
-<h2 class="g-ttl-2 sp-border">Oil Hydraulics</h2>
-<div class="g-media-h g-media-mq">
-<div class="g-media_left g-width-40"><img alt="" src="assets/www.daikin.com/-/media/Project/Daikin/daikin_com/contact/images/pic_pmc_01-jpg.jpg" height="132" width="190"></div>
-<div class="g-media_body">
-<ul class="g-vline">
-    <li class="g-vline_el"><a href="javascript:;" class="g-link">Hydraulic Pumps, Control Valve, Oil Conditioner</a></li>
-    <li class="g-vline_el"><a href="javascript:;" class="g-link">Hydrostatic Transmissions (HST) For Mobile</a></li>
-    <li class="g-vline_el"><a href="javascript:;" class="g-link">Lubrication Products</a></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="g-section-lv2">
-<h2 class="g-ttl-2">Corporate Information</h2>
-<ul class="g-hline">
-    <li class="g-hline_el"><a href="no-page/" class="g-link" onclick="dataLayer.push({'event':'ev_track','evCategory':'contact','evAction':'contact_link','evLabel':this.href.toString()});">Corporate Information and Media Contact</a></li>
-    <li class="g-hline_el"><a href="no-page/" class="g-link" onclick="dataLayer.push({'event':'ev_track','evCategory':'contact','evAction':'contact_link','evLabel':this.href.toString()});">Investor Relations</a></li>
-    <li class="g-hline_el"><a href="no-page/" class="g-link" onclick="dataLayer.push({'event':'ev_track','evCategory':'contact','evAction':'contact_link','evLabel':this.href.toString()});">Sustainability</a></li>
-    <li class="g-hline_el"><a href="no-page/" class="g-link" onclick="dataLayer.push({'event':'ev_track','evCategory':'contact','evAction':'contact_link','evLabel':this.href.toString()});">Contacting Parts Suppliers</a></li>
-    <li class="g-hline_el"><a href="no-page/" class="g-link" onclick="dataLayer.push({'event':'ev_track','evCategory':'contact','evAction':'contact_link','evLabel':this.href.toString()});">Privacy Policy</a></li>
-</ul>
-</div>
-</div>
-</div>
-
-
-<!--probo_noindex-->
-<div id="GlobalLocationsWrap" class="g-gl">
-<div id="GlobalLocationsArea" class="g-gl_inner">
-<p class="GlobalLocations__Catch g-gl_hd">Find out more in your region.</p>
-<p class="g-gl_btn"><a href="no-page/" class="TextButton TextButton--Large g-btn g-btn-em g-btn-inline" onclick="dataLayer.push({'event':'ev_track','evCategory':'Global Locations','evAction':'Global Locations Area','evLabel':this.href.toString()});">Global Locations<i class="Mkr Mkr--Large Mkr--ArwLightBlue"></i></a></p>
-<!-- / #GlobalLocationsArea --></div>
-<!-- / #GlobalLocationsWrap --></div>
-<!--/probo_noindex-->
 
 
 <!--probo_noindex-->

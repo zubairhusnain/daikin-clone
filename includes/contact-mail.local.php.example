@@ -1,0 +1,23 @@
+<?php
+declare(strict_types=1);
+
+/**
+ * Copy this file to contact-mail.local.php and edit the values below.
+ * No Composer — only PHP + SMTP.
+ *
+ * Gmail: use an App Password (Google Account → Security → App passwords).
+ */
+return [
+    'recipient' => 'your-email@gmail.com',
+    'from_email' => 'your-email@gmail.com',
+    'from_name' => 'Daikin Contact Form',
+
+    'smtp' => [
+        'enabled' => true,
+        'host' => 'smtp.gmail.com',
+        'port' => 587,
+        'encryption' => 'tls',
+        'username' => 'your-email@gmail.com',
+        'password' => 'your-16-char-app-password',
+    ],
+];

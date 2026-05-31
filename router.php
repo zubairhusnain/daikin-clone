@@ -6,6 +6,17 @@ declare(strict_types=1);
 
 require_once __DIR__ . '/includes/dk-php-polyfill.php';
 require_once __DIR__ . '/base-url.php';
+require_once __DIR__ . '/includes/dk-forms.php';
+
+if (dk_forms_disabled() && strtoupper($_SERVER['REQUEST_METHOD'] ?? 'GET') === 'POST') {
+    http_response_code(403);
+    header('Content-Type: text/html; charset=utf-8');
+    echo '<!DOCTYPE html><html><head><title>Form disabled</title></head><body>'
+        . '<p>Form submissions are disabled on this site.</p>'
+        . '<p><a href="' . htmlspecialchars(DK_BASE_URL . '/', ENT_QUOTES, 'UTF-8') . '">Return home</a></p>'
+        . '</body></html>';
+    exit;
+}
 
 $uri = $_SERVER['REQUEST_URI'] ?? '/';
 $path = parse_url($uri, PHP_URL_PATH);
