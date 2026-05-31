@@ -243,8 +243,18 @@ function dk_rewrite_baked_paths(string $html): string
         if ($prefix === '') {
             continue;
         }
-        $html = str_replace($prefix . '/', $target, $html);
-        $html = str_replace($prefix, $base, $html);
+        $quoted = preg_quote($prefix, '~');
+        // Only rewrite baked paths at attribute/value starts — not inside http://host/.../prefix/...
+        $html = preg_replace(
+            '~(?<=["\'\(])' . $quoted . '/~',
+            $target,
+            $html
+        ) ?? $html;
+        $html = preg_replace(
+            '~(?<=["\'\(])' . $quoted . '(?=["\'\)])~',
+            $base,
+            $html
+        ) ?? $html;
     }
 
     $html = preg_replace('~<base\s+href=(["\'])#["\']\s*/?>~i', '', $html) ?? $html;
@@ -263,6 +273,19 @@ function dk_rewrite_baked_paths(string $html): string
     return $html;
 }
 
+function dk_fix_mangled_section_hrefs(string $html): string
+{
+    $sections = 'air|corporate|products|investor|sustainability|careers|news|contact|press';
+
+    return preg_replace_callback(
+        '~\bhref=(["\'])/(?:[^"\']+/)+(' . $sections . ')(/[^"\']*)?\1~i',
+        static function (array $m): string {
+            return 'href=' . $m[1] . '/' . $m[2] . ($m[3] ?? '') . $m[1];
+        },
+        $html
+    ) ?? $html;
+}
+
 function dk_rewrite_asset_urls_in_html(string $html): string
 {
     $base = DK_BASE_URL;
@@ -275,6 +298,7 @@ function dk_rewrite_asset_urls_in_html(string $html): string
     $currentRoute = trim($path, '/');
 
     $html = dk_rewrite_baked_paths($html);
+    $html = dk_fix_mangled_section_hrefs($html);
 
     $html = preg_replace(
         '~\b(href|src)=(["\'])(?:\.\./)+(assets/[^"\']*)\2~i',
@@ -331,7 +355,10 @@ function dk_rewrite_asset_urls_in_html(string $html): string
 
     $html = preg_replace_callback(
         '~\b(href)=(["\'])([^"\']+)\2~i',
-        static function (array $m) use ($currentRoute): string {
+        static function (array $m) use ($currentRoute, $base): string {
+            if (preg_match('~^/(' . 'air|corporate|products|investor|sustainability|careers|news|contact|press' . ')(/|$)~i', $m[3])) {
+                return 'href=' . $m[2] . $base . $m[3] . $m[2];
+            }
             $resolved = dk_resolve_internal_href($currentRoute, $m[3]);
             if ($resolved === null) {
                 return $m[0];

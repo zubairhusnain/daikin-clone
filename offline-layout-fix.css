@@ -38,6 +38,11 @@
   overflow: hidden !important;
 }
 
+/* Dimmed backdrop: capture clicks to close mega menu */
+#MegaMenu_Overlay {
+  cursor: default;
+}
+
 #HeaderSubstitution {
   margin: 0;
   padding: 0;

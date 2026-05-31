@@ -123,11 +123,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="BlockSkip"><a href="#ContentsWrap">Skip to main content</a></div>
 <div id="HeaderShrinking" style="width: 100%; position: fixed;"><div id="HeaderWrap">
 <div id="HeaderArea">
-<p class="Logo"><a href="/products/ac/lineup/split_multi_split/"><img src="assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/logo_daikin-png.png" alt="DAIKIN"></a></p>
+<p class="Logo"><a href="/"><img src="assets/www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/logo_daikin-png.png" alt="DAIKIN"></a></p>
 <p class="Region">GLOBAL</p>
 <div class="HeaderLinks">
 <ul>
-<li><a href="/products/ac/lineup/split_multi_split/contact/" onclick="dataLayer.push({'event':'ev_track','evCategory':'Contact','evAction':'Header','evLabel':this.href.toString()});">Contact</a></li>
+<li><a href="/contact/" onclick="dataLayer.push({'event':'ev_track','evCategory':'Contact','evAction':'Header','evLabel':this.href.toString()});">Contact</a></li>
 <li id="GlobalNavBtn" class="Menu"><a href="javascript:void(0);"><span>Menu</span></a></li>
 </ul>
 <!-- / .HeaderLinks --></div>
@@ -135,13 +135,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- / #HeaderWrap --></div><div id="GlobalNavWrap">
 <div id="GlobalNavArea"><div id="Gnav_Overlay"></div>
 <ul>
-    <li><a href="/products/ac/lineup/split_multi_split/air/">PERFECTING THE AIR</a></li>
-    <li><a href="/products/ac/lineup/split_multi_split/corporate/">ABOUT DAIKIN</a></li>
-    <li class="is-Current"><a href="/products/ac/lineup/split_multi_split/products/">PRODUCTS &amp; SERVICES</a></li>
-    <li><a href="/products/ac/lineup/split_multi_split/investor/">INVESTOR RELATIONS</a></li>
-    <li><a href="/products/ac/lineup/split_multi_split/sustainability/">SUSTAINABILITY</a></li>
-    <li><a href="/products/ac/lineup/split_multi_split/careers/">CAREERS</a></li>
-    <li class="js-Disable"><a href="/products/ac/lineup/split_multi_split/news/">NEWS</a></li>
+    <li><a href="/air/">PERFECTING THE AIR</a></li>
+    <li><a href="/corporate/">ABOUT DAIKIN</a></li>
+    <li class="is-Current"><a href="/products/">PRODUCTS &amp; SERVICES</a></li>
+    <li><a href="/investor/">INVESTOR RELATIONS</a></li>
+    <li><a href="/sustainability/">SUSTAINABILITY</a></li>
+    <li><a href="/careers/">CAREERS</a></li>
+    <li class="js-Disable"><a href="/news/">NEWS</a></li>
 </ul>
 <!-- / #GlobalNavArea -->
 </div>
@@ -151,7 +151,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="MegaMenu_Content MegaMenu_Brand">
 <div class="MegaMenu_ContentInner">
 <div class="Category_Content">
-<ul class="List List--Link Grid Grid--TypeCol3"><li class="Grid__Col Grid__Col--Size1"><a href="/products/ac/lineup/split_multi_split/air/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_globalnavi','evLabel':this.href.toString()});"><em class="Mkr"></em>PERFECTING THE AIR TOP</a></li><li class="Grid__Col Grid__Col--Size1"><a class="kerning-short" href="/products/ac/lineup/split_multi_split/air/elements/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_globalnavi','evLabel':this.href.toString()});"><em class="Mkr"></em>The POWER TO CREATE THE AIR OF THE FUTURE</a></li><li class="Grid__Col Grid__Col--Size1"><a href="/products/ac/lineup/split_multi_split/air/ideal_air/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_globalnavi','evLabel':this.href.toString()});"><em class="Mkr"></em>THE IDEAL AIR BY DAIKIN</a></li></ul>
+<ul class="List List--Link Grid Grid--TypeCol3"><li class="Grid__Col Grid__Col--Size1"><a href="/air/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_globalnavi','evLabel':this.href.toString()});"><em class="Mkr"></em>PERFECTING THE AIR TOP</a></li><li class="Grid__Col Grid__Col--Size1"><a class="kerning-short" href="/air/elements/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_globalnavi','evLabel':this.href.toString()});"><em class="Mkr"></em>The POWER TO CREATE THE AIR OF THE FUTURE</a></li><li class="Grid__Col Grid__Col--Size1"><a href="/air/ideal_air/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_globalnavi','evLabel':this.href.toString()});"><em class="Mkr"></em>THE IDEAL AIR BY DAIKIN</a></li></ul>
 <!-- / .Category_Content -->
 </div>
 <!-- / .MegaMenu_ContentInner -->
@@ -163,7 +163,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="MegaMenu_Content MegaMenu_About">
 <div class="MegaMenu_ContentInner">
 <div class="Category_Content">
-<ul class="List List--Link Grid Grid--TypeCol3"><li class="Grid__Col Grid__Col--Size1"><a href="/products/ac/lineup/split_multi_split/corporate/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_globalnavi','evLabel':this.href.toString()});"><em class="Mkr"></em>ABOUT DAIKIN TOP</a></li><li class="Grid__Col Grid__Col--Size1"><a href="/products/ac/lineup/split_multi_split/corporate/overview/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_globalnavi','evLabel':this.href.toString()});"><em class="Mkr"></em>Corporate Information</a></li><li class="Grid__Col Grid__Col--Size1"><a href="/products/ac/lineup/split_multi_split/corporate/overview/message/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_globalnavi','evLabel':this.href.toString()});"> <em class="Mkr"></em>Message from Management</a></li></ul>
+<ul class="List List--Link Grid Grid--TypeCol3"><li class="Grid__Col Grid__Col--Size1"><a href="/corporate/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_globalnavi','evLabel':this.href.toString()});"><em class="Mkr"></em>ABOUT DAIKIN TOP</a></li><li class="Grid__Col Grid__Col--Size1"><a href="/corporate/overview/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_globalnavi','evLabel':this.href.toString()});"><em class="Mkr"></em>Corporate Information</a></li><li class="Grid__Col Grid__Col--Size1"><a href="/corporate/overview/message/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_globalnavi','evLabel':this.href.toString()});"> <em class="Mkr"></em>Message from Management</a></li></ul>
 <!-- / .Category_Content -->
 </div>
 <!-- / .MegaMenu_ContentInner -->
@@ -174,7 +174,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="MegaMenu_Content MegaMenu_Products">
 <div class="MegaMenu_ContentInner">
 <div class="Category_Content">
-<ul class="List List--Link Grid Grid--TypeCol3"><li class="Grid__Col Grid__Col--Size1"><a href="/products/ac/lineup/split_multi_split/products/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_globalnavi','evLabel':this.href.toString()});"><em class="Mkr"></em>PRODUCTS &amp; SERVICES TOP</a></li><li class="Grid__Col Grid__Col--Size1"><a href="/products/ac/lineup/split_multi_split/products/ac/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_globalnavi','evLabel':this.href.toString()});"> <em class="Mkr"></em>Air Conditioning &amp; Refrigeration</a></li><li class="Grid__Col Grid__Col--Size1"><a href="/products/ac/lineup/split_multi_split/products/ac/lineup/split_multi_split/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_globalnavi','evLabel':this.href.toString()});"> <em class="Mkr"></em>Split/Multi-Split</a></li></ul>
+<ul class="List List--Link Grid Grid--TypeCol3"><li class="Grid__Col Grid__Col--Size1"><a href="/products/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_globalnavi','evLabel':this.href.toString()});"><em class="Mkr"></em>PRODUCTS &amp; SERVICES TOP</a></li><li class="Grid__Col Grid__Col--Size1"><a href="/products/ac/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_globalnavi','evLabel':this.href.toString()});"> <em class="Mkr"></em>Air Conditioning &amp; Refrigeration</a></li><li class="Grid__Col Grid__Col--Size1"><a href="/products/ac/lineup/split_multi_split/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_globalnavi','evLabel':this.href.toString()});"> <em class="Mkr"></em>Split/Multi-Split</a></li></ul>
 <!-- / .Category_Content -->
 </div>
 <!-- / .MegaMenu_ContentInner -->
@@ -184,7 +184,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="MegaMenu_Content MegaMenu_Investor">
 <div class="MegaMenu_ContentInner">
 <div class="Category_Content">
-<ul class="List List--Link Grid Grid--TypeCol3"><li class="Grid__Col Grid__Col--Size1"><a href="/products/ac/lineup/split_multi_split/investor/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_globalnavi','evLabel':this.href.toString()});"><em class="Mkr"></em>INVESTOR RELATIONS TOP</a></li><li class="Grid__Col Grid__Col--Size1"><a href="/products/ac/lineup/split_multi_split/investor/management/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_globalnavi','evLabel':this.href.toString()});"> <em class="Mkr"></em>Management Overview</a></li><li class="Grid__Col Grid__Col--Size1"><a href="/products/ac/lineup/split_multi_split/investor/financial/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_globalnavi','evLabel':this.href.toString()});"> <em class="Mkr"></em>Financial Data</a></li></ul>
+<ul class="List List--Link Grid Grid--TypeCol3"><li class="Grid__Col Grid__Col--Size1"><a href="/investor/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_globalnavi','evLabel':this.href.toString()});"><em class="Mkr"></em>INVESTOR RELATIONS TOP</a></li><li class="Grid__Col Grid__Col--Size1"><a href="/investor/management/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_globalnavi','evLabel':this.href.toString()});"> <em class="Mkr"></em>Management Overview</a></li><li class="Grid__Col Grid__Col--Size1"><a href="/investor/financial/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_globalnavi','evLabel':this.href.toString()});"> <em class="Mkr"></em>Financial Data</a></li></ul>
 <!-- / .Category_Content -->
 </div>
 <!-- / .MegaMenu_ContentInner -->
@@ -194,7 +194,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="MegaMenu_Content MegaMenu_Investor">
 <div class="MegaMenu_ContentInner">
 <div class="Category_Content">
-<ul class="List List--Link Grid Grid--TypeCol3"><li class="Grid__Col Grid__Col--Size1"><a href="/products/ac/lineup/split_multi_split/sustainability/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_globalnavi','evLabel':this.href.toString()});"><em class="Mkr"></em>SUSTAINABILITY TOP</a></li><li class="Grid__Col Grid__Col--Size1"><a href="/products/ac/lineup/split_multi_split/sustainability/about/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_globalnavi','evLabel':this.href.toString()});"> <em class="Mkr"></em>INTRODUCTION</a></li><li class="Grid__Col Grid__Col--Size1"><a href="/products/ac/lineup/split_multi_split/sustainability/management/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_globalnavi','evLabel':this.href.toString()});"> <em class="Mkr"></em>MANAGEMENT</a></li></ul>
+<ul class="List List--Link Grid Grid--TypeCol3"><li class="Grid__Col Grid__Col--Size1"><a href="/sustainability/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_globalnavi','evLabel':this.href.toString()});"><em class="Mkr"></em>SUSTAINABILITY TOP</a></li><li class="Grid__Col Grid__Col--Size1"><a href="/sustainability/about/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_globalnavi','evLabel':this.href.toString()});"> <em class="Mkr"></em>INTRODUCTION</a></li><li class="Grid__Col Grid__Col--Size1"><a href="/sustainability/management/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_globalnavi','evLabel':this.href.toString()});"> <em class="Mkr"></em>MANAGEMENT</a></li></ul>
 <!-- / .Category_Content -->
 </div>
 <!-- / .MegaMenu_ContentInner -->
@@ -204,7 +204,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="MegaMenu_Content MegaMenu_Careers">
 <div class="MegaMenu_ContentInner">
 <div class="Category_Content">
-<ul class="List List--Link Grid Grid--TypeCol3"><li class="Grid__Col Grid__Col--Size1"><a href="/products/ac/lineup/split_multi_split/careers/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_globalnavi','evLabel':this.href.toString()});"><em class="Mkr"></em>CAREERS TOP</a></li><li class="Grid__Col Grid__Col--Size1"><a href="/products/ac/lineup/split_multi_split/careers/management/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_globalnavi','evLabel':this.href.toString()});"> <em class="Mkr"></em>PEOPLE-CENTERED MANAGEMENT</a></li><li class="Grid__Col Grid__Col--Size1"><a href="/products/ac/lineup/split_multi_split/careers/human/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_globalnavi','evLabel':this.href.toString()});"> <em class="Mkr"></em>DESIRED HUMAN RESOURCES</a></li></ul>
+<ul class="List List--Link Grid Grid--TypeCol3"><li class="Grid__Col Grid__Col--Size1"><a href="/careers/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_globalnavi','evLabel':this.href.toString()});"><em class="Mkr"></em>CAREERS TOP</a></li><li class="Grid__Col Grid__Col--Size1"><a href="/careers/management/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_globalnavi','evLabel':this.href.toString()});"> <em class="Mkr"></em>PEOPLE-CENTERED MANAGEMENT</a></li><li class="Grid__Col Grid__Col--Size1"><a href="/careers/human/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_globalnavi','evLabel':this.href.toString()});"> <em class="Mkr"></em>DESIRED HUMAN RESOURCES</a></li></ul>
 <!-- / .Category_Content -->
 </div>
 <!-- / .MegaMenu_ContentInner -->
@@ -237,35 +237,36 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <dl>
     <dt><a href="">PERFECTING THE AIR</a></dt>
     <dd>
-    <ul class="GrobalNav_list"><li><a href="/products/ac/lineup/split_multi_split/air/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_globalnavi','evLabel':this.href.toString()});"><em class="Mkr"></em>PERFECTING THE AIR TOP</a></li><li><a class="kerning-short" href="/products/ac/lineup/split_multi_split/air/elements/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_globalnavi','evLabel':this.href.toString()});"><em class="Mkr"></em>The POWER TO CREATE THE AIR OF THE FUTURE</a></li><li><a href="/products/ac/lineup/split_multi_split/air/ideal_air/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_globalnavi','evLabel':this.href.toString()});"><em class="Mkr"></em>THE IDEAL AIR BY DAIKIN</a></li></ul>
+    <ul class="GrobalNav_list"><li><a href="/air/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_globalnavi','evLabel':this.href.toString()});"><em class="Mkr"></em>PERFECTING THE AIR TOP</a></li><li><a class="kerning-short" href="/air/elements/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_globalnavi','evLabel':this.href.toString()});"><em class="Mkr"></em>The POWER TO CREATE THE AIR OF THE FUTURE</a></li><li><a href="/air/ideal_air/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_globalnavi','evLabel':this.href.toString()});"><em class="Mkr"></em>THE IDEAL AIR BY DAIKIN</a></li></ul>
     </dd>
     <!-- section -->
         <dt><a href="">ABOUT DAIKIN</a></dt>
     <dd>
-    <ul class="GrobalNav_list"><li><a href="/products/ac/lineup/split_multi_split/corporate/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_globalnavi','evLabel':this.href.toString()});"><em class="Mkr"></em>ABOUT DAIKIN TOP</a></li><li><a href="/products/ac/lineup/split_multi_split/corporate/overview/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_globalnavi','evLabel':this.href.toString()});"><em class="Mkr"></em>Corporate Information</a></li><li><a href="/products/ac/lineup/split_multi_split/corporate/overview/message/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_globalnavi','evLabel':this.href.toString()});"> <em class="Mkr"></em>Message from Management</a></li></ul>
+    <ul class="GrobalNav_list"><li><a href="/corporate/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_globalnavi','evLabel':this.href.toString()});"><em class="Mkr"></em>ABOUT DAIKIN TOP</a></li><li><a href="/corporate/overview/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_globalnavi','evLabel':this.href.toString()});"><em class="Mkr"></em>Corporate Information</a></li><li><a href="/corporate/overview/message/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_globalnavi','evLabel':this.href.toString()});"> <em class="Mkr"></em>Message from Management</a></li></ul>
     </dd>
     <!-- section -->
         <dt><a href="">PRODUCTS &amp; SERVICES</a></dt>
     <dd>
-    <ul class="GrobalNav_list"><li><a href="/products/ac/lineup/split_multi_split/products/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_globalnavi','evLabel':this.href.toString()});"><em class="Mkr"></em>PRODUCTS &amp; SERVICES TOP</a></li><li><a href="/products/ac/lineup/split_multi_split/products/ac/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_globalnavi','evLabel':this.href.toString()});"> <em class="Mkr"></em>Air Conditioning &amp; Refrigeration</a></li><li><a href="/products/ac/lineup/split_multi_split/products/ac/lineup/split_multi_split/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_globalnavi','evLabel':this.href.toString()});"> <em class="Mkr"></em>Split/Multi-Split</a></li></ul>
+    <ul class="GrobalNav_list"><li><a href="/products/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_globalnavi','evLabel':this.href.toString()});"><em class="Mkr"></em>PRODUCTS &amp; SERVICES TOP</a></li><li><a href="/products/ac/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_globalnavi','evLabel':this.href.toString()});"> <em class="Mkr"></em>Air Conditioning &amp; Refrigeration</a></li><li><a href="/products/ac/lineup/split_multi_split/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_globalnavi','evLabel':this.href.toString()});"> <em class="Mkr"></em>Split/Multi-Split</a></li></ul>
     </dd>
     <!-- section -->
-        <dt><a href="/products/ac/lineup/split_multi_split/investor/">INVESTOR RELATIONS</a></dt>
+        <dt><a href="/investor/">INVESTOR RELATIONS</a></dt>
     <dd>
-    <ul class="GrobalNav_list"><li><a href="/products/ac/lineup/split_multi_split/investor/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_globalnavi','evLabel':this.href.toString()});"><em class="Mkr"></em>INVESTOR RELATIONS TOP</a></li><li><a href="/products/ac/lineup/split_multi_split/investor/management/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_globalnavi','evLabel':this.href.toString()});"> <em class="Mkr"></em>Management Overview</a></li><li><a href="/products/ac/lineup/split_multi_split/investor/financial/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_globalnavi','evLabel':this.href.toString()});"> <em class="Mkr"></em>Financial Data</a></li></ul>
+    <ul class="GrobalNav_list"><li><a href="/investor/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_globalnavi','evLabel':this.href.toString()});"><em class="Mkr"></em>INVESTOR RELATIONS TOP</a></li><li><a href="/investor/management/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_globalnavi','evLabel':this.href.toString()});"> <em class="Mkr"></em>Management Overview</a></li><li><a href="/investor/financial/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_globalnavi','evLabel':this.href.toString()});"> <em class="Mkr"></em>Financial Data</a></li></ul>
     </dd>
     <!-- section -->
         <dt><a href="">SUSTAINABILITY</a></dt>
     <dd>
-    <ul class="GrobalNav_list"><li><a href="/products/ac/lineup/split_multi_split/sustainability/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_globalnavi','evLabel':this.href.toString()});"><em class="Mkr"></em>SUSTAINABILITY TOP</a></li><li><a href="/products/ac/lineup/split_multi_split/sustainability/about/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_globalnavi','evLabel':this.href.toString()});"> <em class="Mkr"></em>INTRODUCTION</a></li><li><a href="/products/ac/lineup/split_multi_split/sustainability/management/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_globalnavi','evLabel':this.href.toString()});"> <em class="Mkr"></em>MANAGEMENT</a></li></ul>
+    <ul class="GrobalNav_list"><li><a href="/sustainability/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_globalnavi','evLabel':this.href.toString()});"><em class="Mkr"></em>SUSTAINABILITY TOP</a></li><li><a href="/sustainability/about/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_globalnavi','evLabel':this.href.toString()});"> <em class="Mkr"></em>INTRODUCTION</a></li><li><a href="/sustainability/management/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_globalnavi','evLabel':this.href.toString()});"> <em class="Mkr"></em>MANAGEMENT</a></li></ul>
     </dd>
     <!-- section -->
         <dt><a href="">CAREERS</a></dt>
     <dd>
-    <ul class="GrobalNav_list"><li><a href="/products/ac/lineup/split_multi_split/careers/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_globalnavi','evLabel':this.href.toString()});"><em class="Mkr"></em>CAREERS TOP</a></li><li><a href="/products/ac/lineup/split_multi_split/careers/management/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_globalnavi','evLabel':this.href.toString()});"> <em class="Mkr"></em>PEOPLE-CENTERED MANAGEMENT</a></li><li><a href="/products/ac/lineup/split_multi_split/careers/human/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_globalnavi','evLabel':this.href.toString()});"> <em class="Mkr"></em>DESIRED HUMAN RESOURCES</a></li></ul>
+    <ul class="GrobalNav_list"><li><a href="/careers/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_globalnavi','evLabel':this.href.toString()});"><em class="Mkr"></em>CAREERS TOP</a></li><li><a href="/careers/management/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_globalnavi','evLabel':this.href.toString()});"> <em class="Mkr"></em>PEOPLE-CENTERED MANAGEMENT</a></li><li><a href="/careers/human/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_globalnavi','evLabel':this.href.toString()});"> <em class="Mkr"></em>DESIRED HUMAN RESOURCES</a></li></ul>
     </dd>
 </dl>
-<ul class="GrobalNav_list"><li class="GrobalNav_list--global"><a href="/products/ac/lineup/split_multi_split/news/">NEWS</a></li><li><a href="/products/ac/lineup/split_multi_split/contact/">CONTACT</a></li></ul>
+<ul class="GrobalNav_list"><li class="GrobalNav_list--global"><a href="/news/">NEWS</a></li><li><a href="/contact/">CONTACT</a></li></ul>
+
 
 
 
@@ -303,7 +304,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </ol>
       </div>
       <div class="g-poster-hero--s">
-        <div style="background-image:url('/daikin-clone/daikin_offline/assets/www.daikin.com/-/media/Project/Daikin/daikin_com/products/ac/lineup/split_multi_split/images/keyvisual_202303-png.png');" class="g-poster-hero_inner"></div>
+        <div style="background-image:url('assets/www.daikin.com/-/media/Project/Daikin/daikin_com/products/ac/lineup/split_multi_split/images/keyvisual_202303-png.png');background-size:cover;background-position:center center;" class="g-poster-hero_inner"><img class="g-poster-hero_img" src="assets/www.daikin.com/-/media/Project/Daikin/daikin_com/products/ac/lineup/split_multi_split/images/keyvisual_202303-png.png" alt=""></div>
         <div class="g-poster-hero_hd">
           <h1><span>Split/Multi-Split Type</span>
             <span>Air Conditioners </span>
@@ -812,17 +813,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="SiteNav__Body__Inner">
 <dl>
     <!-- 202303add -->
-    <dt><a href="/products/ac/lineup/split_multi_split/air/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_footermenu','evLabel':this.href.toString()});"><em class="Mkr"></em>PERFECTING THE AIR</a></dt>
+    <dt><a href="/air/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_footermenu','evLabel':this.href.toString()});"><em class="Mkr"></em>PERFECTING THE AIR</a></dt>
     <dd>
-    <ul><li class="dai2"><a href="/products/ac/lineup/split_multi_split/air/ideal_air/" onclick="datalayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_footermenu','evLabel':this.href.tostring()});"><em class="Mkr"></em>The Ideal Air by Daikin</a></li><li class="dai2"><a href="/products/ac/lineup/split_multi_split/air/stories/" onclick="datalayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_footermenu','evLabel':this.href.tostring()});"><em class="Mkr"></em>Perfecting the Air Stories</a></li></ul>
-    <ul><li class="dai2"><a href="/products/ac/lineup/split_multi_split/air/daikin_brand/" onclick="datalayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_footermenu','evLabel':this.href.tostring()});"><em class="Mkr"></em>Daikin Brand</a></li></ul>
+    <ul><li class="dai2"><a href="/air/ideal_air/" onclick="datalayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_footermenu','evLabel':this.href.tostring()});"><em class="Mkr"></em>The Ideal Air by Daikin</a></li><li class="dai2"><a href="/air/stories/" onclick="datalayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_footermenu','evLabel':this.href.tostring()});"><em class="Mkr"></em>Perfecting the Air Stories</a></li></ul>
+    <ul><li class="dai2"><a href="/air/daikin_brand/" onclick="datalayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_footermenu','evLabel':this.href.tostring()});"><em class="Mkr"></em>Daikin Brand</a></li></ul>
     
     
     </dd>
     <!-- /202303add -->
-    <dt><a href="/products/ac/lineup/split_multi_split/corporate/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_footermenu','evLabel':this.href.toString()});"><em class="Mkr"></em>ABOUT DAIKIN</a></dt>
+    <dt><a href="/corporate/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_footermenu','evLabel':this.href.toString()});"><em class="Mkr"></em>ABOUT DAIKIN</a></dt>
     <dd>
-    <ul><li class="dai2 gen-TextResetUppercase"><a href="/products/ac/lineup/split_multi_split/corporate/overview/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_footermenu','evLabel':this.href.toString()});"><em class="Mkr"></em>Corporate Information</a></li><li class="dai3"><a href="/products/ac/lineup/split_multi_split/corporate/overview/message/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_footermenu','evLabel':this.href.toString()});"> <em class="Mkr"></em>Message from Management</a></li><li class="dai3"><a href="/products/ac/lineup/split_multi_split/corporate/overview/philosophy/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_footermenu','evLabel':this.href.toString()});"> <em class="Mkr"></em>Daikin Group Philosophy</a></li></ul>
+    <ul><li class="dai2 gen-TextResetUppercase"><a href="/corporate/overview/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_footermenu','evLabel':this.href.toString()});"><em class="Mkr"></em>Corporate Information</a></li><li class="dai3"><a href="/corporate/overview/message/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_footermenu','evLabel':this.href.toString()});"> <em class="Mkr"></em>Message from Management</a></li><li class="dai3"><a href="/corporate/overview/philosophy/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_footermenu','evLabel':this.href.toString()});"> <em class="Mkr"></em>Daikin Group Philosophy</a></li></ul>
     
     </dd>
 </dl>
@@ -830,9 +831,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </div>
 <div class="SiteNav__Body__Inner">
 <dl>
-    <dt><a href="/products/ac/lineup/split_multi_split/products/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_footermenu','evLabel':this.href.toString()});"> <em class="Mkr"></em>PRODUCTS &amp; SERVICES</a></dt>
+    <dt><a href="/products/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_footermenu','evLabel':this.href.toString()});"> <em class="Mkr"></em>PRODUCTS &amp; SERVICES</a></dt>
     <dd>
-    <ul><li class="dai2 gen-TextResetUppercase"><a href="/products/ac/lineup/split_multi_split/products/ac/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_footermenu','evLabel':this.href.toString()});"> <em class="Mkr"></em>Air Conditioning &amp; Refrigeration</a></li><li class="dai3"><a href="/products/ac/lineup/split_multi_split/products/ac/lineup/split_multi_split/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_footermenu','evLabel':this.href.toString()});"> <em class="Mkr"></em>Split/Multi-Split</a></li><li class="dai3"><a href="/products/ac/lineup/split_multi_split/products/ac/lineup/duct_unitary/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_footermenu','evLabel':this.href.toString()});"> <em class="Mkr"></em>Unitary</a></li></ul>
+    <ul><li class="dai2 gen-TextResetUppercase"><a href="/products/ac/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_footermenu','evLabel':this.href.toString()});"> <em class="Mkr"></em>Air Conditioning &amp; Refrigeration</a></li><li class="dai3"><a href="/products/ac/lineup/split_multi_split/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_footermenu','evLabel':this.href.toString()});"> <em class="Mkr"></em>Split/Multi-Split</a></li><li class="dai3"><a href="/products/ac/lineup/duct_unitary/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_footermenu','evLabel':this.href.toString()});"> <em class="Mkr"></em>Unitary</a></li></ul>
     
     
     </dd>
@@ -841,29 +842,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </div>
 <div class="SiteNav__Body__Inner">
 <dl>
-    <dt><a href="/products/ac/lineup/split_multi_split/investor/"><em class="Mkr"></em>INVESTOR RELATIONS</a></dt>
+    <dt><a href="/investor/"><em class="Mkr"></em>INVESTOR RELATIONS</a></dt>
     <dd>
-    <ul><li><a href="/products/ac/lineup/split_multi_split/investor/management/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_footermenu','evLabel':this.href.toString()});"> <em class="Mkr"></em>Management Overview</a></li><li><a href="/products/ac/lineup/split_multi_split/investor/financial/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_footermenu','evLabel':this.href.toString()});"> <em class="Mkr"></em>Financial Data</a></li><li><a href="/products/ac/lineup/split_multi_split/investor/esg/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_footermenu','evLabel':this.href.toString()});"> <em class="Mkr"></em>Non-Financial Information</a></li></ul>
+    <ul><li><a href="/investor/management/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_footermenu','evLabel':this.href.toString()});"> <em class="Mkr"></em>Management Overview</a></li><li><a href="/investor/financial/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_footermenu','evLabel':this.href.toString()});"> <em class="Mkr"></em>Financial Data</a></li><li><a href="/investor/esg/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_footermenu','evLabel':this.href.toString()});"> <em class="Mkr"></em>Non-Financial Information</a></li></ul>
     </dd>
-    <dt><a href="/products/ac/lineup/split_multi_split/sustainability/"><em class="Mkr"></em>SUSTAINABILITY</a></dt>
+    <dt><a href="/sustainability/"><em class="Mkr"></em>SUSTAINABILITY</a></dt>
     <dd>
-    <ul class="GrobalNav_list"><li><a href="/products/ac/lineup/split_multi_split/sustainability/about/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_footermenu','evLabel':this.href.toString()});"> <em class="Mkr"></em>Introduction</a></li><li><a href="/products/ac/lineup/split_multi_split/sustainability/management/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_footermenu','evLabel':this.href.toString()});"> <em class="Mkr"></em>Management</a></li><li><a href="/products/ac/lineup/split_multi_split/sustainability/environment/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_footermenu','evLabel':this.href.toString()});"> <em class="Mkr"></em>Environment</a></li></ul>
+    <ul class="GrobalNav_list"><li><a href="/sustainability/about/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_footermenu','evLabel':this.href.toString()});"> <em class="Mkr"></em>Introduction</a></li><li><a href="/sustainability/management/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_footermenu','evLabel':this.href.toString()});"> <em class="Mkr"></em>Management</a></li><li><a href="/sustainability/environment/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_footermenu','evLabel':this.href.toString()});"> <em class="Mkr"></em>Environment</a></li></ul>
     </dd>
 </dl>
 <!-- / .SiteNav__Body__Inner -->
 </div>
 <div class="SiteNav__Body__Inner">
 <dl>
-    <dt><a href="/products/ac/lineup/split_multi_split/careers/"><em class="Mkr"></em>CAREERS</a></dt>
+    <dt><a href="/careers/"><em class="Mkr"></em>CAREERS</a></dt>
     <dd>
-    <ul><li><a href="/products/ac/lineup/split_multi_split/careers/management/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_footermenu','evLabel':this.href.toString()});"> <em class="Mkr"></em>People-Centered Management</a></li><li><a href="/products/ac/lineup/split_multi_split/careers/human/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_footermenu','evLabel':this.href.toString()});"> <em class="Mkr"></em>Desired Human Resources</a></li><li><a href="/products/ac/lineup/split_multi_split/careers/employees/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_footermenu','evLabel':this.href.toString()});"> <em class="Mkr"></em>Global Activities of Daikin Employees</a></li></ul>
+    <ul><li><a href="/careers/management/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_footermenu','evLabel':this.href.toString()});"> <em class="Mkr"></em>People-Centered Management</a></li><li><a href="/careers/human/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_footermenu','evLabel':this.href.toString()});"> <em class="Mkr"></em>Desired Human Resources</a></li><li><a href="/careers/employees/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_footermenu','evLabel':this.href.toString()});"> <em class="Mkr"></em>Global Activities of Daikin Employees</a></li></ul>
     </dd>
     <dt>LATEST NEWS</dt>
     <dd>
-    <ul><li class="dai4"><a href="/products/ac/lineup/split_multi_split/news/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_footermenu','evLabel':this.href.toString()});"><em></em>News</a></li><li class="dai4"><a href="/products/ac/lineup/split_multi_split/press/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_footermenu','evLabel':this.href.toString()});"><em></em>Press Releases</a></li></ul>
+    <ul><li class="dai4"><a href="/news/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_footermenu','evLabel':this.href.toString()});"><em></em>News</a></li><li class="dai4"><a href="/press/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_footermenu','evLabel':this.href.toString()});"><em></em>Press Releases</a></li></ul>
     </dd>
 </dl>
-<p class="SiteNav_Separate"><a href="/products/ac/lineup/split_multi_split/contact/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_footermenu','evLabel':this.href.toString()});"><em></em>CONTACT</a></p>
+<p class="SiteNav_Separate"><a href="/contact/" onclick="dataLayer.push({'event':'ev_track','evCategory':'daikinall','evAction':'daikinall_footermenu','evLabel':this.href.toString()});"><em></em>CONTACT</a></p>
 <!-- / .SiteNav__Body__Inner -->
 </div>
 <!-- / .SiteNav__Body -->
@@ -877,9 +878,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <p class="Copyright">©DAIKIN INDUSTRIES, Ltd., 2026</p>
 <div class="FooterLink">
 <ul>
-    <li><a href="/products/ac/lineup/split_multi_split/privacy/">Privacy Policy</a></li>
-    <li><a href="/products/ac/lineup/split_multi_split/terms/">Terms of Use</a></li>
-    <li><a href="/products/ac/lineup/split_multi_split/cookie/">About Cookies</a></li>
+    <li><a href="/privacy/">Privacy Policy</a></li>
+    <li><a href="/terms/">Terms of Use</a></li>
+    <li><a href="/cookie/">About Cookies</a></li>
 </ul>
 <!-- / .FooterLink -->
 </div>

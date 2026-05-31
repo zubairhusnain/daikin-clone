@@ -36,6 +36,13 @@ function dk_map_external_url(string $url): string
         return $url;
     }
 
+    if (str_contains($url, '/assets/')) {
+        $pos = strpos($url, '/assets/');
+        if ($pos !== false) {
+            return $base . substr($url, $pos);
+        }
+    }
+
     $parts = parse_url($url);
     if ($parts === false || !isset($parts['host'])) {
         return $base . '/';
@@ -83,6 +90,9 @@ function dk_rewrite_external_urls(string $html): string
     $html = preg_replace_callback(
         '~\b(href|src|content|action|poster|cite|data-href|data-url|data-src)=(["\'])(https?://[^"\']+)\2~i',
         static function (array $m): string {
+            if (str_contains($m[3], '/assets/') || str_contains($m[3], '/daikin-clone/')) {
+                return $m[0];
+            }
             $next = dk_map_external_url($m[3]);
             return $m[1] . '=' . $m[2] . $next . $m[2];
         },
